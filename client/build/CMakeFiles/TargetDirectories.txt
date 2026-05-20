@@ -1,0 +1,4 @@
+D:/vskelin/LiveKit/client/build/CMakeFiles/LiveKitClient.dir
+D:/vskelin/LiveKit/client/build/CMakeFiles/edit_cache.dir
+D:/vskelin/LiveKit/client/build/CMakeFiles/rebuild_cache.dir
+D:/vskelin/LiveKit/client/build/CMakeFiles/LiveKitClient_autogen.dir

@@ -1,0 +1,26 @@
+{
+	"BUILD_DIR" : "D:/vskelin/LiveKit/client/build/LiveKitClient_autogen",
+	"CMAKE_BINARY_DIR" : "D:/vskelin/LiveKit/client/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/vskelin/LiveKit/client/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/vskelin/LiveKit/client",
+	"CMAKE_SOURCE_DIR" : "D:/vskelin/LiveKit/client",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "MinGW Makefiles",
+	"INCLUDE_DIR" : "D:/vskelin/LiveKit/client/build/LiveKitClient_autogen/include",
+	"INPUTS" : 
+	[
+		"D:/vskelin/LiveKit/client/resources/qss/dark.qss",
+		"D:/vskelin/LiveKit/client/resources/qss/light.qss"
+	],
+	"LOCK_FILE" : "D:/vskelin/LiveKit/client/build/CMakeFiles/LiveKitClient_autogen.dir/AutoRcc_resources_3YJK5W5UP7_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "3YJK5W5UP7",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "D:/Qt/Qt5.12.11/5.12.11/mingw73_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "D:/vskelin/LiveKit/client/build/CMakeFiles/LiveKitClient_autogen.dir/AutoRcc_resources_3YJK5W5UP7_Used.txt",
+	"SOURCE" : "D:/vskelin/LiveKit/client/resources/resources.qrc",
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}
