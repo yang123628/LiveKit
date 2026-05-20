@@ -1,0 +1,4 @@
+/home/hy/LiveKit/server/build/CMakeFiles/sqlite3.dir
+/home/hy/LiveKit/server/build/CMakeFiles/LiveKitServer.dir
+/home/hy/LiveKit/server/build/CMakeFiles/edit_cache.dir
+/home/hy/LiveKit/server/build/CMakeFiles/rebuild_cache.dir
