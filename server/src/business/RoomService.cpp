@@ -2,10 +2,13 @@
 #include "business/RoomManager.h"
 #include "database/RoomDao.h"
 #include "database/UserDao.h"
+#include "database/ReplayDao.h"
 #include "business/UserService.h"
+#include "recording/RecordingManager.h"
 #include "utils/Crypto.h"
 #include "utils/Config.h"
 #include "core/Logger.h"
+#include <chrono>
 
 static std::string generateStreamKey() {
     std::string chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -64,6 +67,9 @@ nlohmann::json RoomService::createRoom(const std::string& token, const std::stri
         result["msg"] = "创建直播间失败";
         return result;
     }
+
+    RecordingManager::instance().startRecording(roomId, streamKey);
+    RecordingManager::instance().takeScreenshot(roomId, streamKey);
 
     std::string pushUrl = getRtmpBaseUrl() + streamKey;
 
@@ -202,10 +208,28 @@ nlohmann::json RoomService::endRoom(const std::string& token, int roomId) {
 
     RoomManager::instance().clearRoom(roomId);
 
+    bool wasRecording = RecordingManager::instance().hasRecorder(roomId);
+    std::string outputPath = RecordingManager::instance().getOutputPath(roomId);
+    RecordingManager::instance().stopRecording(roomId);
+
     if (!RoomDao::updateRoomStatus(roomId, "ended")) {
         result["code"] = 2008;
         result["msg"] = "结束直播失败";
         return result;
+    }
+
+    if (wasRecording) {
+        auto now = std::chrono::system_clock::now();
+        std::tm createdTm = {};
+        std::istringstream iss(room.created_at);
+        iss >> std::get_time(&createdTm, "%Y-%m-%d %H:%M:%S");
+        auto createdTime = std::chrono::system_clock::from_time_t(std::mktime(&createdTm));
+        int duration = static_cast<int>(std::chrono::duration_cast<std::chrono::seconds>(now - createdTime).count());
+
+        std::string coverPath = "static/covers/" + std::to_string(roomId) + ".jpg";
+
+        ReplayDao::createReplay(roomId, room.title, room.anchor_id, duration, outputPath, coverPath);
+        LOG_INFO("replay created for room " << roomId << " duration=" << duration << "s");
     }
 
     result["code"] = 0;

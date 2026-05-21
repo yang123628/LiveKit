@@ -31,8 +31,8 @@ void StaticFileHandler::handle(HttpRequest& req, HttpResponse& resp) {
         return;
     }
 
-    std::string content = readFile(filePath);
-    if (content.empty()) {
+    size_t fileSize = getFileSize(filePath);
+    if (fileSize == 0) {
         resp.setStatus(404);
         resp.setHeader("Content-Type", "application/json");
         resp.setBody("{\"code\":404,\"msg\":\"File Not Found\",\"data\":{}}");
@@ -40,9 +40,54 @@ void StaticFileHandler::handle(HttpRequest& req, HttpResponse& resp) {
     }
 
     std::string mime = getMimeType(filePath);
+    std::string rangeHeader = req.getHeader("Range");
+
+    if (!rangeHeader.empty() && rangeHeader.find("bytes=") == 0) {
+        std::string rangeSpec = rangeHeader.substr(6);
+        size_t dashPos = rangeSpec.find('-');
+        if (dashPos != std::string::npos) {
+            size_t rangeStart = 0;
+            size_t rangeEnd = fileSize - 1;
+
+            std::string startStr = rangeSpec.substr(0, dashPos);
+            std::string endStr = rangeSpec.substr(dashPos + 1);
+
+            if (!startStr.empty()) {
+                rangeStart = std::stoull(startStr);
+            }
+            if (!endStr.empty()) {
+                rangeEnd = std::stoull(endStr);
+            }
+
+            if (rangeStart >= fileSize) {
+                resp.setStatus(416);
+                resp.setHeader("Content-Range", "bytes */" + std::to_string(fileSize));
+                return;
+            }
+
+            if (rangeEnd >= fileSize) {
+                rangeEnd = fileSize - 1;
+            }
+
+            size_t contentLength = rangeEnd - rangeStart + 1;
+            std::string content = readFileRange(filePath, rangeStart, contentLength);
+
+            resp.setStatus(206, "Partial Content");
+            resp.setHeader("Content-Type", mime);
+            resp.setHeader("Content-Length", std::to_string(contentLength));
+            resp.setHeader("Content-Range", "bytes " + std::to_string(rangeStart) + "-" + std::to_string(rangeEnd) + "/" + std::to_string(fileSize));
+            resp.setHeader("Accept-Ranges", "bytes");
+            resp.setHeader("Access-Control-Allow-Origin", "*");
+            resp.setBody(content);
+            return;
+        }
+    }
+
+    std::string content = readFile(filePath);
     resp.setStatus(200, "OK");
     resp.setHeader("Content-Type", mime);
-    resp.setHeader("Content-Length", std::to_string(content.size()));
+    resp.setHeader("Content-Length", std::to_string(fileSize));
+    resp.setHeader("Accept-Ranges", "bytes");
     resp.setHeader("Cache-Control", "max-age=3600");
     resp.setHeader("Access-Control-Allow-Origin", "*");
     resp.setBody(content);
@@ -71,8 +116,23 @@ std::string StaticFileHandler::getMimeType(const std::string& path) {
 std::string StaticFileHandler::readFile(const std::string& path) {
     std::ifstream file(path, std::ios::binary);
     if (!file.is_open()) return "";
-
     std::ostringstream ss;
     ss << file.rdbuf();
     return ss.str();
+}
+
+std::string StaticFileHandler::readFileRange(const std::string& path, size_t offset, size_t length) {
+    std::ifstream file(path, std::ios::binary);
+    if (!file.is_open()) return "";
+    file.seekg(offset);
+    std::string content(length, '\0');
+    file.read(&content[0], length);
+    content.resize(file.gcount());
+    return content;
+}
+
+size_t StaticFileHandler::getFileSize(const std::string& path) {
+    std::ifstream file(path, std::ios::binary | std::ios::ate);
+    if (!file.is_open()) return 0;
+    return static_cast<size_t>(file.tellg());
 }

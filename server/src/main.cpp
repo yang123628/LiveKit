@@ -11,8 +11,10 @@
 #include "business/RoomService.h"
 #include "business/RoomManager.h"
 #include "business/GiftService.h"
+#include "business/ReplayService.h"
 #include "database/RoomDao.h"
 #include "database/UserDao.h"
+#include "recording/RecordingManager.h"
 #include <csignal>
 #include <iostream>
 #include <chrono>
@@ -23,6 +25,7 @@ HttpServer* g_server = nullptr;
 
 void signalHandler(int signum) {
     LOG_INFO("received signal " << signum << ", shutting down...");
+    RecordingManager::instance().stopAll();
     if (g_server) {
         g_server->stop();
     }
@@ -38,11 +41,6 @@ static std::string getTimestamp() {
 
 static std::unordered_map<int, int> g_likeCounts;
 static std::mutex g_likeMutex;
-
-int getLikeCount(int roomId) {
-    std::lock_guard<std::mutex> lock(g_likeMutex);
-    return g_likeCounts[roomId];
-}
 
 void persistLikeCount(int roomId) {
     std::lock_guard<std::mutex> lock(g_likeMutex);
@@ -325,6 +323,14 @@ void registerRoutes(HttpServer& server) {
         resp.setJson(code, msg, data);
     });
 
+    server.router().get("/api/live/replays", [](HttpRequest& req, HttpResponse& resp) {
+        nlohmann::json result = ReplayService::getReplayList();
+        int code = result.value("code", -1);
+        std::string msg = result.value("msg", "");
+        nlohmann::json data = result.value("data", nlohmann::json::object());
+        resp.setJson(code, msg, data);
+    });
+
     server.router().get("/avatars/{file}", [](HttpRequest& req, HttpResponse& resp) {
         StaticFileHandler::handle(req, resp);
     });
@@ -378,6 +384,7 @@ int main(int argc, char* argv[]) {
 
     signal(SIGINT, signalHandler);
     signal(SIGTERM, signalHandler);
+    signal(SIGPIPE, SIG_IGN);
 
     HttpServer server(port, threadCount);
     g_server = &server;
@@ -390,6 +397,7 @@ int main(int argc, char* argv[]) {
 
     server.start();
 
+    RecordingManager::instance().stopAll();
     Database::instance().close();
     LOG_INFO("LiveKit Server stopped");
     return 0;

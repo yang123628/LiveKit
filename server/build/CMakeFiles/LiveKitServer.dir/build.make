@@ -377,10 +377,24 @@ CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/LiveKit/server/src/database/GiftDao.cpp -o CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.s
 
+CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
+CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.o: ../src/database/ReplayDao.cpp
+CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.o -c /home/hy/LiveKit/server/src/database/ReplayDao.cpp
+
+CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/LiveKit/server/src/database/ReplayDao.cpp > CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.i
+
+CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/LiveKit/server/src/database/ReplayDao.cpp -o CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.s
+
 CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o: ../src/business/UserService.cpp
 CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o -c /home/hy/LiveKit/server/src/business/UserService.cpp
 
 CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.i: cmake_force
@@ -394,7 +408,7 @@ CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.s: cmake_force
 CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o: ../src/business/RoomService.cpp
 CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o -c /home/hy/LiveKit/server/src/business/RoomService.cpp
 
 CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.i: cmake_force
@@ -408,7 +422,7 @@ CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.s: cmake_force
 CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o: ../src/business/RoomManager.cpp
 CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o -c /home/hy/LiveKit/server/src/business/RoomManager.cpp
 
 CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.i: cmake_force
@@ -422,7 +436,7 @@ CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.s: cmake_force
 CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o: ../src/business/GiftService.cpp
 CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o -c /home/hy/LiveKit/server/src/business/GiftService.cpp
 
 CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.i: cmake_force
@@ -432,6 +446,48 @@ CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.i: cmake_force
 CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/LiveKit/server/src/business/GiftService.cpp -o CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.s
+
+CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
+CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.o: ../src/business/ReplayService.cpp
+CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.o -c /home/hy/LiveKit/server/src/business/ReplayService.cpp
+
+CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/LiveKit/server/src/business/ReplayService.cpp > CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.i
+
+CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/LiveKit/server/src/business/ReplayService.cpp -o CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.s
+
+CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
+CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o: ../src/recording/FFmpegRecorder.cpp
+CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o -c /home/hy/LiveKit/server/src/recording/FFmpegRecorder.cpp
+
+CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/LiveKit/server/src/recording/FFmpegRecorder.cpp > CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.i
+
+CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/LiveKit/server/src/recording/FFmpegRecorder.cpp -o CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.s
+
+CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
+CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o: ../src/recording/RecordingManager.cpp
+CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o -c /home/hy/LiveKit/server/src/recording/RecordingManager.cpp
+
+CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/LiveKit/server/src/recording/RecordingManager.cpp > CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.i
+
+CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/LiveKit/server/src/recording/RecordingManager.cpp -o CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.s
 
 # Object files for target LiveKitServer
 LiveKitServer_OBJECTS = \
@@ -457,10 +513,14 @@ LiveKitServer_OBJECTS = \
 "CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o" \
 "CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o" \
 "CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.o" \
+"CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.o" \
 "CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o" \
 "CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o" \
 "CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o" \
-"CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o"
+"CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o" \
+"CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.o" \
+"CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o" \
+"CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o"
 
 # External object files for target LiveKitServer
 LiveKitServer_EXTERNAL_OBJECTS =
@@ -487,14 +547,18 @@ LiveKitServer: CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.o
+LiveKitServer: CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o
+LiveKitServer: CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.o
+LiveKitServer: CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o
+LiveKitServer: CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/build.make
 LiveKitServer: libsqlite3.a
 LiveKitServer: CMakeFiles/LiveKitServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable LiveKitServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable LiveKitServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LiveKitServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

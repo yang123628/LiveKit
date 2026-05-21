@@ -166,6 +166,30 @@ src/business/GiftService.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.s
 .PHONY : src/business/GiftService.cpp.s
 
+src/business/ReplayService.o: src/business/ReplayService.cpp.o
+.PHONY : src/business/ReplayService.o
+
+# target to build an object file
+src/business/ReplayService.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.o
+.PHONY : src/business/ReplayService.cpp.o
+
+src/business/ReplayService.i: src/business/ReplayService.cpp.i
+.PHONY : src/business/ReplayService.i
+
+# target to preprocess a source file
+src/business/ReplayService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.i
+.PHONY : src/business/ReplayService.cpp.i
+
+src/business/ReplayService.s: src/business/ReplayService.cpp.s
+.PHONY : src/business/ReplayService.s
+
+# target to generate assembly for a file
+src/business/ReplayService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.s
+.PHONY : src/business/ReplayService.cpp.s
+
 src/business/RoomManager.o: src/business/RoomManager.cpp.o
 .PHONY : src/business/RoomManager.o
 
@@ -405,6 +429,30 @@ src/database/GiftDao.s: src/database/GiftDao.cpp.s
 src/database/GiftDao.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.s
 .PHONY : src/database/GiftDao.cpp.s
+
+src/database/ReplayDao.o: src/database/ReplayDao.cpp.o
+.PHONY : src/database/ReplayDao.o
+
+# target to build an object file
+src/database/ReplayDao.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.o
+.PHONY : src/database/ReplayDao.cpp.o
+
+src/database/ReplayDao.i: src/database/ReplayDao.cpp.i
+.PHONY : src/database/ReplayDao.i
+
+# target to preprocess a source file
+src/database/ReplayDao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.i
+.PHONY : src/database/ReplayDao.cpp.i
+
+src/database/ReplayDao.s: src/database/ReplayDao.cpp.s
+.PHONY : src/database/ReplayDao.s
+
+# target to generate assembly for a file
+src/database/ReplayDao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/ReplayDao.cpp.s
+.PHONY : src/database/ReplayDao.cpp.s
 
 src/database/RoomDao.o: src/database/RoomDao.cpp.o
 .PHONY : src/database/RoomDao.o
@@ -694,6 +742,54 @@ src/network/WebSocketHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/network/WebSocketHandler.cpp.s
 .PHONY : src/network/WebSocketHandler.cpp.s
 
+src/recording/FFmpegRecorder.o: src/recording/FFmpegRecorder.cpp.o
+.PHONY : src/recording/FFmpegRecorder.o
+
+# target to build an object file
+src/recording/FFmpegRecorder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o
+.PHONY : src/recording/FFmpegRecorder.cpp.o
+
+src/recording/FFmpegRecorder.i: src/recording/FFmpegRecorder.cpp.i
+.PHONY : src/recording/FFmpegRecorder.i
+
+# target to preprocess a source file
+src/recording/FFmpegRecorder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.i
+.PHONY : src/recording/FFmpegRecorder.cpp.i
+
+src/recording/FFmpegRecorder.s: src/recording/FFmpegRecorder.cpp.s
+.PHONY : src/recording/FFmpegRecorder.s
+
+# target to generate assembly for a file
+src/recording/FFmpegRecorder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.s
+.PHONY : src/recording/FFmpegRecorder.cpp.s
+
+src/recording/RecordingManager.o: src/recording/RecordingManager.cpp.o
+.PHONY : src/recording/RecordingManager.o
+
+# target to build an object file
+src/recording/RecordingManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o
+.PHONY : src/recording/RecordingManager.cpp.o
+
+src/recording/RecordingManager.i: src/recording/RecordingManager.cpp.i
+.PHONY : src/recording/RecordingManager.i
+
+# target to preprocess a source file
+src/recording/RecordingManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.i
+.PHONY : src/recording/RecordingManager.cpp.i
+
+src/recording/RecordingManager.s: src/recording/RecordingManager.cpp.s
+.PHONY : src/recording/RecordingManager.s
+
+# target to generate assembly for a file
+src/recording/RecordingManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.s
+.PHONY : src/recording/RecordingManager.cpp.s
+
 src/utils/Config.o: src/utils/Config.cpp.o
 .PHONY : src/utils/Config.o
 
@@ -803,6 +899,9 @@ help:
 	@echo "... src/business/GiftService.o"
 	@echo "... src/business/GiftService.i"
 	@echo "... src/business/GiftService.s"
+	@echo "... src/business/ReplayService.o"
+	@echo "... src/business/ReplayService.i"
+	@echo "... src/business/ReplayService.s"
 	@echo "... src/business/RoomManager.o"
 	@echo "... src/business/RoomManager.i"
 	@echo "... src/business/RoomManager.s"
@@ -833,6 +932,9 @@ help:
 	@echo "... src/database/GiftDao.o"
 	@echo "... src/database/GiftDao.i"
 	@echo "... src/database/GiftDao.s"
+	@echo "... src/database/ReplayDao.o"
+	@echo "... src/database/ReplayDao.i"
+	@echo "... src/database/ReplayDao.s"
 	@echo "... src/database/RoomDao.o"
 	@echo "... src/database/RoomDao.i"
 	@echo "... src/database/RoomDao.s"
@@ -869,6 +971,12 @@ help:
 	@echo "... src/network/WebSocketHandler.o"
 	@echo "... src/network/WebSocketHandler.i"
 	@echo "... src/network/WebSocketHandler.s"
+	@echo "... src/recording/FFmpegRecorder.o"
+	@echo "... src/recording/FFmpegRecorder.i"
+	@echo "... src/recording/FFmpegRecorder.s"
+	@echo "... src/recording/RecordingManager.o"
+	@echo "... src/recording/RecordingManager.i"
+	@echo "... src/recording/RecordingManager.s"
 	@echo "... src/utils/Config.o"
 	@echo "... src/utils/Config.i"
 	@echo "... src/utils/Config.s"

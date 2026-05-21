@@ -225,7 +225,9 @@ CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o: \
  /usr/include/c++/11/bits/unique_lock.h \
  /home/hy/LiveKit/server/src/database/RoomDao.h \
  /home/hy/LiveKit/server/src/database/UserDao.h \
+ /home/hy/LiveKit/server/src/database/ReplayDao.h \
  /home/hy/LiveKit/server/src/business/UserService.h \
+ /home/hy/LiveKit/server/src/recording/RecordingManager.h \
  /home/hy/LiveKit/server/src/utils/Crypto.h \
  /home/hy/LiveKit/server/src/utils/Config.h \
  /home/hy/LiveKit/server/src/core/Logger.h /usr/include/c++/11/fstream \

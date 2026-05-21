@@ -33,10 +33,14 @@ add_executable(LiveKitServer
     src/database/UserDao.cpp
     src/database/RoomDao.cpp
     src/database/GiftDao.cpp
+    src/database/ReplayDao.cpp
     src/business/UserService.cpp
     src/business/RoomService.cpp
     src/business/RoomManager.cpp
     src/business/GiftService.cpp
+    src/business/ReplayService.cpp
+    src/recording/FFmpegRecorder.cpp
+    src/recording/RecordingManager.cpp
 )
 
 target_include_directories(LiveKitServer PRIVATE
