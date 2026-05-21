@@ -149,6 +149,102 @@ QPushButton#navButton:checked {
     background-color: #1a1a2e;
 }
 
+#hallHeader {
+    background-color: #16213e;
+}
+
+QLabel#hallLogo {
+    color: #e94560;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#hallCategoryBar {
+    background-color: #16213e;
+}
+
+QPushButton#categoryButton {
+    background-color: transparent;
+    color: #a0a0a0;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    padding: 4px 16px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QPushButton#categoryButton:hover {
+    color: #e0e0e0;
+    border: 2px solid #0f3460;
+}
+
+QPushButton#categoryButton:checked {
+    background-color: #e94560;
+    color: #ffffff;
+    border: 2px solid #e94560;
+}
+
+#hallScrollArea {
+    background-color: #1a1a2e;
+    border: none;
+}
+
+#hallScrollContent {
+    background-color: #1a1a2e;
+}
+
+QLabel#hallEmptyLabel {
+    color: #607090;
+    font-size: 18px;
+}
+
+#roomCard {
+    background-color: #16213e;
+    border-radius: 12px;
+}
+
+#roomCover {
+    background-color: #0f3460;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+QLabel#roomCategory {
+    background-color: rgba(233, 69, 96, 200);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 2px 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#roomInfoBar {
+    background-color: #16213e;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+QLabel#roomAvatar {
+    border: 2px solid #0f3460;
+    border-radius: 18px;
+}
+
+QLabel#roomTitle {
+    color: #e0e0e0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QLabel#roomAnchorName {
+    color: #808080;
+    font-size: 11px;
+}
+
+QLabel#roomViewerCount {
+    color: #808080;
+    font-size: 11px;
+}
+
 QLabel#pageTitle {
     color: #e0e0e0;
     font-size: 28px;

@@ -261,6 +261,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/model/RoomInfo.obj: src/model/RoomInfo.cpp.obj
+.PHONY : src/model/RoomInfo.obj
+
+# target to build an object file
+src/model/RoomInfo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.obj
+.PHONY : src/model/RoomInfo.cpp.obj
+
+src/model/RoomInfo.i: src/model/RoomInfo.cpp.i
+.PHONY : src/model/RoomInfo.i
+
+# target to preprocess a source file
+src/model/RoomInfo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.i
+.PHONY : src/model/RoomInfo.cpp.i
+
+src/model/RoomInfo.s: src/model/RoomInfo.cpp.s
+.PHONY : src/model/RoomInfo.s
+
+# target to generate assembly for a file
+src/model/RoomInfo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.s
+.PHONY : src/model/RoomInfo.cpp.s
+
 src/model/UserInfo.obj: src/model/UserInfo.cpp.obj
 .PHONY : src/model/UserInfo.obj
 
@@ -405,6 +429,30 @@ src/theme/ThemeManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/theme/ThemeManager.cpp.s
 .PHONY : src/theme/ThemeManager.cpp.s
 
+src/ui/LiveHallPage.obj: src/ui/LiveHallPage.cpp.obj
+.PHONY : src/ui/LiveHallPage.obj
+
+# target to build an object file
+src/ui/LiveHallPage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/LiveHallPage.cpp.obj
+.PHONY : src/ui/LiveHallPage.cpp.obj
+
+src/ui/LiveHallPage.i: src/ui/LiveHallPage.cpp.i
+.PHONY : src/ui/LiveHallPage.i
+
+# target to preprocess a source file
+src/ui/LiveHallPage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/LiveHallPage.cpp.i
+.PHONY : src/ui/LiveHallPage.cpp.i
+
+src/ui/LiveHallPage.s: src/ui/LiveHallPage.cpp.s
+.PHONY : src/ui/LiveHallPage.s
+
+# target to generate assembly for a file
+src/ui/LiveHallPage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/LiveHallPage.cpp.s
+.PHONY : src/ui/LiveHallPage.cpp.s
+
 src/ui/LoginPage.obj: src/ui/LoginPage.cpp.obj
 .PHONY : src/ui/LoginPage.obj
 
@@ -477,6 +525,30 @@ src/ui/RegisterPage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/RegisterPage.cpp.s
 .PHONY : src/ui/RegisterPage.cpp.s
 
+src/ui/RoomCard.obj: src/ui/RoomCard.cpp.obj
+.PHONY : src/ui/RoomCard.obj
+
+# target to build an object file
+src/ui/RoomCard.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/RoomCard.cpp.obj
+.PHONY : src/ui/RoomCard.cpp.obj
+
+src/ui/RoomCard.i: src/ui/RoomCard.cpp.i
+.PHONY : src/ui/RoomCard.i
+
+# target to preprocess a source file
+src/ui/RoomCard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/RoomCard.cpp.i
+.PHONY : src/ui/RoomCard.cpp.i
+
+src/ui/RoomCard.s: src/ui/RoomCard.cpp.s
+.PHONY : src/ui/RoomCard.s
+
+# target to generate assembly for a file
+src/ui/RoomCard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/RoomCard.cpp.s
+.PHONY : src/ui/RoomCard.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -502,6 +574,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/model/RoomInfo.obj
+	@echo ... src/model/RoomInfo.i
+	@echo ... src/model/RoomInfo.s
 	@echo ... src/model/UserInfo.obj
 	@echo ... src/model/UserInfo.i
 	@echo ... src/model/UserInfo.s
@@ -520,6 +595,9 @@ help:
 	@echo ... src/theme/ThemeManager.obj
 	@echo ... src/theme/ThemeManager.i
 	@echo ... src/theme/ThemeManager.s
+	@echo ... src/ui/LiveHallPage.obj
+	@echo ... src/ui/LiveHallPage.i
+	@echo ... src/ui/LiveHallPage.s
 	@echo ... src/ui/LoginPage.obj
 	@echo ... src/ui/LoginPage.i
 	@echo ... src/ui/LoginPage.s
@@ -529,6 +607,9 @@ help:
 	@echo ... src/ui/RegisterPage.obj
 	@echo ... src/ui/RegisterPage.i
 	@echo ... src/ui/RegisterPage.s
+	@echo ... src/ui/RoomCard.obj
+	@echo ... src/ui/RoomCard.i
+	@echo ... src/ui/RoomCard.s
 .PHONY : help
 
 

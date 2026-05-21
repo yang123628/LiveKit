@@ -3,6 +3,8 @@
 #include "UFQQIFJZKK/moc_IHttpClient.cpp"
 #include "UFQQIFJZKK/moc_MockHttpClient.cpp"
 #include "YLADOPUWMF/moc_ThemeManager.cpp"
+#include "YPKJ5OE7LN/moc_LiveHallPage.cpp"
 #include "YPKJ5OE7LN/moc_LoginPage.cpp"
 #include "YPKJ5OE7LN/moc_MainWindow.cpp"
 #include "YPKJ5OE7LN/moc_RegisterPage.cpp"
+#include "YPKJ5OE7LN/moc_RoomCard.cpp"
