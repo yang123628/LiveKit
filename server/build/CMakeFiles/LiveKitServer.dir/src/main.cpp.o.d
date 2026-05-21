@@ -265,6 +265,7 @@ CMakeFiles/LiveKitServer.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
  /usr/include/arpa/inet.h /home/hy/LiveKit/server/src/network/Buffer.h \
+ /home/hy/LiveKit/server/src/network/StaticFileHandler.h \
  /home/hy/LiveKit/server/src/utils/Config.h \
  /home/hy/LiveKit/server/src/database/Database.h \
  /home/hy/LiveKit/server/third_party/sqlite3/sqlite3.h \

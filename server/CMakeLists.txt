@@ -25,6 +25,7 @@ add_executable(LiveKitServer
     src/network/Router.cpp
     src/network/WebSocketFrame.cpp
     src/network/WebSocketHandler.cpp
+    src/network/StaticFileHandler.cpp
     src/utils/Config.cpp
     src/utils/Crypto.cpp
     src/utils/TokenGenerator.cpp

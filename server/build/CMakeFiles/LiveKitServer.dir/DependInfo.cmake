@@ -28,6 +28,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hy/LiveKit/server/src/network/HttpResponse.cpp" "CMakeFiles/LiveKitServer.dir/src/network/HttpResponse.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/network/HttpResponse.cpp.o.d"
   "/home/hy/LiveKit/server/src/network/HttpServer.cpp" "CMakeFiles/LiveKitServer.dir/src/network/HttpServer.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/network/HttpServer.cpp.o.d"
   "/home/hy/LiveKit/server/src/network/Router.cpp" "CMakeFiles/LiveKitServer.dir/src/network/Router.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/network/Router.cpp.o.d"
+  "/home/hy/LiveKit/server/src/network/StaticFileHandler.cpp" "CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.o.d"
   "/home/hy/LiveKit/server/src/network/WebSocketFrame.cpp" "CMakeFiles/LiveKitServer.dir/src/network/WebSocketFrame.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/network/WebSocketFrame.cpp.o.d"
   "/home/hy/LiveKit/server/src/network/WebSocketHandler.cpp" "CMakeFiles/LiveKitServer.dir/src/network/WebSocketHandler.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/network/WebSocketHandler.cpp.o.d"
   "/home/hy/LiveKit/server/src/utils/Config.cpp" "CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o.d"

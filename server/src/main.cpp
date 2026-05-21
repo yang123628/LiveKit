@@ -4,6 +4,7 @@
 #include "network/HttpResponse.h"
 #include "network/WebSocketHandler.h"
 #include "network/Connection.h"
+#include "network/StaticFileHandler.h"
 #include "utils/Config.h"
 #include "database/Database.h"
 #include "business/UserService.h"
@@ -37,6 +38,19 @@ static std::string getTimestamp() {
 
 static std::unordered_map<int, int> g_likeCounts;
 static std::mutex g_likeMutex;
+
+int getLikeCount(int roomId) {
+    std::lock_guard<std::mutex> lock(g_likeMutex);
+    return g_likeCounts[roomId];
+}
+
+void persistLikeCount(int roomId) {
+    std::lock_guard<std::mutex> lock(g_likeMutex);
+    auto it = g_likeCounts.find(roomId);
+    if (it != g_likeCounts.end() && it->second > 0) {
+        RoomDao::updateLikeCount(roomId, it->second);
+    }
+}
 
 void onWsOpen(std::shared_ptr<Connection> conn, const std::string& rawData) {
     HttpRequest req;
@@ -138,6 +152,8 @@ void onWsMessage(std::shared_ptr<Connection> conn, const std::string& payload) {
             count = g_likeCounts[roomId];
         }
 
+        RoomDao::updateLikeCount(roomId, count);
+
         nlohmann::json broadcast;
         broadcast["type"] = "like";
         broadcast["count"] = count;
@@ -170,13 +186,6 @@ void onWsClose(std::shared_ptr<Connection> conn) {
     RoomManager::instance().broadcastToRoom(roomId, countMsg.dump());
 
     LOG_INFO("ws close: user=" << username << " room=" << roomId);
-}
-
-void heartbeatThread() {
-    while (true) {
-        std::this_thread::sleep_for(std::chrono::seconds(30));
-        WebSocketHandler::sendPing(std::shared_ptr<Connection>());
-    }
 }
 
 void registerRoutes(HttpServer& server) {
@@ -275,6 +284,8 @@ void registerRoutes(HttpServer& server) {
         std::string token = json.value("token", "");
         int roomId = json.value("room_id", 0);
 
+        persistLikeCount(roomId);
+
         nlohmann::json result = RoomService::endRoom(token, roomId);
         int code = result.value("code", -1);
         std::string msg = result.value("msg", "");
@@ -312,6 +323,22 @@ void registerRoutes(HttpServer& server) {
         std::string msg = result.value("msg", "");
         nlohmann::json data = result.value("data", nlohmann::json::object());
         resp.setJson(code, msg, data);
+    });
+
+    server.router().get("/avatars/{file}", [](HttpRequest& req, HttpResponse& resp) {
+        StaticFileHandler::handle(req, resp);
+    });
+
+    server.router().get("/gifts/{file}", [](HttpRequest& req, HttpResponse& resp) {
+        StaticFileHandler::handle(req, resp);
+    });
+
+    server.router().get("/covers/{file}", [](HttpRequest& req, HttpResponse& resp) {
+        StaticFileHandler::handle(req, resp);
+    });
+
+    server.router().get("/recordings/{file}", [](HttpRequest& req, HttpResponse& resp) {
+        StaticFileHandler::handle(req, resp);
     });
 }
 

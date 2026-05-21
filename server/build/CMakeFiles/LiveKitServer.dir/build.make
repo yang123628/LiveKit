@@ -265,10 +265,24 @@ CMakeFiles/LiveKitServer.dir/src/network/WebSocketHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LiveKitServer.dir/src/network/WebSocketHandler.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/LiveKit/server/src/network/WebSocketHandler.cpp -o CMakeFiles/LiveKitServer.dir/src/network/WebSocketHandler.cpp.s
 
+CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
+CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.o: ../src/network/StaticFileHandler.cpp
+CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.o -c /home/hy/LiveKit/server/src/network/StaticFileHandler.cpp
+
+CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/LiveKit/server/src/network/StaticFileHandler.cpp > CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.i
+
+CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/LiveKit/server/src/network/StaticFileHandler.cpp -o CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.s
+
 CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o: ../src/utils/Config.cpp
 CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o -c /home/hy/LiveKit/server/src/utils/Config.cpp
 
 CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.s: cmake_force
 CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o: ../src/utils/Crypto.cpp
 CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o -c /home/hy/LiveKit/server/src/utils/Crypto.cpp
 
 CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.s: cmake_force
 CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o: ../src/utils/TokenGenerator.cpp
 CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o -c /home/hy/LiveKit/server/src/utils/TokenGenerator.cpp
 
 CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.s: cmake_force
 CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o: ../src/database/Database.cpp
 CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o -c /home/hy/LiveKit/server/src/database/Database.cpp
 
 CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.s: cmake_force
 CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o: ../src/database/UserDao.cpp
 CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o -c /home/hy/LiveKit/server/src/database/UserDao.cpp
 
 CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.s: cmake_force
 CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o: ../src/database/RoomDao.cpp
 CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o -c /home/hy/LiveKit/server/src/database/RoomDao.cpp
 
 CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.i: cmake_force
@@ -352,7 +366,7 @@ CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.s: cmake_force
 CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.o: ../src/database/GiftDao.cpp
 CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.o -c /home/hy/LiveKit/server/src/database/GiftDao.cpp
 
 CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.i: cmake_force
@@ -366,7 +380,7 @@ CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.s: cmake_force
 CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o: ../src/business/UserService.cpp
 CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o -c /home/hy/LiveKit/server/src/business/UserService.cpp
 
 CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.i: cmake_force
@@ -380,7 +394,7 @@ CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.s: cmake_force
 CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o: ../src/business/RoomService.cpp
 CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o -c /home/hy/LiveKit/server/src/business/RoomService.cpp
 
 CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.i: cmake_force
@@ -394,7 +408,7 @@ CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.s: cmake_force
 CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o: ../src/business/RoomManager.cpp
 CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o -c /home/hy/LiveKit/server/src/business/RoomManager.cpp
 
 CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.i: cmake_force
@@ -408,7 +422,7 @@ CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.s: cmake_force
 CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
 CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o: ../src/business/GiftService.cpp
 CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o -c /home/hy/LiveKit/server/src/business/GiftService.cpp
 
 CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.i: cmake_force
@@ -435,6 +449,7 @@ LiveKitServer_OBJECTS = \
 "CMakeFiles/LiveKitServer.dir/src/network/Router.cpp.o" \
 "CMakeFiles/LiveKitServer.dir/src/network/WebSocketFrame.cpp.o" \
 "CMakeFiles/LiveKitServer.dir/src/network/WebSocketHandler.cpp.o" \
+"CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.o" \
 "CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o" \
 "CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o" \
 "CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o" \
@@ -464,6 +479,7 @@ LiveKitServer: CMakeFiles/LiveKitServer.dir/src/network/HttpServer.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/network/Router.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/network/WebSocketFrame.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/network/WebSocketHandler.cpp.o
+LiveKitServer: CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o
@@ -478,7 +494,7 @@ LiveKitServer: CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/build.make
 LiveKitServer: libsqlite3.a
 LiveKitServer: CMakeFiles/LiveKitServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable LiveKitServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable LiveKitServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LiveKitServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

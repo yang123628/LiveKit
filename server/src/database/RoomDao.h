@@ -12,6 +12,7 @@ struct RoomInfo {
     std::string stream_key;
     std::string status;
     int viewer_count;
+    int like_count;
     std::string created_at;
     std::string ended_at;
 };
@@ -27,5 +28,6 @@ public:
                                      std::vector<RoomInfo>& outRooms);
     static bool updateRoomStatus(int roomId, const std::string& status);
     static bool updateViewerCount(int roomId, int count);
+    static bool updateLikeCount(int roomId, int count);
     static bool findRoomsByAnchorId(int anchorId, std::vector<RoomInfo>& outRooms);
 };

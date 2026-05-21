@@ -622,6 +622,30 @@ src/network/Router.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/network/Router.cpp.s
 .PHONY : src/network/Router.cpp.s
 
+src/network/StaticFileHandler.o: src/network/StaticFileHandler.cpp.o
+.PHONY : src/network/StaticFileHandler.o
+
+# target to build an object file
+src/network/StaticFileHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.o
+.PHONY : src/network/StaticFileHandler.cpp.o
+
+src/network/StaticFileHandler.i: src/network/StaticFileHandler.cpp.i
+.PHONY : src/network/StaticFileHandler.i
+
+# target to preprocess a source file
+src/network/StaticFileHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.i
+.PHONY : src/network/StaticFileHandler.cpp.i
+
+src/network/StaticFileHandler.s: src/network/StaticFileHandler.cpp.s
+.PHONY : src/network/StaticFileHandler.s
+
+# target to generate assembly for a file
+src/network/StaticFileHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.s
+.PHONY : src/network/StaticFileHandler.cpp.s
+
 src/network/WebSocketFrame.o: src/network/WebSocketFrame.cpp.o
 .PHONY : src/network/WebSocketFrame.o
 
@@ -836,6 +860,9 @@ help:
 	@echo "... src/network/Router.o"
 	@echo "... src/network/Router.i"
 	@echo "... src/network/Router.s"
+	@echo "... src/network/StaticFileHandler.o"
+	@echo "... src/network/StaticFileHandler.i"
+	@echo "... src/network/StaticFileHandler.s"
 	@echo "... src/network/WebSocketFrame.o"
 	@echo "... src/network/WebSocketFrame.i"
 	@echo "... src/network/WebSocketFrame.s"

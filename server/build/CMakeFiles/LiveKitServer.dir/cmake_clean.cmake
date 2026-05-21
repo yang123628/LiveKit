@@ -39,6 +39,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LiveKitServer.dir/src/network/HttpServer.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/network/Router.cpp.o"
   "CMakeFiles/LiveKitServer.dir/src/network/Router.cpp.o.d"
+  "CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.o"
+  "CMakeFiles/LiveKitServer.dir/src/network/StaticFileHandler.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/network/WebSocketFrame.cpp.o"
   "CMakeFiles/LiveKitServer.dir/src/network/WebSocketFrame.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/network/WebSocketHandler.cpp.o"

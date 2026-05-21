@@ -24,7 +24,7 @@ bool RoomDao::createRoom(int anchorId, const std::string& title,
 }
 
 bool RoomDao::findRoomById(int roomId, RoomInfo& outRoom) {
-    std::string sql = "SELECT id, anchor_id, title, category, mode, stream_key, status, viewer_count, created_at, ended_at FROM rooms WHERE id = ?";
+    std::string sql = "SELECT id, anchor_id, title, category, mode, stream_key, status, viewer_count, like_count, created_at, ended_at FROM rooms WHERE id = ?";
     std::vector<std::string> params = {std::to_string(roomId)};
     bool found = false;
 
@@ -37,15 +37,16 @@ bool RoomDao::findRoomById(int roomId, RoomInfo& outRoom) {
         outRoom.stream_key = row[5];
         outRoom.status = row[6];
         outRoom.viewer_count = std::stoi(row[7]);
-        outRoom.created_at = row[8];
-        outRoom.ended_at = row[9];
+        outRoom.like_count = std::stoi(row[8]);
+        outRoom.created_at = row[9];
+        outRoom.ended_at = row[10];
         found = true;
     });
     return found;
 }
 
 bool RoomDao::findRoomsByStatus(const std::string& status, std::vector<RoomInfo>& outRooms) {
-    std::string sql = "SELECT id, anchor_id, title, category, mode, stream_key, status, viewer_count, created_at, ended_at FROM rooms WHERE status = ? ORDER BY id DESC";
+    std::string sql = "SELECT id, anchor_id, title, category, mode, stream_key, status, viewer_count, like_count, created_at, ended_at FROM rooms WHERE status = ? ORDER BY id DESC";
     std::vector<std::string> params = {status};
 
     Database::instance().queryPrepared(sql, params, [&](const std::vector<std::string>& row) {
@@ -58,8 +59,9 @@ bool RoomDao::findRoomsByStatus(const std::string& status, std::vector<RoomInfo>
         room.stream_key = row[5];
         room.status = row[6];
         room.viewer_count = std::stoi(row[7]);
-        room.created_at = row[8];
-        room.ended_at = row[9];
+        room.like_count = std::stoi(row[8]);
+        room.created_at = row[9];
+        room.ended_at = row[10];
         outRooms.push_back(room);
     });
     return true;
@@ -67,7 +69,7 @@ bool RoomDao::findRoomsByStatus(const std::string& status, std::vector<RoomInfo>
 
 bool RoomDao::findRoomsByCategory(const std::string& category, const std::string& status,
                                    std::vector<RoomInfo>& outRooms) {
-    std::string sql = "SELECT id, anchor_id, title, category, mode, stream_key, status, viewer_count, created_at, ended_at FROM rooms WHERE category = ? AND status = ? ORDER BY id DESC";
+    std::string sql = "SELECT id, anchor_id, title, category, mode, stream_key, status, viewer_count, like_count, created_at, ended_at FROM rooms WHERE category = ? AND status = ? ORDER BY id DESC";
     std::vector<std::string> params = {category, status};
 
     Database::instance().queryPrepared(sql, params, [&](const std::vector<std::string>& row) {
@@ -80,8 +82,9 @@ bool RoomDao::findRoomsByCategory(const std::string& category, const std::string
         room.stream_key = row[5];
         room.status = row[6];
         room.viewer_count = std::stoi(row[7]);
-        room.created_at = row[8];
-        room.ended_at = row[9];
+        room.like_count = std::stoi(row[8]);
+        room.created_at = row[9];
+        room.ended_at = row[10];
         outRooms.push_back(room);
     });
     return true;
@@ -99,8 +102,14 @@ bool RoomDao::updateViewerCount(int roomId, int count) {
     return Database::instance().executePrepared(sql, params);
 }
 
+bool RoomDao::updateLikeCount(int roomId, int count) {
+    std::string sql = "UPDATE rooms SET like_count = ? WHERE id = ?";
+    std::vector<std::string> params = {std::to_string(count), std::to_string(roomId)};
+    return Database::instance().executePrepared(sql, params);
+}
+
 bool RoomDao::findRoomsByAnchorId(int anchorId, std::vector<RoomInfo>& outRooms) {
-    std::string sql = "SELECT id, anchor_id, title, category, mode, stream_key, status, viewer_count, created_at, ended_at FROM rooms WHERE anchor_id = ? ORDER BY id DESC";
+    std::string sql = "SELECT id, anchor_id, title, category, mode, stream_key, status, viewer_count, like_count, created_at, ended_at FROM rooms WHERE anchor_id = ? ORDER BY id DESC";
     std::vector<std::string> params = {std::to_string(anchorId)};
 
     Database::instance().queryPrepared(sql, params, [&](const std::vector<std::string>& row) {
@@ -113,8 +122,9 @@ bool RoomDao::findRoomsByAnchorId(int anchorId, std::vector<RoomInfo>& outRooms)
         room.stream_key = row[5];
         room.status = row[6];
         room.viewer_count = std::stoi(row[7]);
-        room.created_at = row[8];
-        room.ended_at = row[9];
+        room.like_count = std::stoi(row[8]);
+        room.created_at = row[9];
+        room.ended_at = row[10];
         outRooms.push_back(room);
     });
     return true;

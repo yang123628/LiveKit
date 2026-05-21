@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS rooms (
     stream_key TEXT UNIQUE NOT NULL,
     status TEXT DEFAULT 'live',
     viewer_count INTEGER DEFAULT 0,
+    like_count INTEGER DEFAULT 0,
     created_at TEXT DEFAULT (datetime('now', 'localtime')),
     ended_at TEXT,
     FOREIGN KEY (anchor_id) REFERENCES users(id)
