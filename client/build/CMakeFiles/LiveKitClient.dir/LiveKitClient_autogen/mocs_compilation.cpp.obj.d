@@ -288,10 +288,6 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonDocument \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsondocument.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\UFQQIFJZKK/moc_IHttpClient.cpp \
- D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\UFQQIFJZKK/moc_MockHttpClient.cpp \
- D:/vskelin/LiveKit/client/src/network/MockHttpClient.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonArray \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonarray.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\UFQQIFJZKK/moc_WebSocketClient.cpp \
  D:/vskelin/LiveKit/client/src/network/WebSocketClient.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWebSockets/QWebSocket \
@@ -415,7 +411,11 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QStackedWidget \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qstackedwidget.h \
  D:/vskelin/LiveKit/client/src/model/RoomInfo.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonArray \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonarray.h \
  D:/vskelin/LiveKit/client/src/model/ReplayInfo.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_LoadingSpinner.cpp \
+ D:/vskelin/LiveKit/client/src/ui/LoadingSpinner.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_LoginPage.cpp \
  D:/vskelin/LiveKit/client/src/ui/LoginPage.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QLineEdit \
@@ -438,6 +438,8 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/vskelin/LiveKit/client/src/ui/MainWindow.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QMainWindow \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qmainwindow.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_NetworkBanner.cpp \
+ D:/vskelin/LiveKit/client/src/ui/NetworkBanner.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_OpenGLWidget.cpp \
  D:/vskelin/LiveKit/client/src/ui/OpenGLWidget.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QOpenGLWidget \
@@ -663,24 +665,28 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/vskelin/LiveKit/client/src/ui/PicInPicWidget.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QPoint \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qpoint.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_ProfilePage.cpp \
+ D:/vskelin/LiveKit/client/src/ui/ProfilePage.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtSvg/QSvgRenderer \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtSvg/qsvgrenderer.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qxmlstream.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtSvg/qtsvgglobal.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_RegisterPage.cpp \
  D:/vskelin/LiveKit/client/src/ui/RegisterPage.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_ReplayCard.cpp \
  D:/vskelin/LiveKit/client/src/ui/ReplayCard.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QGraphicsDropShadowEffect \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtSvg/QSvgRenderer \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtSvg/qsvgrenderer.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qxmlstream.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtSvg/qtsvgglobal.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/QPainter \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qpainter.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/QPixmap \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qpixmap.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_RoomCard.cpp \
  D:/vskelin/LiveKit/client/src/ui/RoomCard.h \
- D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_StartLivePage.cpp \
- D:/vskelin/LiveKit/client/src/ui/StartLivePage.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_SettingsPage.cpp \
+ D:/vskelin/LiveKit/client/src/ui/SettingsPage.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QComboBox \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qcombobox.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_StartLivePage.cpp \
+ D:/vskelin/LiveKit/client/src/ui/StartLivePage.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QRadioButton \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qradiobutton.h

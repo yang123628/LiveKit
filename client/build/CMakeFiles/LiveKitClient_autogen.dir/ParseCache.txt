@@ -7,11 +7,11 @@ D:/vskelin/LiveKit/client/src/ui/MainWindow.h
  mmc:Q_OBJECT
 D:/vskelin/LiveKit/client/src/network/ApiResponse.h
 D:/vskelin/LiveKit/client/src/model/RoomInfo.cpp
-D:/vskelin/LiveKit/client/src/model/ReplayInfo.cpp
 D:/vskelin/LiveKit/client/src/network/HttpClient.h
  mmc:Q_OBJECT
-D:/vskelin/LiveKit/client/src/model/UserInfo.cpp
+D:/vskelin/LiveKit/client/src/model/ReplayInfo.cpp
 D:/vskelin/LiveKit/client/src/app/Application.h
+D:/vskelin/LiveKit/client/src/model/UserInfo.cpp
 D:/vskelin/LiveKit/client/src/model/ReplayInfo.h
 D:/vskelin/LiveKit/client/src/model/UserInfo.h
 D:/vskelin/LiveKit/client/src/model/RoomInfo.h
@@ -27,6 +27,8 @@ D:/vskelin/LiveKit/client/src/ui/LiveHallPage.h
 D:/vskelin/LiveKit/client/src/ui/RegisterPage.h
  mmc:Q_OBJECT
 D:/vskelin/LiveKit/client/src/ui/LoginPage.h
+ mmc:Q_OBJECT
+D:/vskelin/LiveKit/client/src/ui/SettingsPage.h
  mmc:Q_OBJECT
 D:/vskelin/LiveKit/client/src/ui/OpenGLWidget.h
  mmc:Q_OBJECT
@@ -48,6 +50,7 @@ D:/vskelin/LiveKit/client/src/theme/ThemeManager.cpp
 D:/vskelin/LiveKit/client/src/ui/LiveHallPage.cpp
 D:/vskelin/LiveKit/client/src/ui/RegisterPage.cpp
 D:/vskelin/LiveKit/client/src/ui/LoginPage.cpp
+D:/vskelin/LiveKit/client/src/ui/SettingsPage.cpp
 D:/vskelin/LiveKit/client/src/ui/OpenGLWidget.cpp
 D:/vskelin/LiveKit/client/src/ui/RoomCard.cpp
 D:/vskelin/LiveKit/client/src/model/GiftInfo.cpp
@@ -71,3 +74,12 @@ D:/vskelin/LiveKit/client/src/ui/LikeButton.cpp
 D:/vskelin/LiveKit/client/src/ui/ReplayCard.h
  mmc:Q_OBJECT
 D:/vskelin/LiveKit/client/src/ui/ReplayCard.cpp
+D:/vskelin/LiveKit/client/src/ui/LoadingSpinner.h
+ mmc:Q_OBJECT
+D:/vskelin/LiveKit/client/src/ui/NetworkBanner.h
+ mmc:Q_OBJECT
+D:/vskelin/LiveKit/client/src/ui/ProfilePage.h
+ mmc:Q_OBJECT
+D:/vskelin/LiveKit/client/src/ui/LoadingSpinner.cpp
+D:/vskelin/LiveKit/client/src/ui/NetworkBanner.cpp
+D:/vskelin/LiveKit/client/src/ui/ProfilePage.cpp

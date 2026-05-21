@@ -14,6 +14,9 @@ class StartLivePage;
 class AnchorRoomPage;
 class LiveRoomPage;
 class ReplayPlayerPage;
+class ProfilePage;
+class SettingsPage;
+class NetworkBanner;
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -51,6 +54,7 @@ private:
     QStackedWidget* m_contentStack;
     QWidget* m_navigationBar;
     QHBoxLayout* m_navLayout;
+    NetworkBanner* m_networkBanner;
 
     QPushButton* m_btnLiveHall;
     QPushButton* m_btnStartLive;
@@ -58,7 +62,8 @@ private:
 
     LiveHallPage* m_pageLiveHall;
     StartLivePage* m_pageStartLive;
-    QWidget* m_pageProfile;
+    ProfilePage* m_pageProfile;
+    SettingsPage* m_pageSettings;
 
 #ifdef HAS_FFMPEG
     AnchorRoomPage* m_pageAnchorRoom;

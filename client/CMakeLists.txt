@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(LiveKitClient VERSION 0.7.0 LANGUAGES CXX)
+project(LiveKitClient VERSION 0.8.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -60,11 +60,14 @@ set(SOURCES
     src/ui/GiftAnimation.cpp
     src/ui/LikeButton.cpp
     src/ui/FloatingHeartsWidget.cpp
+    src/ui/ProfilePage.cpp
+    src/ui/SettingsPage.cpp
+    src/ui/NetworkBanner.cpp
+    src/ui/LoadingSpinner.cpp
     src/theme/ThemeManager.cpp
     src/network/ApiResponse.cpp
     src/network/IHttpClient.cpp
     src/network/HttpClient.cpp
-    src/network/MockHttpClient.cpp
     src/network/WebSocketClient.cpp
     src/model/UserInfo.cpp
     src/model/RoomInfo.cpp
@@ -89,11 +92,14 @@ set(HEADERS
     src/ui/GiftAnimation.h
     src/ui/LikeButton.h
     src/ui/FloatingHeartsWidget.h
+    src/ui/ProfilePage.h
+    src/ui/SettingsPage.h
+    src/ui/NetworkBanner.h
+    src/ui/LoadingSpinner.h
     src/theme/ThemeManager.h
     src/network/ApiResponse.h
     src/network/IHttpClient.h
     src/network/HttpClient.h
-    src/network/MockHttpClient.h
     src/network/WebSocketClient.h
     src/model/UserInfo.h
     src/model/RoomInfo.h

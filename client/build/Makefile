@@ -429,30 +429,6 @@ src/network/IHttpClient.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/IHttpClient.cpp.s
 .PHONY : src/network/IHttpClient.cpp.s
 
-src/network/MockHttpClient.obj: src/network/MockHttpClient.cpp.obj
-.PHONY : src/network/MockHttpClient.obj
-
-# target to build an object file
-src/network/MockHttpClient.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.obj
-.PHONY : src/network/MockHttpClient.cpp.obj
-
-src/network/MockHttpClient.i: src/network/MockHttpClient.cpp.i
-.PHONY : src/network/MockHttpClient.i
-
-# target to preprocess a source file
-src/network/MockHttpClient.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.i
-.PHONY : src/network/MockHttpClient.cpp.i
-
-src/network/MockHttpClient.s: src/network/MockHttpClient.cpp.s
-.PHONY : src/network/MockHttpClient.s
-
-# target to generate assembly for a file
-src/network/MockHttpClient.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.s
-.PHONY : src/network/MockHttpClient.cpp.s
-
 src/network/WebSocketClient.obj: src/network/WebSocketClient.cpp.obj
 .PHONY : src/network/WebSocketClient.obj
 
@@ -645,6 +621,30 @@ src/ui/LiveHallPage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/LiveHallPage.cpp.s
 .PHONY : src/ui/LiveHallPage.cpp.s
 
+src/ui/LoadingSpinner.obj: src/ui/LoadingSpinner.cpp.obj
+.PHONY : src/ui/LoadingSpinner.obj
+
+# target to build an object file
+src/ui/LoadingSpinner.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.obj
+.PHONY : src/ui/LoadingSpinner.cpp.obj
+
+src/ui/LoadingSpinner.i: src/ui/LoadingSpinner.cpp.i
+.PHONY : src/ui/LoadingSpinner.i
+
+# target to preprocess a source file
+src/ui/LoadingSpinner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.i
+.PHONY : src/ui/LoadingSpinner.cpp.i
+
+src/ui/LoadingSpinner.s: src/ui/LoadingSpinner.cpp.s
+.PHONY : src/ui/LoadingSpinner.s
+
+# target to generate assembly for a file
+src/ui/LoadingSpinner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.s
+.PHONY : src/ui/LoadingSpinner.cpp.s
+
 src/ui/LoginPage.obj: src/ui/LoginPage.cpp.obj
 .PHONY : src/ui/LoginPage.obj
 
@@ -693,6 +693,30 @@ src/ui/MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/MainWindow.cpp.s
 .PHONY : src/ui/MainWindow.cpp.s
 
+src/ui/NetworkBanner.obj: src/ui/NetworkBanner.cpp.obj
+.PHONY : src/ui/NetworkBanner.obj
+
+# target to build an object file
+src/ui/NetworkBanner.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.obj
+.PHONY : src/ui/NetworkBanner.cpp.obj
+
+src/ui/NetworkBanner.i: src/ui/NetworkBanner.cpp.i
+.PHONY : src/ui/NetworkBanner.i
+
+# target to preprocess a source file
+src/ui/NetworkBanner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.i
+.PHONY : src/ui/NetworkBanner.cpp.i
+
+src/ui/NetworkBanner.s: src/ui/NetworkBanner.cpp.s
+.PHONY : src/ui/NetworkBanner.s
+
+# target to generate assembly for a file
+src/ui/NetworkBanner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.s
+.PHONY : src/ui/NetworkBanner.cpp.s
+
 src/ui/OpenGLWidget.obj: src/ui/OpenGLWidget.cpp.obj
 .PHONY : src/ui/OpenGLWidget.obj
 
@@ -740,6 +764,30 @@ src/ui/PicInPicWidget.s: src/ui/PicInPicWidget.cpp.s
 src/ui/PicInPicWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/PicInPicWidget.cpp.s
 .PHONY : src/ui/PicInPicWidget.cpp.s
+
+src/ui/ProfilePage.obj: src/ui/ProfilePage.cpp.obj
+.PHONY : src/ui/ProfilePage.obj
+
+# target to build an object file
+src/ui/ProfilePage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.obj
+.PHONY : src/ui/ProfilePage.cpp.obj
+
+src/ui/ProfilePage.i: src/ui/ProfilePage.cpp.i
+.PHONY : src/ui/ProfilePage.i
+
+# target to preprocess a source file
+src/ui/ProfilePage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.i
+.PHONY : src/ui/ProfilePage.cpp.i
+
+src/ui/ProfilePage.s: src/ui/ProfilePage.cpp.s
+.PHONY : src/ui/ProfilePage.s
+
+# target to generate assembly for a file
+src/ui/ProfilePage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.s
+.PHONY : src/ui/ProfilePage.cpp.s
 
 src/ui/RegisterPage.obj: src/ui/RegisterPage.cpp.obj
 .PHONY : src/ui/RegisterPage.obj
@@ -813,6 +861,30 @@ src/ui/RoomCard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/RoomCard.cpp.s
 .PHONY : src/ui/RoomCard.cpp.s
 
+src/ui/SettingsPage.obj: src/ui/SettingsPage.cpp.obj
+.PHONY : src/ui/SettingsPage.obj
+
+# target to build an object file
+src/ui/SettingsPage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.obj
+.PHONY : src/ui/SettingsPage.cpp.obj
+
+src/ui/SettingsPage.i: src/ui/SettingsPage.cpp.i
+.PHONY : src/ui/SettingsPage.i
+
+# target to preprocess a source file
+src/ui/SettingsPage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.i
+.PHONY : src/ui/SettingsPage.cpp.i
+
+src/ui/SettingsPage.s: src/ui/SettingsPage.cpp.s
+.PHONY : src/ui/SettingsPage.s
+
+# target to generate assembly for a file
+src/ui/SettingsPage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.s
+.PHONY : src/ui/SettingsPage.cpp.s
+
 src/ui/StartLivePage.obj: src/ui/StartLivePage.cpp.obj
 .PHONY : src/ui/StartLivePage.obj
 
@@ -883,9 +955,6 @@ help:
 	@echo ... src/network/IHttpClient.obj
 	@echo ... src/network/IHttpClient.i
 	@echo ... src/network/IHttpClient.s
-	@echo ... src/network/MockHttpClient.obj
-	@echo ... src/network/MockHttpClient.i
-	@echo ... src/network/MockHttpClient.s
 	@echo ... src/network/WebSocketClient.obj
 	@echo ... src/network/WebSocketClient.i
 	@echo ... src/network/WebSocketClient.s
@@ -910,18 +979,27 @@ help:
 	@echo ... src/ui/LiveHallPage.obj
 	@echo ... src/ui/LiveHallPage.i
 	@echo ... src/ui/LiveHallPage.s
+	@echo ... src/ui/LoadingSpinner.obj
+	@echo ... src/ui/LoadingSpinner.i
+	@echo ... src/ui/LoadingSpinner.s
 	@echo ... src/ui/LoginPage.obj
 	@echo ... src/ui/LoginPage.i
 	@echo ... src/ui/LoginPage.s
 	@echo ... src/ui/MainWindow.obj
 	@echo ... src/ui/MainWindow.i
 	@echo ... src/ui/MainWindow.s
+	@echo ... src/ui/NetworkBanner.obj
+	@echo ... src/ui/NetworkBanner.i
+	@echo ... src/ui/NetworkBanner.s
 	@echo ... src/ui/OpenGLWidget.obj
 	@echo ... src/ui/OpenGLWidget.i
 	@echo ... src/ui/OpenGLWidget.s
 	@echo ... src/ui/PicInPicWidget.obj
 	@echo ... src/ui/PicInPicWidget.i
 	@echo ... src/ui/PicInPicWidget.s
+	@echo ... src/ui/ProfilePage.obj
+	@echo ... src/ui/ProfilePage.i
+	@echo ... src/ui/ProfilePage.s
 	@echo ... src/ui/RegisterPage.obj
 	@echo ... src/ui/RegisterPage.i
 	@echo ... src/ui/RegisterPage.s
@@ -931,6 +1009,9 @@ help:
 	@echo ... src/ui/RoomCard.obj
 	@echo ... src/ui/RoomCard.i
 	@echo ... src/ui/RoomCard.s
+	@echo ... src/ui/SettingsPage.obj
+	@echo ... src/ui/SettingsPage.i
+	@echo ... src/ui/SettingsPage.s
 	@echo ... src/ui/StartLivePage.obj
 	@echo ... src/ui/StartLivePage.i
 	@echo ... src/ui/StartLivePage.s

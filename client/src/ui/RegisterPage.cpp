@@ -1,7 +1,7 @@
 #include "ui/RegisterPage.h"
 #include "app/AppConfig.h"
 #include "app/Application.h"
-#include "network/MockHttpClient.h"
+#include "network/HttpClient.h"
 #include <QHBoxLayout>
 #include <QPixmap>
 #include <QPainter>
@@ -178,15 +178,14 @@ void RegisterPage::onRegisterClicked() {
 
     setLoading(true);
 
-    auto* client = new MockHttpClient(this);
+    auto* client = Application::instance().httpClient();
     QJsonObject body;
     body["username"] = username;
     body["password"] = password;
     body["avatar_id"] = m_selectedAvatarId;
 
-    client->post("/api/register", body, [this, client](const ApiResponse& resp) {
+    client->post("/api/register", body, [this](const ApiResponse& resp) {
         setLoading(false);
-        client->deleteLater();
 
         if (resp.isSuccess()) {
             auto data = resp.data();

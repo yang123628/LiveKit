@@ -319,16 +319,57 @@ CMakeFiles/LiveKitClient.dir/src/ui/RegisterPage.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonObject \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonobject.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonvalue.h \
- D:/vskelin/LiveKit/client/src/network/MockHttpClient.h \
+ D:/vskelin/LiveKit/client/src/network/HttpClient.h \
  D:/vskelin/LiveKit/client/src/network/IHttpClient.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QObject \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobject.h \
  D:/vskelin/LiveKit/client/src/network/ApiResponse.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QNetworkAccessManager \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qnetworkaccessmanager.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qtnetworkglobal.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qtnetwork-config.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qnetworkrequest.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QSharedDataPointer \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qshareddata.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QString \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QUrl \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qurl.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QVariant \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qvariant.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QVector \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qvector.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QObject \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QSslConfiguration \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qsslconfiguration.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qsslsocket.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qtcpsocket.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qabstractsocket.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qdebug.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qtextstream.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qcontiguouscache.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qsslerror.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qsslcertificate.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qcryptographichash.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qdatetime.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qssl.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QFlags \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qflags.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QMetaType \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qmetatype.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QNetworkReply \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qnetworkreply.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QIODevice \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qiodevice.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QNetworkRequest \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qnetworkrequest.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QNetworkAccessManager \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QTimer \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qtimer.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qbasictimer.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonArray \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonarray.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonDocument \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsondocument.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QHBoxLayout \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/QPixmap \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qpixmap.h \
