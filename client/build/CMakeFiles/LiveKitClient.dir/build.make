@@ -364,11 +364,71 @@ CMakeFiles/LiveKitClient.dir/src/ui/FloatingHeartsWidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LiveKitClient.dir/src/ui/FloatingHeartsWidget.cpp.s"
 	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\vskelin\LiveKit\client\src\ui\FloatingHeartsWidget.cpp -o CMakeFiles\LiveKitClient.dir\src\ui\FloatingHeartsWidget.cpp.s
 
+CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.obj: CMakeFiles/LiveKitClient.dir/flags.make
+CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
+CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.obj: D:/vskelin/LiveKit/client/src/ui/ProfilePage.cpp
+CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.obj"
+	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.obj -MF CMakeFiles\LiveKitClient.dir\src\ui\ProfilePage.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\src\ui\ProfilePage.cpp.obj -c D:\vskelin\LiveKit\client\src\ui\ProfilePage.cpp
+
+CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.i"
+	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\vskelin\LiveKit\client\src\ui\ProfilePage.cpp > CMakeFiles\LiveKitClient.dir\src\ui\ProfilePage.cpp.i
+
+CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.s"
+	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\vskelin\LiveKit\client\src\ui\ProfilePage.cpp -o CMakeFiles\LiveKitClient.dir\src\ui\ProfilePage.cpp.s
+
+CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.obj: CMakeFiles/LiveKitClient.dir/flags.make
+CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
+CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.obj: D:/vskelin/LiveKit/client/src/ui/SettingsPage.cpp
+CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.obj"
+	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.obj -MF CMakeFiles\LiveKitClient.dir\src\ui\SettingsPage.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\src\ui\SettingsPage.cpp.obj -c D:\vskelin\LiveKit\client\src\ui\SettingsPage.cpp
+
+CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.i"
+	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\vskelin\LiveKit\client\src\ui\SettingsPage.cpp > CMakeFiles\LiveKitClient.dir\src\ui\SettingsPage.cpp.i
+
+CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.s"
+	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\vskelin\LiveKit\client\src\ui\SettingsPage.cpp -o CMakeFiles\LiveKitClient.dir\src\ui\SettingsPage.cpp.s
+
+CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.obj: CMakeFiles/LiveKitClient.dir/flags.make
+CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
+CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.obj: D:/vskelin/LiveKit/client/src/ui/NetworkBanner.cpp
+CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.obj"
+	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.obj -MF CMakeFiles\LiveKitClient.dir\src\ui\NetworkBanner.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\src\ui\NetworkBanner.cpp.obj -c D:\vskelin\LiveKit\client\src\ui\NetworkBanner.cpp
+
+CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.i"
+	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\vskelin\LiveKit\client\src\ui\NetworkBanner.cpp > CMakeFiles\LiveKitClient.dir\src\ui\NetworkBanner.cpp.i
+
+CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.s"
+	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\vskelin\LiveKit\client\src\ui\NetworkBanner.cpp -o CMakeFiles\LiveKitClient.dir\src\ui\NetworkBanner.cpp.s
+
+CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.obj: CMakeFiles/LiveKitClient.dir/flags.make
+CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
+CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.obj: D:/vskelin/LiveKit/client/src/ui/LoadingSpinner.cpp
+CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.obj"
+	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.obj -MF CMakeFiles\LiveKitClient.dir\src\ui\LoadingSpinner.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\src\ui\LoadingSpinner.cpp.obj -c D:\vskelin\LiveKit\client\src\ui\LoadingSpinner.cpp
+
+CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.i"
+	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\vskelin\LiveKit\client\src\ui\LoadingSpinner.cpp > CMakeFiles\LiveKitClient.dir\src\ui\LoadingSpinner.cpp.i
+
+CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.s"
+	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\vskelin\LiveKit\client\src\ui\LoadingSpinner.cpp -o CMakeFiles\LiveKitClient.dir\src\ui\LoadingSpinner.cpp.s
+
 CMakeFiles/LiveKitClient.dir/src/theme/ThemeManager.cpp.obj: CMakeFiles/LiveKitClient.dir/flags.make
 CMakeFiles/LiveKitClient.dir/src/theme/ThemeManager.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
 CMakeFiles/LiveKitClient.dir/src/theme/ThemeManager.cpp.obj: D:/vskelin/LiveKit/client/src/theme/ThemeManager.cpp
 CMakeFiles/LiveKitClient.dir/src/theme/ThemeManager.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/LiveKitClient.dir/src/theme/ThemeManager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/LiveKitClient.dir/src/theme/ThemeManager.cpp.obj"
 	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/src/theme/ThemeManager.cpp.obj -MF CMakeFiles\LiveKitClient.dir\src\theme\ThemeManager.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\src\theme\ThemeManager.cpp.obj -c D:\vskelin\LiveKit\client\src\theme\ThemeManager.cpp
 
 CMakeFiles/LiveKitClient.dir/src/theme/ThemeManager.cpp.i: cmake_force
@@ -383,7 +443,7 @@ CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.obj: CMakeFiles/LiveKit
 CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
 CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.obj: D:/vskelin/LiveKit/client/src/network/ApiResponse.cpp
 CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.obj"
 	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.obj -MF CMakeFiles\LiveKitClient.dir\src\network\ApiResponse.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\src\network\ApiResponse.cpp.obj -c D:\vskelin\LiveKit\client\src\network\ApiResponse.cpp
 
 CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.i: cmake_force
@@ -398,7 +458,7 @@ CMakeFiles/LiveKitClient.dir/src/network/IHttpClient.cpp.obj: CMakeFiles/LiveKit
 CMakeFiles/LiveKitClient.dir/src/network/IHttpClient.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
 CMakeFiles/LiveKitClient.dir/src/network/IHttpClient.cpp.obj: D:/vskelin/LiveKit/client/src/network/IHttpClient.cpp
 CMakeFiles/LiveKitClient.dir/src/network/IHttpClient.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/LiveKitClient.dir/src/network/IHttpClient.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/LiveKitClient.dir/src/network/IHttpClient.cpp.obj"
 	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/src/network/IHttpClient.cpp.obj -MF CMakeFiles\LiveKitClient.dir\src\network\IHttpClient.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\src\network\IHttpClient.cpp.obj -c D:\vskelin\LiveKit\client\src\network\IHttpClient.cpp
 
 CMakeFiles/LiveKitClient.dir/src/network/IHttpClient.cpp.i: cmake_force
@@ -413,7 +473,7 @@ CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.obj: CMakeFiles/LiveKitC
 CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
 CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.obj: D:/vskelin/LiveKit/client/src/network/HttpClient.cpp
 CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.obj"
 	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.obj -MF CMakeFiles\LiveKitClient.dir\src\network\HttpClient.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\src\network\HttpClient.cpp.obj -c D:\vskelin\LiveKit\client\src\network\HttpClient.cpp
 
 CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.i: cmake_force
@@ -424,26 +484,11 @@ CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.s"
 	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\vskelin\LiveKit\client\src\network\HttpClient.cpp -o CMakeFiles\LiveKitClient.dir\src\network\HttpClient.cpp.s
 
-CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.obj: CMakeFiles/LiveKitClient.dir/flags.make
-CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
-CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.obj: D:/vskelin/LiveKit/client/src/network/MockHttpClient.cpp
-CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.obj"
-	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.obj -MF CMakeFiles\LiveKitClient.dir\src\network\MockHttpClient.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\src\network\MockHttpClient.cpp.obj -c D:\vskelin\LiveKit\client\src\network\MockHttpClient.cpp
-
-CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.i"
-	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\vskelin\LiveKit\client\src\network\MockHttpClient.cpp > CMakeFiles\LiveKitClient.dir\src\network\MockHttpClient.cpp.i
-
-CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.s"
-	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\vskelin\LiveKit\client\src\network\MockHttpClient.cpp -o CMakeFiles\LiveKitClient.dir\src\network\MockHttpClient.cpp.s
-
 CMakeFiles/LiveKitClient.dir/src/network/WebSocketClient.cpp.obj: CMakeFiles/LiveKitClient.dir/flags.make
 CMakeFiles/LiveKitClient.dir/src/network/WebSocketClient.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
 CMakeFiles/LiveKitClient.dir/src/network/WebSocketClient.cpp.obj: D:/vskelin/LiveKit/client/src/network/WebSocketClient.cpp
 CMakeFiles/LiveKitClient.dir/src/network/WebSocketClient.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/LiveKitClient.dir/src/network/WebSocketClient.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/LiveKitClient.dir/src/network/WebSocketClient.cpp.obj"
 	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/src/network/WebSocketClient.cpp.obj -MF CMakeFiles\LiveKitClient.dir\src\network\WebSocketClient.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\src\network\WebSocketClient.cpp.obj -c D:\vskelin\LiveKit\client\src\network\WebSocketClient.cpp
 
 CMakeFiles/LiveKitClient.dir/src/network/WebSocketClient.cpp.i: cmake_force
@@ -458,7 +503,7 @@ CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.obj: CMakeFiles/LiveKitClien
 CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
 CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.obj: D:/vskelin/LiveKit/client/src/model/UserInfo.cpp
 CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.obj"
 	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.obj -MF CMakeFiles\LiveKitClient.dir\src\model\UserInfo.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\src\model\UserInfo.cpp.obj -c D:\vskelin\LiveKit\client\src\model\UserInfo.cpp
 
 CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.i: cmake_force
@@ -473,7 +518,7 @@ CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.obj: CMakeFiles/LiveKitClien
 CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
 CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.obj: D:/vskelin/LiveKit/client/src/model/RoomInfo.cpp
 CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.obj"
 	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.obj -MF CMakeFiles\LiveKitClient.dir\src\model\RoomInfo.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\src\model\RoomInfo.cpp.obj -c D:\vskelin\LiveKit\client\src\model\RoomInfo.cpp
 
 CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.i: cmake_force
@@ -488,7 +533,7 @@ CMakeFiles/LiveKitClient.dir/src/model/GiftInfo.cpp.obj: CMakeFiles/LiveKitClien
 CMakeFiles/LiveKitClient.dir/src/model/GiftInfo.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
 CMakeFiles/LiveKitClient.dir/src/model/GiftInfo.cpp.obj: D:/vskelin/LiveKit/client/src/model/GiftInfo.cpp
 CMakeFiles/LiveKitClient.dir/src/model/GiftInfo.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/LiveKitClient.dir/src/model/GiftInfo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/LiveKitClient.dir/src/model/GiftInfo.cpp.obj"
 	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/src/model/GiftInfo.cpp.obj -MF CMakeFiles\LiveKitClient.dir\src\model\GiftInfo.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\src\model\GiftInfo.cpp.obj -c D:\vskelin\LiveKit\client\src\model\GiftInfo.cpp
 
 CMakeFiles/LiveKitClient.dir/src/model/GiftInfo.cpp.i: cmake_force
@@ -503,7 +548,7 @@ CMakeFiles/LiveKitClient.dir/src/model/ReplayInfo.cpp.obj: CMakeFiles/LiveKitCli
 CMakeFiles/LiveKitClient.dir/src/model/ReplayInfo.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
 CMakeFiles/LiveKitClient.dir/src/model/ReplayInfo.cpp.obj: D:/vskelin/LiveKit/client/src/model/ReplayInfo.cpp
 CMakeFiles/LiveKitClient.dir/src/model/ReplayInfo.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/LiveKitClient.dir/src/model/ReplayInfo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/LiveKitClient.dir/src/model/ReplayInfo.cpp.obj"
 	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/src/model/ReplayInfo.cpp.obj -MF CMakeFiles\LiveKitClient.dir\src\model\ReplayInfo.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\src\model\ReplayInfo.cpp.obj -c D:\vskelin\LiveKit\client\src\model\ReplayInfo.cpp
 
 CMakeFiles/LiveKitClient.dir/src/model/ReplayInfo.cpp.i: cmake_force
@@ -518,7 +563,7 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/3YJK5W5UP7/qrc_resources.cpp.
 CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/3YJK5W5UP7/qrc_resources.cpp.obj: CMakeFiles/LiveKitClient.dir/includes_CXX.rsp
 CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/3YJK5W5UP7/qrc_resources.cpp.obj: LiveKitClient_autogen/3YJK5W5UP7/qrc_resources.cpp
 CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/3YJK5W5UP7/qrc_resources.cpp.obj: CMakeFiles/LiveKitClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/3YJK5W5UP7/qrc_resources.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/3YJK5W5UP7/qrc_resources.cpp.obj"
 	D:\Qt\Qt5.12.11\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/3YJK5W5UP7/qrc_resources.cpp.obj -MF CMakeFiles\LiveKitClient.dir\LiveKitClient_autogen\3YJK5W5UP7\qrc_resources.cpp.obj.d -o CMakeFiles\LiveKitClient.dir\LiveKitClient_autogen\3YJK5W5UP7\qrc_resources.cpp.obj -c D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\3YJK5W5UP7\qrc_resources.cpp
 
 CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/3YJK5W5UP7/qrc_resources.cpp.i: cmake_force
@@ -549,11 +594,14 @@ LiveKitClient_OBJECTS = \
 "CMakeFiles/LiveKitClient.dir/src/ui/GiftAnimation.cpp.obj" \
 "CMakeFiles/LiveKitClient.dir/src/ui/LikeButton.cpp.obj" \
 "CMakeFiles/LiveKitClient.dir/src/ui/FloatingHeartsWidget.cpp.obj" \
+"CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.obj" \
+"CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.obj" \
+"CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.obj" \
+"CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.obj" \
 "CMakeFiles/LiveKitClient.dir/src/theme/ThemeManager.cpp.obj" \
 "CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.obj" \
 "CMakeFiles/LiveKitClient.dir/src/network/IHttpClient.cpp.obj" \
 "CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.obj" \
-"CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.obj" \
 "CMakeFiles/LiveKitClient.dir/src/network/WebSocketClient.cpp.obj" \
 "CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.obj" \
 "CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.obj" \
@@ -582,11 +630,14 @@ bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/ui/GiftPanel.cpp.obj
 bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/ui/GiftAnimation.cpp.obj
 bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/ui/LikeButton.cpp.obj
 bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/ui/FloatingHeartsWidget.cpp.obj
+bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/ui/ProfilePage.cpp.obj
+bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/ui/SettingsPage.cpp.obj
+bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/ui/NetworkBanner.cpp.obj
+bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/ui/LoadingSpinner.cpp.obj
 bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/theme/ThemeManager.cpp.obj
 bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.obj
 bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/network/IHttpClient.cpp.obj
 bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.obj
-bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.obj
 bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/network/WebSocketClient.cpp.obj
 bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.obj
 bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.obj
@@ -606,7 +657,7 @@ bin/LiveKitClient.exe: D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/libqtmaind.a
 bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/linkLibs.rsp
 bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/objects1.rsp
 bin/LiveKitClient.exe: CMakeFiles/LiveKitClient.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable bin\LiveKitClient.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\vskelin\LiveKit\client\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX executable bin\LiveKitClient.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\LiveKitClient.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

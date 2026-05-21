@@ -1,7 +1,7 @@
 #include "ui/LoginPage.h"
 #include "app/AppConfig.h"
 #include "app/Application.h"
-#include "network/MockHttpClient.h"
+#include "network/HttpClient.h"
 #include <QHBoxLayout>
 #include <QSpacerItem>
 
@@ -105,14 +105,13 @@ void LoginPage::onLoginClicked() {
 
     setLoading(true);
 
-    auto* client = new MockHttpClient(this);
+    auto* client = Application::instance().httpClient();
     QJsonObject body;
     body["username"] = username;
     body["password"] = password;
 
-    client->post("/api/login", body, [this, client](const ApiResponse& resp) {
+    client->post("/api/login", body, [this](const ApiResponse& resp) {
         setLoading(false);
-        client->deleteLater();
 
         if (resp.isSuccess()) {
             auto data = resp.data();

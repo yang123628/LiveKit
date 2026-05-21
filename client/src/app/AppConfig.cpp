@@ -56,3 +56,7 @@ void AppConfig::load() {
         m_token = m_settings.value("user/token").toString();
     }
 }
+
+QSettings& AppConfig::settings() {
+    return m_settings;
+}

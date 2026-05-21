@@ -2,7 +2,7 @@
 #include "app/AppConfig.h"
 #include "ui/MainWindow.h"
 #include "theme/ThemeManager.h"
-#include "network/MockHttpClient.h"
+#include "network/HttpClient.h"
 
 Application& Application::instance() {
     static Application inst;
@@ -19,12 +19,12 @@ void Application::initialize(int& argc, char** argv) {
     m_app = std::make_unique<QApplication>(argc, argv);
 
     QApplication::setApplicationName("LiveKit");
-    QApplication::setApplicationVersion("0.7.0");
+    QApplication::setApplicationVersion("0.8.0");
     QApplication::setOrganizationName("LiveKit");
 
     AppConfig::instance().load();
 
-    m_httpClient = new MockHttpClient;
+    m_httpClient = new HttpClient;
     m_httpClient->setBaseUrl(AppConfig::instance().serverAddress());
 
     m_mainWindow = new MainWindow;

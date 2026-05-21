@@ -19,6 +19,8 @@ public:
     void save();
     void load();
 
+    QSettings& settings();
+
 private:
     AppConfig();
     ~AppConfig() = default;

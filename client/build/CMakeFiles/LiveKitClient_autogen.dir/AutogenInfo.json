@@ -150,12 +150,6 @@
 			null
 		],
 		[
-			"D:/vskelin/LiveKit/client/src/network/MockHttpClient.h",
-			"MU",
-			"UFQQIFJZKK/moc_MockHttpClient.cpp",
-			null
-		],
-		[
 			"D:/vskelin/LiveKit/client/src/network/WebSocketClient.h",
 			"MU",
 			"UFQQIFJZKK/moc_WebSocketClient.cpp",
@@ -204,6 +198,12 @@
 			null
 		],
 		[
+			"D:/vskelin/LiveKit/client/src/ui/LoadingSpinner.h",
+			"MU",
+			"YPKJ5OE7LN/moc_LoadingSpinner.cpp",
+			null
+		],
+		[
 			"D:/vskelin/LiveKit/client/src/ui/LoginPage.h",
 			"MU",
 			"YPKJ5OE7LN/moc_LoginPage.cpp",
@@ -216,6 +216,12 @@
 			null
 		],
 		[
+			"D:/vskelin/LiveKit/client/src/ui/NetworkBanner.h",
+			"MU",
+			"YPKJ5OE7LN/moc_NetworkBanner.cpp",
+			null
+		],
+		[
 			"D:/vskelin/LiveKit/client/src/ui/OpenGLWidget.h",
 			"MU",
 			"YPKJ5OE7LN/moc_OpenGLWidget.cpp",
@@ -225,6 +231,12 @@
 			"D:/vskelin/LiveKit/client/src/ui/PicInPicWidget.h",
 			"MU",
 			"YPKJ5OE7LN/moc_PicInPicWidget.cpp",
+			null
+		],
+		[
+			"D:/vskelin/LiveKit/client/src/ui/ProfilePage.h",
+			"MU",
+			"YPKJ5OE7LN/moc_ProfilePage.cpp",
 			null
 		],
 		[
@@ -243,6 +255,12 @@
 			"D:/vskelin/LiveKit/client/src/ui/RoomCard.h",
 			"MU",
 			"YPKJ5OE7LN/moc_RoomCard.cpp",
+			null
+		],
+		[
+			"D:/vskelin/LiveKit/client/src/ui/SettingsPage.h",
+			"MU",
+			"YPKJ5OE7LN/moc_SettingsPage.cpp",
 			null
 		],
 		[
@@ -330,11 +348,6 @@
 		[ "D:/vskelin/LiveKit/client/src/network/HttpClient.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/network/IHttpClient.cpp", "MU", null ],
 		[
-			"D:/vskelin/LiveKit/client/src/network/MockHttpClient.cpp",
-			"MU",
-			null
-		],
-		[
 			"D:/vskelin/LiveKit/client/src/network/WebSocketClient.cpp",
 			"MU",
 			null
@@ -350,13 +363,17 @@
 		[ "D:/vskelin/LiveKit/client/src/ui/GiftPanel.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/LikeButton.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/LiveHallPage.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/ui/LoadingSpinner.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/LoginPage.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/MainWindow.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/ui/NetworkBanner.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/OpenGLWidget.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/PicInPicWidget.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/ui/ProfilePage.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/RegisterPage.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/ReplayCard.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/RoomCard.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/ui/SettingsPage.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/StartLivePage.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

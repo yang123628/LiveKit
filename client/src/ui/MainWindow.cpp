@@ -3,10 +3,12 @@
 #include "ui/RegisterPage.h"
 #include "ui/LiveHallPage.h"
 #include "ui/StartLivePage.h"
+#include "ui/ProfilePage.h"
+#include "ui/SettingsPage.h"
+#include "ui/NetworkBanner.h"
 #include "theme/ThemeManager.h"
 #include "app/AppConfig.h"
 #include "app/Application.h"
-#include <QDebug>
 
 #ifdef HAS_FFMPEG
 #include "ui/AnchorRoomPage.h"
@@ -45,6 +47,11 @@ void MainWindow::setupUI() {
     m_mainPageLayout = new QVBoxLayout(m_mainPage);
     m_mainPageLayout->setContentsMargins(0, 0, 0, 0);
     m_mainPageLayout->setSpacing(0);
+
+    m_networkBanner = new NetworkBanner(m_mainPage);
+    m_networkBanner->setObjectName("networkBanner");
+
+    m_mainPageLayout->addWidget(m_networkBanner);
     m_mainPageLayout->addWidget(m_contentStack, 1);
     m_mainPageLayout->addWidget(m_navigationBar);
 
@@ -125,7 +132,6 @@ void MainWindow::setupPages() {
         showLiveRoom(playUrl, roomId);
 #else
         Q_UNUSED(roomId)
-        qDebug() << "FFmpeg not available, cannot play stream";
 #endif
     });
 
@@ -134,7 +140,6 @@ void MainWindow::setupPages() {
         showReplayRoom(playUrl);
 #else
         Q_UNUSED(playUrl)
-        qDebug() << "FFmpeg not available, cannot play replay";
 #endif
     });
 
@@ -164,17 +169,35 @@ void MainWindow::setupPages() {
                             .arg(roomId);
                     }
                     showAnchorRoom(pushUrl, mode, roomId);
-                } else {
-                    qDebug() << "Create live failed:" << resp.msg();
                 }
             });
 #else
             Q_UNUSED(title)
             Q_UNUSED(category)
             Q_UNUSED(mode)
-            qDebug() << "FFmpeg not available, cannot start live";
 #endif
         });
+
+    m_pageProfile = new ProfilePage(this);
+    m_pageProfile->setObjectName("pageProfile");
+
+    connect(m_pageProfile, &ProfilePage::SIG_logout, this, [this]() {
+        Application::instance().currentUser().clear();
+        AppConfig::instance().setToken("");
+        AppConfig::instance().save();
+        showAuthPage();
+    });
+
+    connect(m_pageProfile, &ProfilePage::SIG_openSettings, this, [this]() {
+        m_contentStack->setCurrentWidget(m_pageSettings);
+    });
+
+    m_pageSettings = new SettingsPage(this);
+    m_pageSettings->setObjectName("pageSettings");
+
+    connect(m_pageSettings, &SettingsPage::SIG_themeChanged, this, [](const QString& themeName) {
+        ThemeManager::instance().applyTheme(themeName);
+    });
 
 #ifdef HAS_FFMPEG
     m_pageAnchorRoom = new AnchorRoomPage(this);
@@ -206,17 +229,10 @@ void MainWindow::setupPages() {
     });
 #endif
 
-    m_pageProfile = new QWidget(this);
-    m_pageProfile->setObjectName("pageProfile");
-    auto* profileLayout = new QVBoxLayout(m_pageProfile);
-    auto* profileLabel = new QLabel(QStringLiteral("个人中心"), m_pageProfile);
-    profileLabel->setObjectName("pageTitle");
-    profileLabel->setAlignment(Qt::AlignCenter);
-    profileLayout->addWidget(profileLabel);
-
     m_contentStack->addWidget(m_pageLiveHall);
     m_contentStack->addWidget(m_pageStartLive);
     m_contentStack->addWidget(m_pageProfile);
+    m_contentStack->addWidget(m_pageSettings);
 
 #ifdef HAS_FFMPEG
     m_contentStack->addWidget(m_pageAnchorRoom);
@@ -252,6 +268,7 @@ void MainWindow::showMainPage() {
     m_topStack->setCurrentWidget(m_mainPage);
     switchPage(0);
     m_pageLiveHall->refreshRooms();
+    m_pageProfile->refreshProfile();
 }
 
 void MainWindow::showLiveRoom(const QString& playUrl, int roomId) {
