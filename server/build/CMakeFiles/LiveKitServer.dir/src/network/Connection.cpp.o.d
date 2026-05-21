@@ -180,10 +180,11 @@ CMakeFiles/LiveKitServer.dir/src/network/Connection.cpp.o: \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /home/hy/LiveKit/server/src/core/Logger.h /usr/include/c++/11/mutex \
+ /home/hy/LiveKit/server/src/network/WebSocketHandler.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/limits /usr/include/c++/11/ctime \
  /usr/include/c++/11/bits/parse_numbers.h \
+ /home/hy/LiveKit/server/src/core/Logger.h /usr/include/c++/11/mutex \
  /usr/include/c++/11/system_error \
  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
  /usr/include/c++/11/stdexcept /usr/include/c++/11/bits/std_mutex.h \

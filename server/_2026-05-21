@@ -3,3 +3,6 @@
 [2026-05-21 16:45:11.099] [INFO] [/home/hy/LiveKit/server/src/utils/Config.cpp:37] config loaded from config/server.conf
 [2026-05-21 16:47:32.085] [INFO] [/home/hy/LiveKit/server/src/utils/Config.cpp:37] config loaded from config/server.conf
 [2026-05-21 16:48:02.737] [INFO] [/home/hy/LiveKit/server/src/utils/Config.cpp:37] config loaded from /tmp/server_test.conf
+[2026-05-21 18:15:46.764] [INFO] [/home/hy/LiveKit/server/src/utils/Config.cpp:37] config loaded from config/server.conf
+[2026-05-21 18:19:09.083] [INFO] [/home/hy/LiveKit/server/src/utils/Config.cpp:37] config loaded from config/server.conf
+[2026-05-21 18:41:09.647] [INFO] [/home/hy/LiveKit/server/src/utils/Config.cpp:37] config loaded from config/server.conf

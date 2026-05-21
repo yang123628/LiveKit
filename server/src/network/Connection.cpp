@@ -1,4 +1,5 @@
 #include "network/Connection.h"
+#include "network/WebSocketHandler.h"
 #include "core/Logger.h"
 
 Connection::Connection(int fd, struct sockaddr_in addr)
@@ -9,6 +10,10 @@ Connection::Connection(int fd, struct sockaddr_in addr)
 }
 
 Connection::~Connection() {
+    if (m_userData) {
+        delete static_cast<WsContext*>(m_userData);
+        m_userData = nullptr;
+    }
     ::close(m_fd);
 }
 
