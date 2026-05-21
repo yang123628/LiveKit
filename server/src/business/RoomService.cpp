@@ -7,6 +7,7 @@
 #include "recording/RecordingManager.h"
 #include "utils/Crypto.h"
 #include "utils/Config.h"
+#include "utils/ErrorCode.h"
 #include "core/Logger.h"
 #include <chrono>
 
@@ -37,14 +38,20 @@ nlohmann::json RoomService::createRoom(const std::string& token, const std::stri
     nlohmann::json result;
 
     int userId = 0;
-    if (!UserService::verifyToken(token, userId)) {
-        result["code"] = 2001;
-        result["msg"] = "无效的token";
+    auto tokenStatus = UserService::verifyToken(token, userId);
+    if (tokenStatus != UserService::TokenStatus::VALID) {
+        if (tokenStatus == UserService::TokenStatus::EXPIRED) {
+            result["code"] = ErrorCode::TOKEN_EXPIRED;
+            result["msg"] = "token已过期";
+        } else {
+            result["code"] = ErrorCode::TOKEN_INVALID;
+            result["msg"] = "无效的token";
+        }
         return result;
     }
 
     if (title.empty()) {
-        result["code"] = 2002;
+        result["code"] = ErrorCode::Room::EMPTY_TITLE;
         result["msg"] = "直播标题不能为空";
         return result;
     }
@@ -53,7 +60,7 @@ nlohmann::json RoomService::createRoom(const std::string& token, const std::stri
     RoomDao::findRoomsByAnchorId(userId, existingRooms);
     for (const auto& r : existingRooms) {
         if (r.status == "live") {
-            result["code"] = 2003;
+            result["code"] = ErrorCode::Room::ALREADY_LIVING;
             result["msg"] = "已有正在直播的房间";
             return result;
         }
@@ -63,7 +70,7 @@ nlohmann::json RoomService::createRoom(const std::string& token, const std::stri
 
     int roomId = 0;
     if (!RoomDao::createRoom(userId, title, category, mode, streamKey, roomId)) {
-        result["code"] = 2004;
+        result["code"] = ErrorCode::Room::CREATE_FAILED;
         result["msg"] = "创建直播间失败";
         return result;
     }
@@ -78,7 +85,7 @@ nlohmann::json RoomService::createRoom(const std::string& token, const std::stri
     data["stream_key"] = streamKey;
     data["push_url"] = pushUrl;
 
-    result["code"] = 0;
+    result["code"] = ErrorCode::SUCCESS;
     result["msg"] = "创建成功";
     result["data"] = data;
     return result;
@@ -120,7 +127,7 @@ nlohmann::json RoomService::getRoomList(const std::string& category) {
     nlohmann::json data;
     data["rooms"] = roomList;
 
-    result["code"] = 0;
+    result["code"] = ErrorCode::SUCCESS;
     result["msg"] = "success";
     result["data"] = data;
     return result;
@@ -131,7 +138,7 @@ nlohmann::json RoomService::getRoomInfo(int roomId) {
 
     RoomInfo room;
     if (!RoomDao::findRoomById(roomId, room)) {
-        result["code"] = 2005;
+        result["code"] = ErrorCode::Room::ROOM_NOT_FOUND;
         result["msg"] = "直播间不存在";
         return result;
     }
@@ -166,7 +173,7 @@ nlohmann::json RoomService::getRoomInfo(int roomId) {
     data["room_info"] = roomJson;
     data["viewer_list"] = viewerList;
 
-    result["code"] = 0;
+    result["code"] = ErrorCode::SUCCESS;
     result["msg"] = "success";
     result["data"] = data;
     return result;
@@ -176,27 +183,33 @@ nlohmann::json RoomService::endRoom(const std::string& token, int roomId) {
     nlohmann::json result;
 
     int userId = 0;
-    if (!UserService::verifyToken(token, userId)) {
-        result["code"] = 2001;
-        result["msg"] = "无效的token";
+    auto tokenStatus = UserService::verifyToken(token, userId);
+    if (tokenStatus != UserService::TokenStatus::VALID) {
+        if (tokenStatus == UserService::TokenStatus::EXPIRED) {
+            result["code"] = ErrorCode::TOKEN_EXPIRED;
+            result["msg"] = "token已过期";
+        } else {
+            result["code"] = ErrorCode::TOKEN_INVALID;
+            result["msg"] = "无效的token";
+        }
         return result;
     }
 
     RoomInfo room;
     if (!RoomDao::findRoomById(roomId, room)) {
-        result["code"] = 2005;
+        result["code"] = ErrorCode::Room::ROOM_NOT_FOUND;
         result["msg"] = "直播间不存在";
         return result;
     }
 
     if (room.anchor_id != userId) {
-        result["code"] = 2006;
+        result["code"] = ErrorCode::Room::NO_PERMISSION;
         result["msg"] = "无权结束该直播间";
         return result;
     }
 
     if (room.status != "live") {
-        result["code"] = 2007;
+        result["code"] = ErrorCode::Room::ROOM_ENDED;
         result["msg"] = "直播间已结束";
         return result;
     }
@@ -213,7 +226,7 @@ nlohmann::json RoomService::endRoom(const std::string& token, int roomId) {
     RecordingManager::instance().stopRecording(roomId);
 
     if (!RoomDao::updateRoomStatus(roomId, "ended")) {
-        result["code"] = 2008;
+        result["code"] = ErrorCode::Room::END_FAILED;
         result["msg"] = "结束直播失败";
         return result;
     }
@@ -232,7 +245,7 @@ nlohmann::json RoomService::endRoom(const std::string& token, int roomId) {
         LOG_INFO("replay created for room " << roomId << " duration=" << duration << "s");
     }
 
-    result["code"] = 0;
+    result["code"] = ErrorCode::SUCCESS;
     result["msg"] = "直播已结束";
     return result;
 }
@@ -241,34 +254,40 @@ nlohmann::json RoomService::joinRoom(const std::string& token, int roomId) {
     nlohmann::json result;
 
     int userId = 0;
-    if (!UserService::verifyToken(token, userId)) {
-        result["code"] = 2001;
-        result["msg"] = "无效的token";
+    auto tokenStatus = UserService::verifyToken(token, userId);
+    if (tokenStatus != UserService::TokenStatus::VALID) {
+        if (tokenStatus == UserService::TokenStatus::EXPIRED) {
+            result["code"] = ErrorCode::TOKEN_EXPIRED;
+            result["msg"] = "token已过期";
+        } else {
+            result["code"] = ErrorCode::TOKEN_INVALID;
+            result["msg"] = "无效的token";
+        }
         return result;
     }
 
     RoomInfo room;
     if (!RoomDao::findRoomById(roomId, room)) {
-        result["code"] = 2005;
+        result["code"] = ErrorCode::Room::ROOM_NOT_FOUND;
         result["msg"] = "直播间不存在";
         return result;
     }
 
     if (room.status != "live") {
-        result["code"] = 2007;
+        result["code"] = ErrorCode::Room::ROOM_ENDED;
         result["msg"] = "直播已结束";
         return result;
     }
 
     UserInfo user;
     if (!UserDao::findUserById(userId, user)) {
-        result["code"] = 2009;
+        result["code"] = ErrorCode::Room::USER_NOT_FOUND;
         result["msg"] = "用户不存在";
         return result;
     }
 
     if (!RoomManager::instance().joinRoom(roomId, userId, user.username, user.avatar_id, nullptr)) {
-        result["code"] = 2010;
+        result["code"] = ErrorCode::Room::ALREADY_IN_ROOM;
         result["msg"] = "已在直播间中";
         return result;
     }
@@ -281,7 +300,7 @@ nlohmann::json RoomService::joinRoom(const std::string& token, int roomId) {
     data["viewer_count"] = viewerCount;
     data["play_url"] = getRtmpBaseUrl() + room.stream_key;
 
-    result["code"] = 0;
+    result["code"] = ErrorCode::SUCCESS;
     result["msg"] = "加入成功";
     result["data"] = data;
     return result;
@@ -291,9 +310,15 @@ nlohmann::json RoomService::leaveRoom(const std::string& token, int roomId) {
     nlohmann::json result;
 
     int userId = 0;
-    if (!UserService::verifyToken(token, userId)) {
-        result["code"] = 2001;
-        result["msg"] = "无效的token";
+    auto tokenStatus = UserService::verifyToken(token, userId);
+    if (tokenStatus != UserService::TokenStatus::VALID) {
+        if (tokenStatus == UserService::TokenStatus::EXPIRED) {
+            result["code"] = ErrorCode::TOKEN_EXPIRED;
+            result["msg"] = "token已过期";
+        } else {
+            result["code"] = ErrorCode::TOKEN_INVALID;
+            result["msg"] = "无效的token";
+        }
         return result;
     }
 
@@ -306,7 +331,7 @@ nlohmann::json RoomService::leaveRoom(const std::string& token, int roomId) {
     data["room_id"] = roomId;
     data["viewer_count"] = viewerCount;
 
-    result["code"] = 0;
+    result["code"] = ErrorCode::SUCCESS;
     result["msg"] = "离开成功";
     result["data"] = data;
     return result;

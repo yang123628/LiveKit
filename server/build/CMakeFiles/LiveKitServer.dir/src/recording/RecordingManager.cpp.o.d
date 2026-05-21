@@ -162,6 +162,7 @@ CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o: \
  /usr/include/c++/11/stdexcept /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
  /home/hy/LiveKit/server/src/recording/FFmpegRecorder.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /home/hy/LiveKit/server/src/utils/Config.h /usr/include/c++/11/map \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \

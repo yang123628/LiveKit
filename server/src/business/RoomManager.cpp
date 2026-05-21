@@ -147,3 +147,15 @@ void RoomManager::cleanupExpired() {
         }
     }
 }
+
+void RoomManager::forEachConnection(std::function<void(std::shared_ptr<Connection>)> callback) {
+    std::lock_guard<std::mutex> lock(m_mutex);
+    for (auto& room : m_rooms) {
+        for (auto& viewer : room.second) {
+            auto conn = viewer.second.conn.lock();
+            if (conn) {
+                callback(conn);
+            }
+        }
+    }
+}

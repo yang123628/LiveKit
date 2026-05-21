@@ -267,6 +267,8 @@ CMakeFiles/LiveKitServer.dir/src/main.cpp.o: \
  /usr/include/arpa/inet.h /home/hy/LiveKit/server/src/network/Buffer.h \
  /home/hy/LiveKit/server/src/network/StaticFileHandler.h \
  /home/hy/LiveKit/server/src/utils/Config.h \
+ /home/hy/LiveKit/server/src/utils/TokenGenerator.h \
+ /home/hy/LiveKit/server/src/utils/ErrorCode.h \
  /home/hy/LiveKit/server/src/database/Database.h \
  /home/hy/LiveKit/server/third_party/sqlite3/sqlite3.h \
  /home/hy/LiveKit/server/src/business/UserService.h \
@@ -277,6 +279,7 @@ CMakeFiles/LiveKitServer.dir/src/main.cpp.o: \
  /home/hy/LiveKit/server/src/database/RoomDao.h \
  /home/hy/LiveKit/server/src/database/UserDao.h \
  /home/hy/LiveKit/server/src/recording/RecordingManager.h \
+ /home/hy/LiveKit/server/src/recording/FFmpegRecorder.h \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \

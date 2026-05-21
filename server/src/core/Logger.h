@@ -25,6 +25,9 @@ private:
     LogLevel m_level = LogLevel::INFO;
     std::mutex m_mutex;
     std::ofstream m_fileStream;
+    std::string m_logBasePath;
+    std::string m_currentLogDate;
+    void checkLogRotation();
     std::string levelToString(LogLevel level);
 };
 

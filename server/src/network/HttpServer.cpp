@@ -95,6 +95,8 @@ void HttpServer::handleRequest(std::shared_ptr<Connection> conn, const std::stri
         return;
     }
 
+    auto startTime = std::chrono::steady_clock::now();
+
     HttpRequest req;
     if (!req.parse(rawData)) {
         HttpResponse resp;
@@ -109,6 +111,7 @@ void HttpServer::handleRequest(std::shared_ptr<Connection> conn, const std::stri
     resp.setHeader("Access-Control-Allow-Origin", "*");
     resp.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
     resp.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    resp.setHeader("Connection", "keep-alive");
 
     if (req.method() == HttpRequest::UNKNOWN) {
         resp.setStatus(405);
@@ -119,6 +122,18 @@ void HttpServer::handleRequest(std::shared_ptr<Connection> conn, const std::stri
 
     m_router.route(req, resp);
     conn->send(resp.serialize());
+
+    auto endTime = std::chrono::steady_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime).count();
+
+    std::string methodStr;
+    switch (req.method()) {
+        case HttpRequest::GET: methodStr = "GET"; break;
+        case HttpRequest::POST: methodStr = "POST"; break;
+        default: methodStr = "UNKNOWN"; break;
+    }
+
+    LOG_INFO("HTTP " << methodStr << " " << req.path() << " " << resp.statusCode() << " " << duration << "ms");
 }
 
 void HttpServer::setWsOpenCallback(const WsOpenCallback& cb) {

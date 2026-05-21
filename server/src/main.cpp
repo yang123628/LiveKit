@@ -6,6 +6,8 @@
 #include "network/Connection.h"
 #include "network/StaticFileHandler.h"
 #include "utils/Config.h"
+#include "utils/TokenGenerator.h"
+#include "utils/ErrorCode.h"
 #include "database/Database.h"
 #include "business/UserService.h"
 #include "business/RoomService.h"
@@ -15,16 +17,52 @@
 #include "database/RoomDao.h"
 #include "database/UserDao.h"
 #include "recording/RecordingManager.h"
+#include "recording/FFmpegRecorder.h"
 #include <csignal>
 #include <iostream>
 #include <chrono>
 #include <thread>
+#include <atomic>
 #include <nlohmann/json.hpp>
 
 HttpServer* g_server = nullptr;
+static std::atomic<bool> g_heartbeatRunning{false};
+static std::thread g_heartbeatThread;
+
+void heartbeatThread() {
+    g_heartbeatRunning = true;
+    int tokenCleanupCounter = 0;
+    while (g_heartbeatRunning) {
+        std::this_thread::sleep_for(std::chrono::seconds(30));
+        if (!g_heartbeatRunning) break;
+        auto now = std::chrono::steady_clock::now();
+        RoomManager::instance().forEachConnection([&](std::shared_ptr<Connection> conn) {
+            WsContext* ctx = WebSocketHandler::getWsContext(conn);
+            if (ctx && ctx->handshakeDone) {
+                auto elapsed = std::chrono::duration_cast<std::chrono::seconds>(now - ctx->lastPongTime).count();
+                if (elapsed > 90) {
+                    LOG_WARN("ws heartbeat timeout, closing fd=" << conn->fd());
+                    WebSocketHandler::sendClose(conn, 4001, "heartbeat timeout");
+                } else {
+                    WebSocketHandler::sendPing(conn);
+                }
+            }
+        });
+
+        tokenCleanupCounter++;
+        if (tokenCleanupCounter >= 120) {
+            TokenGenerator::cleanExpiredTokens();
+            tokenCleanupCounter = 0;
+        }
+    }
+}
 
 void signalHandler(int signum) {
     LOG_INFO("received signal " << signum << ", shutting down...");
+    g_heartbeatRunning = false;
+    if (g_heartbeatThread.joinable()) {
+        g_heartbeatThread.join();
+    }
     RecordingManager::instance().stopAll();
     if (g_server) {
         g_server->stop();
@@ -59,8 +97,13 @@ void onWsOpen(std::shared_ptr<Connection> conn, const std::string& rawData) {
     try { roomId = std::stoi(roomIdStr); } catch (...) { return; }
 
     int userId = 0;
-    if (!UserService::verifyToken(token, userId)) {
-        WebSocketHandler::sendClose(conn, 4001, "invalid token");
+    auto tokenStatus = UserService::verifyToken(token, userId);
+    if (tokenStatus != UserService::TokenStatus::VALID) {
+        if (tokenStatus == UserService::TokenStatus::EXPIRED) {
+            WebSocketHandler::sendClose(conn, 4001, "token expired");
+        } else {
+            WebSocketHandler::sendClose(conn, 4001, "invalid token");
+        }
         return;
     }
 
@@ -386,6 +429,15 @@ int main(int argc, char* argv[]) {
     signal(SIGTERM, signalHandler);
     signal(SIGPIPE, SIG_IGN);
 
+    FFmpegRecorder::setChildExitCallback([](pid_t pid, int status) {
+        if (WIFEXITED(status) && WEXITSTATUS(status) != 0) {
+            LOG_WARN("child process exited abnormally: pid=" << pid << " exit_code=" << WEXITSTATUS(status));
+        } else if (WIFSIGNALED(status)) {
+            LOG_WARN("child process killed by signal: pid=" << pid << " signal=" << WTERMSIG(status));
+        }
+    });
+    FFmpegRecorder::installSigchldHandler();
+
     HttpServer server(port, threadCount);
     g_server = &server;
 
@@ -397,6 +449,12 @@ int main(int argc, char* argv[]) {
 
     server.start();
 
+    g_heartbeatThread = std::thread(heartbeatThread);
+
+    g_heartbeatRunning = false;
+    if (g_heartbeatThread.joinable()) {
+        g_heartbeatThread.join();
+    }
     RecordingManager::instance().stopAll();
     Database::instance().close();
     LOG_INFO("LiveKit Server stopped");

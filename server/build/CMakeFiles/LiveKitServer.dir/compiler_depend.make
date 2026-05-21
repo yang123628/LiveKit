@@ -560,6 +560,7 @@ CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.o: ../src/business/R
   ../src/database/ReplayDao.h \
   ../src/database/UserDao.h \
   ../src/utils/Config.h \
+  ../src/utils/ErrorCode.h \
   ../src/core/Logger.h \
   /usr/include/c++/11/mutex \
   /usr/include/c++/11/chrono \
@@ -770,9 +771,9 @@ CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o: ../src/business/Roo
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
   /usr/include/c++/11/backward/auto_ptr.h \
-  ../src/network/Connection.h \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/bits/std_function.h \
+  ../src/network/Connection.h \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -1134,6 +1135,7 @@ CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o: ../src/business/Roo
   ../src/recording/RecordingManager.h \
   ../src/utils/Crypto.h \
   ../src/utils/Config.h \
+  ../src/utils/ErrorCode.h \
   ../src/core/Logger.h \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -1414,6 +1416,7 @@ CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o: ../src/business/Use
   ../src/database/UserDao.h \
   ../src/utils/Crypto.h \
   ../src/utils/TokenGenerator.h \
+  ../src/utils/ErrorCode.h \
   ../src/core/Logger.h \
   /usr/include/c++/11/mutex \
   /usr/include/c++/11/chrono \
@@ -4066,6 +4069,8 @@ CMakeFiles/LiveKitServer.dir/src/main.cpp.o: ../src/main.cpp \
   ../src/network/Buffer.h \
   ../src/network/StaticFileHandler.h \
   ../src/utils/Config.h \
+  ../src/utils/TokenGenerator.h \
+  ../src/utils/ErrorCode.h \
   ../src/database/Database.h \
   ../third_party/sqlite3/sqlite3.h \
   ../src/business/UserService.h \
@@ -4076,6 +4081,7 @@ CMakeFiles/LiveKitServer.dir/src/main.cpp.o: ../src/main.cpp \
   ../src/database/RoomDao.h \
   ../src/database/UserDao.h \
   ../src/recording/RecordingManager.h \
+  ../src/recording/FFmpegRecorder.h \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
   /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
@@ -6582,17 +6588,21 @@ CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o: ../src/recordin
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
-  ../src/utils/Config.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/functional \
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/array \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/typeinfo \
+  ../src/utils/Config.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
   /usr/include/c++/11/bits/enable_special_members.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
@@ -6605,7 +6615,6 @@ CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o: ../src/recordin
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/typeinfo \
   /usr/include/c++/11/bits/nested_exception.h \
   /usr/include/c++/11/system_error \
   /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
@@ -6689,7 +6698,8 @@ CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o: ../src/recordin
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
-  /usr/include/strings.h
+  /usr/include/strings.h \
+  /usr/include/c++/11/csignal
 
 CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o: ../src/recording/RecordingManager.cpp \
   /usr/include/stdc-predef.h \
@@ -6886,6 +6896,8 @@ CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o: ../src/record
   /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/bits/unique_lock.h \
   ../src/recording/FFmpegRecorder.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/bits/std_function.h \
   ../src/utils/Config.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
@@ -7659,8 +7671,6 @@ CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o: ../src/utils/TokenG
 
 /usr/include/x86_64-linux-gnu/sys/stat.h:
 
-../src/recording/FFmpegRecorder.h:
-
 /usr/include/openssl/e_os2.h:
 
 /usr/include/x86_64-linux-gnu/openssl/opensslconf.h:
@@ -7708,6 +7718,8 @@ CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o: ../src/utils/TokenG
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
+
+../src/recording/FFmpegRecorder.h:
 
 ../src/network/StaticFileHandler.h:
 
@@ -7816,6 +7828,8 @@ CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o: ../src/utils/TokenG
 ../src/business/UserService.cpp:
 
 ../src/business/RoomManager.cpp:
+
+../src/utils/ErrorCode.h:
 
 ../src/database/UserDao.h:
 

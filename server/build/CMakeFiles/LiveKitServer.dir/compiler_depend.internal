@@ -562,6 +562,7 @@ CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.o
  /home/hy/LiveKit/server/src/database/ReplayDao.h
  /home/hy/LiveKit/server/src/database/UserDao.h
  /home/hy/LiveKit/server/src/utils/Config.h
+ /home/hy/LiveKit/server/src/utils/ErrorCode.h
  /home/hy/LiveKit/server/src/core/Logger.h
  /usr/include/c++/11/mutex
  /usr/include/c++/11/chrono
@@ -773,9 +774,9 @@ CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o
  /usr/include/c++/11/bits/atomic_base.h
  /usr/include/c++/11/bits/atomic_lockfree_defines.h
  /usr/include/c++/11/backward/auto_ptr.h
- /home/hy/LiveKit/server/src/network/Connection.h
  /usr/include/c++/11/functional
  /usr/include/c++/11/bits/std_function.h
+ /home/hy/LiveKit/server/src/network/Connection.h
  /usr/include/unistd.h
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h
  /usr/include/x86_64-linux-gnu/bits/environments.h
@@ -1138,6 +1139,7 @@ CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o
  /home/hy/LiveKit/server/src/recording/RecordingManager.h
  /home/hy/LiveKit/server/src/utils/Crypto.h
  /home/hy/LiveKit/server/src/utils/Config.h
+ /home/hy/LiveKit/server/src/utils/ErrorCode.h
  /home/hy/LiveKit/server/src/core/Logger.h
  /usr/include/c++/11/fstream
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h
@@ -1419,6 +1421,7 @@ CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o
  /home/hy/LiveKit/server/src/database/UserDao.h
  /home/hy/LiveKit/server/src/utils/Crypto.h
  /home/hy/LiveKit/server/src/utils/TokenGenerator.h
+ /home/hy/LiveKit/server/src/utils/ErrorCode.h
  /home/hy/LiveKit/server/src/core/Logger.h
  /usr/include/c++/11/mutex
  /usr/include/c++/11/chrono
@@ -4082,6 +4085,8 @@ CMakeFiles/LiveKitServer.dir/src/main.cpp.o
  /home/hy/LiveKit/server/src/network/Buffer.h
  /home/hy/LiveKit/server/src/network/StaticFileHandler.h
  /home/hy/LiveKit/server/src/utils/Config.h
+ /home/hy/LiveKit/server/src/utils/TokenGenerator.h
+ /home/hy/LiveKit/server/src/utils/ErrorCode.h
  /home/hy/LiveKit/server/src/database/Database.h
  /home/hy/LiveKit/server/third_party/sqlite3/sqlite3.h
  /home/hy/LiveKit/server/src/business/UserService.h
@@ -4092,6 +4097,7 @@ CMakeFiles/LiveKitServer.dir/src/main.cpp.o
  /home/hy/LiveKit/server/src/database/RoomDao.h
  /home/hy/LiveKit/server/src/database/UserDao.h
  /home/hy/LiveKit/server/src/recording/RecordingManager.h
+ /home/hy/LiveKit/server/src/recording/FFmpegRecorder.h
  /usr/include/c++/11/csignal
  /usr/include/signal.h
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h
@@ -6608,17 +6614,21 @@ CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o
  /usr/include/c++/11/limits
  /usr/include/c++/11/ctime
  /usr/include/c++/11/bits/parse_numbers.h
- /home/hy/LiveKit/server/src/utils/Config.h
- /usr/include/c++/11/unordered_map
- /usr/include/c++/11/ext/aligned_buffer.h
- /usr/include/c++/11/bits/hashtable.h
- /usr/include/c++/11/bits/hashtable_policy.h
+ /usr/include/c++/11/functional
  /usr/include/c++/11/tuple
  /usr/include/c++/11/utility
  /usr/include/c++/11/bits/stl_relops.h
  /usr/include/c++/11/array
  /usr/include/c++/11/bits/uses_allocator.h
  /usr/include/c++/11/bits/invoke.h
+ /usr/include/c++/11/bits/refwrap.h
+ /usr/include/c++/11/bits/std_function.h
+ /usr/include/c++/11/typeinfo
+ /home/hy/LiveKit/server/src/utils/Config.h
+ /usr/include/c++/11/unordered_map
+ /usr/include/c++/11/ext/aligned_buffer.h
+ /usr/include/c++/11/bits/hashtable.h
+ /usr/include/c++/11/bits/hashtable_policy.h
  /usr/include/c++/11/bits/enable_special_members.h
  /usr/include/c++/11/bits/unordered_map.h
  /usr/include/c++/11/bits/erase_if.h
@@ -6631,7 +6641,6 @@ CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o
  /usr/include/c++/11/exception
  /usr/include/c++/11/bits/exception_ptr.h
  /usr/include/c++/11/bits/cxxabi_init_exception.h
- /usr/include/c++/11/typeinfo
  /usr/include/c++/11/bits/nested_exception.h
  /usr/include/c++/11/system_error
  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h
@@ -6716,6 +6725,7 @@ CMakeFiles/LiveKitServer.dir/src/recording/FFmpegRecorder.cpp.o
  /usr/include/c++/11/cstring
  /usr/include/string.h
  /usr/include/strings.h
+ /usr/include/c++/11/csignal
 
 CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o
  /home/hy/LiveKit/server/src/recording/RecordingManager.cpp
@@ -6913,6 +6923,8 @@ CMakeFiles/LiveKitServer.dir/src/recording/RecordingManager.cpp.o
  /usr/include/c++/11/bits/std_mutex.h
  /usr/include/c++/11/bits/unique_lock.h
  /home/hy/LiveKit/server/src/recording/FFmpegRecorder.h
+ /usr/include/c++/11/functional
+ /usr/include/c++/11/bits/std_function.h
  /home/hy/LiveKit/server/src/utils/Config.h
  /usr/include/c++/11/map
  /usr/include/c++/11/bits/stl_tree.h

@@ -5,6 +5,7 @@
 #include <unordered_map>
 #include <mutex>
 #include <memory>
+#include <functional>
 
 class Connection;
 
@@ -30,6 +31,8 @@ public:
     int getUserIdByFd(int fd);
 
     void cleanupExpired();
+
+    void forEachConnection(std::function<void(std::shared_ptr<Connection>)> callback);
 
 private:
     RoomManager() = default;

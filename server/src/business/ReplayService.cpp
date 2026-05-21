@@ -2,6 +2,7 @@
 #include "database/ReplayDao.h"
 #include "database/UserDao.h"
 #include "utils/Config.h"
+#include "utils/ErrorCode.h"
 #include "core/Logger.h"
 
 nlohmann::json ReplayService::getReplayList() {
@@ -40,7 +41,7 @@ nlohmann::json ReplayService::getReplayList() {
     nlohmann::json data;
     data["replays"] = replayList;
 
-    result["code"] = 0;
+    result["code"] = ErrorCode::SUCCESS;
     result["msg"] = "success";
     result["data"] = data;
     return result;
@@ -51,7 +52,7 @@ nlohmann::json ReplayService::getReplayById(int replayId) {
 
     ReplayInfo replay;
     if (!ReplayDao::getReplayById(replayId, replay)) {
-        result["code"] = 4001;
+        result["code"] = ErrorCode::Replay::NOT_FOUND;
         result["msg"] = "回放不存在";
         return result;
     }
@@ -79,7 +80,7 @@ nlohmann::json ReplayService::getReplayById(int replayId) {
     data["play_url"] = playUrl;
     data["created_at"] = replay.created_at;
 
-    result["code"] = 0;
+    result["code"] = ErrorCode::SUCCESS;
     result["msg"] = "success";
     result["data"] = data;
     return result;

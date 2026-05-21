@@ -2,6 +2,7 @@
 
 #include <string>
 #include <chrono>
+#include <functional>
 
 class FFmpegRecorder {
 public:
@@ -15,9 +16,14 @@ public:
     std::string outputPath() const;
     std::chrono::steady_clock::time_point startTime() const;
 
+    static void setChildExitCallback(const std::function<void(pid_t, int)>& cb);
+    static void installSigchldHandler();
+
 private:
     pid_t m_childPid;
     int m_stdinFd;
     std::string m_outputPath;
     std::chrono::steady_clock::time_point m_startTime;
+
+    static std::function<void(pid_t, int)> s_childExitCallback;
 };

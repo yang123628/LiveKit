@@ -58,3 +58,39 @@ bool TokenGenerator::removeToken(const std::string& token) {
     std::vector<std::string> params = {token};
     return Database::instance().executePrepared(sql, params);
 }
+
+int TokenGenerator::verifyWithDetail(const std::string& token, int& outUserId) {
+    if (token.empty()) return 2;
+
+    std::string sql = "SELECT user_id, expires_at FROM tokens WHERE token = ?";
+    std::vector<std::string> params = {token};
+    bool found = false;
+    std::string expiresAt;
+
+    Database::instance().queryPrepared(sql, params, [&](const std::vector<std::string>& row) {
+        outUserId = std::stoi(row[0]);
+        expiresAt = row[1];
+        found = true;
+    });
+
+    if (!found) return 2;
+
+    time_t now = time(nullptr);
+    struct tm tm;
+    memset(&tm, 0, sizeof(tm));
+    strptime(expiresAt.c_str(), "%Y-%m-%d %H:%M:%S", &tm);
+    time_t expiresTime = mktime(&tm);
+
+    if (now > expiresTime) return 1;
+
+    return 0;
+}
+
+bool TokenGenerator::cleanExpiredTokens() {
+    std::string sql = "DELETE FROM tokens WHERE expires_at < datetime('now', 'localtime')";
+    bool ok = Database::instance().execute(sql);
+    if (ok) {
+        LOG_INFO("expired tokens cleaned");
+    }
+    return ok;
+}

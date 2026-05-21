@@ -6,6 +6,30 @@
 #include <fcntl.h>
 #include <cstring>
 #include <cerrno>
+#include <csignal>
+
+std::function<void(pid_t, int)> FFmpegRecorder::s_childExitCallback;
+
+void FFmpegRecorder::setChildExitCallback(const std::function<void(pid_t, int)>& cb) {
+    s_childExitCallback = cb;
+}
+
+void FFmpegRecorder::installSigchldHandler() {
+    struct sigaction sa;
+    memset(&sa, 0, sizeof(sa));
+    sa.sa_handler = [](int) {
+        int status = 0;
+        pid_t pid;
+        while ((pid = waitpid(-1, &status, WNOHANG)) > 0) {
+            if (s_childExitCallback) {
+                s_childExitCallback(pid, status);
+            }
+        }
+    };
+    sigemptyset(&sa.sa_mask);
+    sa.sa_flags = SA_RESTART | SA_NOCLDSTOP;
+    sigaction(SIGCHLD, &sa, nullptr);
+}
 
 FFmpegRecorder::FFmpegRecorder()
     : m_childPid(-1), m_stdinFd(-1) {

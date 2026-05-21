@@ -230,6 +230,7 @@ CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o: \
  /home/hy/LiveKit/server/src/recording/RecordingManager.h \
  /home/hy/LiveKit/server/src/utils/Crypto.h \
  /home/hy/LiveKit/server/src/utils/Config.h \
+ /home/hy/LiveKit/server/src/utils/ErrorCode.h \
  /home/hy/LiveKit/server/src/core/Logger.h /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \

@@ -9,4 +9,6 @@ public:
     static bool storeToken(int userId, const std::string& token);
     static bool isTokenExpired(const std::string& token);
     static bool removeToken(const std::string& token);
+    static int verifyWithDetail(const std::string& token, int& outUserId);
+    static bool cleanExpiredTokens();
 };

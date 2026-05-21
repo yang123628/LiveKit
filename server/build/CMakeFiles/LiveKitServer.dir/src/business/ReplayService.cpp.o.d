@@ -221,6 +221,7 @@ CMakeFiles/LiveKitServer.dir/src/business/ReplayService.cpp.o: \
  /home/hy/LiveKit/server/src/database/ReplayDao.h \
  /home/hy/LiveKit/server/src/database/UserDao.h \
  /home/hy/LiveKit/server/src/utils/Config.h \
+ /home/hy/LiveKit/server/src/utils/ErrorCode.h \
  /home/hy/LiveKit/server/src/core/Logger.h /usr/include/c++/11/mutex \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/bits/parse_numbers.h \
