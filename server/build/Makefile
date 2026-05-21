@@ -142,6 +142,30 @@ LiveKitServer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/build
 .PHONY : LiveKitServer/fast
 
+src/business/RoomService.o: src/business/RoomService.cpp.o
+.PHONY : src/business/RoomService.o
+
+# target to build an object file
+src/business/RoomService.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o
+.PHONY : src/business/RoomService.cpp.o
+
+src/business/RoomService.i: src/business/RoomService.cpp.i
+.PHONY : src/business/RoomService.i
+
+# target to preprocess a source file
+src/business/RoomService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.i
+.PHONY : src/business/RoomService.cpp.i
+
+src/business/RoomService.s: src/business/RoomService.cpp.s
+.PHONY : src/business/RoomService.s
+
+# target to generate assembly for a file
+src/business/RoomService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.s
+.PHONY : src/business/RoomService.cpp.s
+
 src/business/UserService.o: src/business/UserService.cpp.o
 .PHONY : src/business/UserService.o
 
@@ -309,6 +333,30 @@ src/database/Database.s: src/database/Database.cpp.s
 src/database/Database.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.s
 .PHONY : src/database/Database.cpp.s
+
+src/database/RoomDao.o: src/database/RoomDao.cpp.o
+.PHONY : src/database/RoomDao.o
+
+# target to build an object file
+src/database/RoomDao.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o
+.PHONY : src/database/RoomDao.cpp.o
+
+src/database/RoomDao.i: src/database/RoomDao.cpp.i
+.PHONY : src/database/RoomDao.i
+
+# target to preprocess a source file
+src/database/RoomDao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.i
+.PHONY : src/database/RoomDao.cpp.i
+
+src/database/RoomDao.s: src/database/RoomDao.cpp.s
+.PHONY : src/database/RoomDao.s
+
+# target to generate assembly for a file
+src/database/RoomDao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.s
+.PHONY : src/database/RoomDao.cpp.s
 
 src/database/UserDao.o: src/database/UserDao.cpp.o
 .PHONY : src/database/UserDao.o
@@ -608,6 +656,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... LiveKitServer"
 	@echo "... sqlite3"
+	@echo "... src/business/RoomService.o"
+	@echo "... src/business/RoomService.i"
+	@echo "... src/business/RoomService.s"
 	@echo "... src/business/UserService.o"
 	@echo "... src/business/UserService.i"
 	@echo "... src/business/UserService.s"
@@ -629,6 +680,9 @@ help:
 	@echo "... src/database/Database.o"
 	@echo "... src/database/Database.i"
 	@echo "... src/database/Database.s"
+	@echo "... src/database/RoomDao.o"
+	@echo "... src/database/RoomDao.i"
+	@echo "... src/database/RoomDao.s"
 	@echo "... src/database/UserDao.o"
 	@echo "... src/database/UserDao.i"
 	@echo "... src/database/UserDao.s"

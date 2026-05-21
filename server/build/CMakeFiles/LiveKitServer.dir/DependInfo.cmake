@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/hy/LiveKit/server/src/business/RoomService.cpp" "CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o.d"
   "/home/hy/LiveKit/server/src/business/UserService.cpp" "CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o.d"
   "/home/hy/LiveKit/server/src/core/EpollWrapper.cpp" "CMakeFiles/LiveKitServer.dir/src/core/EpollWrapper.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/core/EpollWrapper.cpp.o.d"
   "/home/hy/LiveKit/server/src/core/EventLoop.cpp" "CMakeFiles/LiveKitServer.dir/src/core/EventLoop.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/core/EventLoop.cpp.o.d"
@@ -15,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hy/LiveKit/server/src/core/TaskQueue.cpp" "CMakeFiles/LiveKitServer.dir/src/core/TaskQueue.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/core/TaskQueue.cpp.o.d"
   "/home/hy/LiveKit/server/src/core/ThreadPool.cpp" "CMakeFiles/LiveKitServer.dir/src/core/ThreadPool.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/core/ThreadPool.cpp.o.d"
   "/home/hy/LiveKit/server/src/database/Database.cpp" "CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o.d"
+  "/home/hy/LiveKit/server/src/database/RoomDao.cpp" "CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o.d"
   "/home/hy/LiveKit/server/src/database/UserDao.cpp" "CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o.d"
   "/home/hy/LiveKit/server/src/main.cpp" "CMakeFiles/LiveKitServer.dir/src/main.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/main.cpp.o.d"
   "/home/hy/LiveKit/server/src/network/Buffer.cpp" "CMakeFiles/LiveKitServer.dir/src/network/Buffer.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/network/Buffer.cpp.o.d"

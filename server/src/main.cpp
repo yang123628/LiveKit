@@ -5,6 +5,7 @@
 #include "utils/Config.h"
 #include "database/Database.h"
 #include "business/UserService.h"
+#include "business/RoomService.h"
 #include <csignal>
 #include <iostream>
 #include <nlohmann/json.hpp>
@@ -65,6 +66,60 @@ void registerRoutes(HttpServer& server) {
         nlohmann::json data;
         data["avatars"] = avatars;
         resp.setJson(0, "success", data);
+    });
+
+    server.router().post("/api/live/create", [](HttpRequest& req, HttpResponse& resp) {
+        auto json = req.getJson();
+        std::string token = json.value("token", "");
+        std::string title = json.value("title", "");
+        std::string category = json.value("category", "other");
+        std::string mode = json.value("mode", "camera");
+
+        nlohmann::json result = RoomService::createRoom(token, title, category, mode);
+        int code = result.value("code", -1);
+        std::string msg = result.value("msg", "");
+        nlohmann::json data = result.value("data", nlohmann::json::object());
+        resp.setJson(code, msg, data);
+    });
+
+    server.router().get("/api/live/rooms", [](HttpRequest& req, HttpResponse& resp) {
+        std::string category = req.getParam("category");
+        if (category.empty()) category = "all";
+
+        nlohmann::json result = RoomService::getRoomList(category);
+        int code = result.value("code", -1);
+        std::string msg = result.value("msg", "");
+        nlohmann::json data = result.value("data", nlohmann::json::object());
+        resp.setJson(code, msg, data);
+    });
+
+    server.router().get("/api/live/room/{room_id}", [](HttpRequest& req, HttpResponse& resp) {
+        std::string roomIdStr = req.getPathParam("room_id");
+        int roomId = 0;
+        try {
+            roomId = std::stoi(roomIdStr);
+        } catch (...) {
+            resp.setJson(2005, "无效的房间ID");
+            return;
+        }
+
+        nlohmann::json result = RoomService::getRoomInfo(roomId);
+        int code = result.value("code", -1);
+        std::string msg = result.value("msg", "");
+        nlohmann::json data = result.value("data", nlohmann::json::object());
+        resp.setJson(code, msg, data);
+    });
+
+    server.router().post("/api/live/end", [](HttpRequest& req, HttpResponse& resp) {
+        auto json = req.getJson();
+        std::string token = json.value("token", "");
+        int roomId = json.value("room_id", 0);
+
+        nlohmann::json result = RoomService::endRoom(token, roomId);
+        int code = result.value("code", -1);
+        std::string msg = result.value("msg", "");
+        nlohmann::json data = result.value("data", nlohmann::json::object());
+        resp.setJson(code, msg, data);
     });
 }
 

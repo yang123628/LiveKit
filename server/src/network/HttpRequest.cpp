@@ -49,6 +49,12 @@ std::string HttpRequest::getParam(const std::string& key) const {
     return "";
 }
 
+std::string HttpRequest::getPathParam(const std::string& key) const {
+    auto it = m_pathParams.find(key);
+    if (it != m_pathParams.end()) return it->second;
+    return "";
+}
+
 nlohmann::json HttpRequest::getJson() const {
     try {
         if (m_body.empty()) return nlohmann::json::object();
@@ -64,6 +70,10 @@ void HttpRequest::setPath(const std::string& path) {
 
 void HttpRequest::setMethod(Method method) {
     m_method = method;
+}
+
+void HttpRequest::setPathParam(const std::string& key, const std::string& value) {
+    m_pathParams[key] = value;
 }
 
 void HttpRequest::parseRequestLine(const std::string& line) {

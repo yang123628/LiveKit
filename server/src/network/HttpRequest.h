@@ -20,10 +20,12 @@ public:
 
     std::string getHeader(const std::string& key) const;
     std::string getParam(const std::string& key) const;
+    std::string getPathParam(const std::string& key) const;
     nlohmann::json getJson() const;
 
     void setPath(const std::string& path);
     void setMethod(Method method);
+    void setPathParam(const std::string& key, const std::string& value);
 
 private:
     Method m_method;
@@ -32,6 +34,7 @@ private:
     std::string m_body;
     std::unordered_map<std::string, std::string> m_headers;
     std::unordered_map<std::string, std::string> m_params;
+    std::unordered_map<std::string, std::string> m_pathParams;
 
     void parseRequestLine(const std::string& line);
     void parseHeaders(const std::string& headers);

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o"
+  "CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o"
   "CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/core/EpollWrapper.cpp.o"
@@ -13,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LiveKitServer.dir/src/core/ThreadPool.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o"
   "CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o.d"
+  "CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o"
+  "CMakeFiles/LiveKitServer.dir/src/database/RoomDao.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o"
   "CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/main.cpp.o"

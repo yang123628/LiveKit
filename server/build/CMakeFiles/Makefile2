@@ -83,7 +83,7 @@ clean: CMakeFiles/LiveKitServer.dir/clean
 CMakeFiles/sqlite3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sqlite3.dir/build.make CMakeFiles/sqlite3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sqlite3.dir/build.make CMakeFiles/sqlite3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=20,21 "Built target sqlite3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=22,23 "Built target sqlite3"
 .PHONY : CMakeFiles/sqlite3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -109,12 +109,12 @@ CMakeFiles/sqlite3.dir/clean:
 CMakeFiles/LiveKitServer.dir/all: CMakeFiles/sqlite3.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target LiveKitServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target LiveKitServer"
 .PHONY : CMakeFiles/LiveKitServer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LiveKitServer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hy/LiveKit/server/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hy/LiveKit/server/build/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LiveKitServer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hy/LiveKit/server/build/CMakeFiles 0
 .PHONY : CMakeFiles/LiveKitServer.dir/rule
