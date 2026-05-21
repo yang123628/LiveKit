@@ -32,12 +32,23 @@ void HttpResponse::setBody(const std::string& body) {
 }
 
 void HttpResponse::setJson(int code, const std::string& msg, const std::string& data) {
-    m_statusCode = code;
-    m_statusMessage = (code == 200 || code == 0) ? "OK" : "Error";
-    if (code == 0) m_statusCode = 200;
+    m_statusCode = 200;
+    m_statusMessage = "OK";
     m_headers["Content-Type"] = "application/json";
     std::string json = "{\"code\":" + std::to_string(code) + ",\"msg\":\"" + msg + "\",\"data\":" + data + "}";
     m_body = json;
+    m_headers["Content-Length"] = std::to_string(m_body.size());
+}
+
+void HttpResponse::setJson(int code, const std::string& msg, const nlohmann::json& data) {
+    m_statusCode = 200;
+    m_statusMessage = "OK";
+    m_headers["Content-Type"] = "application/json";
+    nlohmann::json resp;
+    resp["code"] = code;
+    resp["msg"] = msg;
+    resp["data"] = data;
+    m_body = resp.dump();
     m_headers["Content-Length"] = std::to_string(m_body.size());
 }
 

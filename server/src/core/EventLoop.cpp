@@ -29,7 +29,6 @@ bool EventLoop::start() {
 
     int opt = 1;
     ::setsockopt(m_listenFd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
-    ::setsockopt(m_listenFd, SOL_SOCKET, SO_REUSEPORT, &opt, sizeof(opt));
 
     struct sockaddr_in addr;
     memset(&addr, 0, sizeof(addr));

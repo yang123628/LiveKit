@@ -2,6 +2,7 @@
 
 #include <string>
 #include <unordered_map>
+#include <nlohmann/json.hpp>
 
 class HttpResponse {
 public:
@@ -12,6 +13,7 @@ public:
     void setBody(const std::string& body);
 
     void setJson(int code, const std::string& msg, const std::string& data = "{}");
+    void setJson(int code, const std::string& msg, const nlohmann::json& data);
 
     std::string serialize() const;
 

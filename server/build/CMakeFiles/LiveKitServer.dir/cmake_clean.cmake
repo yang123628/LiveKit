@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o"
+  "CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/core/EpollWrapper.cpp.o"
   "CMakeFiles/LiveKitServer.dir/src/core/EpollWrapper.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/core/EventLoop.cpp.o"
@@ -9,6 +11,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/LiveKitServer.dir/src/core/TaskQueue.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/core/ThreadPool.cpp.o"
   "CMakeFiles/LiveKitServer.dir/src/core/ThreadPool.cpp.o.d"
+  "CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o"
+  "CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o.d"
+  "CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o"
+  "CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/main.cpp.o"
   "CMakeFiles/LiveKitServer.dir/src/main.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/network/Buffer.cpp.o"
@@ -25,6 +31,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/LiveKitServer.dir/src/network/Router.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o"
   "CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o.d"
+  "CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o"
+  "CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o.d"
+  "CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o"
+  "CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o.d"
   "LiveKitServer"
   "LiveKitServer.pdb"
 )

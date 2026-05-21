@@ -251,6 +251,76 @@ CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/LiveKit/server/src/utils/Config.cpp -o CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.s
 
+CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
+CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o: ../src/utils/Crypto.cpp
+CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o -c /home/hy/LiveKit/server/src/utils/Crypto.cpp
+
+CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/LiveKit/server/src/utils/Crypto.cpp > CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.i
+
+CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/LiveKit/server/src/utils/Crypto.cpp -o CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.s
+
+CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
+CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o: ../src/utils/TokenGenerator.cpp
+CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o -c /home/hy/LiveKit/server/src/utils/TokenGenerator.cpp
+
+CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/LiveKit/server/src/utils/TokenGenerator.cpp > CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.i
+
+CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/LiveKit/server/src/utils/TokenGenerator.cpp -o CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.s
+
+CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
+CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o: ../src/database/Database.cpp
+CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o -c /home/hy/LiveKit/server/src/database/Database.cpp
+
+CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/LiveKit/server/src/database/Database.cpp > CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.i
+
+CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/LiveKit/server/src/database/Database.cpp -o CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.s
+
+CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
+CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o: ../src/database/UserDao.cpp
+CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o -c /home/hy/LiveKit/server/src/database/UserDao.cpp
+
+CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/LiveKit/server/src/database/UserDao.cpp > CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.i
+
+CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/LiveKit/server/src/database/UserDao.cpp -o CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.s
+
+CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o: CMakeFiles/LiveKitServer.dir/flags.make
+CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o: ../src/business/UserService.cpp
+CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o: CMakeFiles/LiveKitServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o -MF CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o.d -o CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o -c /home/hy/LiveKit/server/src/business/UserService.cpp
+
+CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hy/LiveKit/server/src/business/UserService.cpp > CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.i
+
+CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hy/LiveKit/server/src/business/UserService.cpp -o CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.s
+
 # Object files for target LiveKitServer
 LiveKitServer_OBJECTS = \
 "CMakeFiles/LiveKitServer.dir/src/main.cpp.o" \
@@ -265,7 +335,12 @@ LiveKitServer_OBJECTS = \
 "CMakeFiles/LiveKitServer.dir/src/network/HttpResponse.cpp.o" \
 "CMakeFiles/LiveKitServer.dir/src/network/HttpServer.cpp.o" \
 "CMakeFiles/LiveKitServer.dir/src/network/Router.cpp.o" \
-"CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o"
+"CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o" \
+"CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o" \
+"CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o" \
+"CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o" \
+"CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o" \
+"CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o"
 
 # External object files for target LiveKitServer
 LiveKitServer_EXTERNAL_OBJECTS =
@@ -283,10 +358,15 @@ LiveKitServer: CMakeFiles/LiveKitServer.dir/src/network/HttpResponse.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/network/HttpServer.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/network/Router.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.o
+LiveKitServer: CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o
+LiveKitServer: CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o
+LiveKitServer: CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o
+LiveKitServer: CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o
+LiveKitServer: CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o
 LiveKitServer: CMakeFiles/LiveKitServer.dir/build.make
 LiveKitServer: libsqlite3.a
 LiveKitServer: CMakeFiles/LiveKitServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable LiveKitServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hy/LiveKit/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable LiveKitServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LiveKitServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

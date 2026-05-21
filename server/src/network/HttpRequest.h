@@ -3,6 +3,7 @@
 #include <string>
 #include <unordered_map>
 #include <algorithm>
+#include <nlohmann/json.hpp>
 
 class HttpRequest {
 public:
@@ -19,6 +20,7 @@ public:
 
     std::string getHeader(const std::string& key) const;
     std::string getParam(const std::string& key) const;
+    nlohmann::json getJson() const;
 
     void setPath(const std::string& path);
     void setMethod(Method method);

@@ -186,6 +186,59 @@ CMakeFiles/LiveKitServer.dir/src/network/HttpServer.cpp.o: \
  /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
+ /home/hy/LiveKit/server/third_party/nlohmann/json.hpp \
+ /usr/include/c++/11/cstddef /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/c++/11/bits/streambuf_iterator.h \
+ /usr/include/c++/11/streambuf /usr/include/c++/11/bits/ios_base.h \
+ /usr/include/c++/11/bits/locale_classes.h \
+ /usr/include/c++/11/bits/locale_classes.tcc \
+ /usr/include/c++/11/bits/streambuf.tcc /usr/include/c++/11/forward_list \
+ /usr/include/c++/11/bits/forward_list.h \
+ /usr/include/c++/11/bits/forward_list.tcc /usr/include/c++/11/map \
+ /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/valarray \
+ /usr/include/c++/11/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/11/bits/valarray_array.h \
+ /usr/include/c++/11/bits/valarray_array.tcc \
+ /usr/include/c++/11/bits/valarray_before.h \
+ /usr/include/c++/11/bits/slice_array.h \
+ /usr/include/c++/11/bits/valarray_after.h \
+ /usr/include/c++/11/bits/gslice.h \
+ /usr/include/c++/11/bits/gslice_array.h \
+ /usr/include/c++/11/bits/mask_array.h \
+ /usr/include/c++/11/bits/indirect_array.h /usr/include/c++/11/version \
+ /usr/include/c++/11/cassert /usr/include/assert.h \
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/istream /usr/include/c++/11/ios \
+ /usr/include/c++/11/bits/basic_ios.h \
+ /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+ /usr/include/c++/11/bits/locale_facets.tcc \
+ /usr/include/c++/11/bits/basic_ios.tcc /usr/include/c++/11/ostream \
+ /usr/include/c++/11/bits/ostream.tcc \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h \
+ /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc \
  /home/hy/LiveKit/server/src/network/HttpResponse.h \
  /home/hy/LiveKit/server/src/network/Connection.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
@@ -205,33 +258,8 @@ CMakeFiles/LiveKitServer.dir/src/network/HttpServer.cpp.o: \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
- /usr/include/arpa/inet.h /usr/include/c++/11/cstring \
- /usr/include/string.h /usr/include/strings.h \
- /home/hy/LiveKit/server/src/network/Buffer.h \
+ /usr/include/arpa/inet.h /home/hy/LiveKit/server/src/network/Buffer.h \
  /home/hy/LiveKit/server/src/core/Logger.h /usr/include/c++/11/fstream \
- /usr/include/c++/11/istream /usr/include/c++/11/ios \
- /usr/include/c++/11/bits/ios_base.h \
- /usr/include/c++/11/bits/locale_classes.h \
- /usr/include/c++/11/bits/locale_classes.tcc \
- /usr/include/c++/11/streambuf /usr/include/c++/11/bits/streambuf.tcc \
- /usr/include/c++/11/bits/basic_ios.h \
- /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
- /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
- /usr/include/c++/11/bits/streambuf_iterator.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
- /usr/include/c++/11/bits/locale_facets.tcc \
- /usr/include/c++/11/bits/basic_ios.tcc /usr/include/c++/11/ostream \
- /usr/include/c++/11/bits/ostream.tcc \
- /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/sstream \
- /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/iomanip \
- /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets_nonio.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h \
- /usr/include/c++/11/bits/quoted_string.h
+ /usr/include/c++/11/bits/fstream.tcc

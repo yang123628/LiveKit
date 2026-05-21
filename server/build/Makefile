@@ -142,6 +142,30 @@ LiveKitServer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/build
 .PHONY : LiveKitServer/fast
 
+src/business/UserService.o: src/business/UserService.cpp.o
+.PHONY : src/business/UserService.o
+
+# target to build an object file
+src/business/UserService.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o
+.PHONY : src/business/UserService.cpp.o
+
+src/business/UserService.i: src/business/UserService.cpp.i
+.PHONY : src/business/UserService.i
+
+# target to preprocess a source file
+src/business/UserService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.i
+.PHONY : src/business/UserService.cpp.i
+
+src/business/UserService.s: src/business/UserService.cpp.s
+.PHONY : src/business/UserService.s
+
+# target to generate assembly for a file
+src/business/UserService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.s
+.PHONY : src/business/UserService.cpp.s
+
 src/core/EpollWrapper.o: src/core/EpollWrapper.cpp.o
 .PHONY : src/core/EpollWrapper.o
 
@@ -261,6 +285,54 @@ src/core/ThreadPool.s: src/core/ThreadPool.cpp.s
 src/core/ThreadPool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/core/ThreadPool.cpp.s
 .PHONY : src/core/ThreadPool.cpp.s
+
+src/database/Database.o: src/database/Database.cpp.o
+.PHONY : src/database/Database.o
+
+# target to build an object file
+src/database/Database.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.o
+.PHONY : src/database/Database.cpp.o
+
+src/database/Database.i: src/database/Database.cpp.i
+.PHONY : src/database/Database.i
+
+# target to preprocess a source file
+src/database/Database.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.i
+.PHONY : src/database/Database.cpp.i
+
+src/database/Database.s: src/database/Database.cpp.s
+.PHONY : src/database/Database.s
+
+# target to generate assembly for a file
+src/database/Database.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.s
+.PHONY : src/database/Database.cpp.s
+
+src/database/UserDao.o: src/database/UserDao.cpp.o
+.PHONY : src/database/UserDao.o
+
+# target to build an object file
+src/database/UserDao.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.o
+.PHONY : src/database/UserDao.cpp.o
+
+src/database/UserDao.i: src/database/UserDao.cpp.i
+.PHONY : src/database/UserDao.i
+
+# target to preprocess a source file
+src/database/UserDao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.i
+.PHONY : src/database/UserDao.cpp.i
+
+src/database/UserDao.s: src/database/UserDao.cpp.s
+.PHONY : src/database/UserDao.s
+
+# target to generate assembly for a file
+src/database/UserDao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/UserDao.cpp.s
+.PHONY : src/database/UserDao.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -454,6 +526,54 @@ src/utils/Config.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/utils/Config.cpp.s
 .PHONY : src/utils/Config.cpp.s
 
+src/utils/Crypto.o: src/utils/Crypto.cpp.o
+.PHONY : src/utils/Crypto.o
+
+# target to build an object file
+src/utils/Crypto.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.o
+.PHONY : src/utils/Crypto.cpp.o
+
+src/utils/Crypto.i: src/utils/Crypto.cpp.i
+.PHONY : src/utils/Crypto.i
+
+# target to preprocess a source file
+src/utils/Crypto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.i
+.PHONY : src/utils/Crypto.cpp.i
+
+src/utils/Crypto.s: src/utils/Crypto.cpp.s
+.PHONY : src/utils/Crypto.s
+
+# target to generate assembly for a file
+src/utils/Crypto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/utils/Crypto.cpp.s
+.PHONY : src/utils/Crypto.cpp.s
+
+src/utils/TokenGenerator.o: src/utils/TokenGenerator.cpp.o
+.PHONY : src/utils/TokenGenerator.o
+
+# target to build an object file
+src/utils/TokenGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.o
+.PHONY : src/utils/TokenGenerator.cpp.o
+
+src/utils/TokenGenerator.i: src/utils/TokenGenerator.cpp.i
+.PHONY : src/utils/TokenGenerator.i
+
+# target to preprocess a source file
+src/utils/TokenGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.i
+.PHONY : src/utils/TokenGenerator.cpp.i
+
+src/utils/TokenGenerator.s: src/utils/TokenGenerator.cpp.s
+.PHONY : src/utils/TokenGenerator.s
+
+# target to generate assembly for a file
+src/utils/TokenGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/utils/TokenGenerator.cpp.s
+.PHONY : src/utils/TokenGenerator.cpp.s
+
 third_party/sqlite3/sqlite3.o: third_party/sqlite3/sqlite3.c.o
 .PHONY : third_party/sqlite3/sqlite3.o
 
@@ -488,6 +608,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... LiveKitServer"
 	@echo "... sqlite3"
+	@echo "... src/business/UserService.o"
+	@echo "... src/business/UserService.i"
+	@echo "... src/business/UserService.s"
 	@echo "... src/core/EpollWrapper.o"
 	@echo "... src/core/EpollWrapper.i"
 	@echo "... src/core/EpollWrapper.s"
@@ -503,6 +626,12 @@ help:
 	@echo "... src/core/ThreadPool.o"
 	@echo "... src/core/ThreadPool.i"
 	@echo "... src/core/ThreadPool.s"
+	@echo "... src/database/Database.o"
+	@echo "... src/database/Database.i"
+	@echo "... src/database/Database.s"
+	@echo "... src/database/UserDao.o"
+	@echo "... src/database/UserDao.i"
+	@echo "... src/database/UserDao.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -527,6 +656,12 @@ help:
 	@echo "... src/utils/Config.o"
 	@echo "... src/utils/Config.i"
 	@echo "... src/utils/Config.s"
+	@echo "... src/utils/Crypto.o"
+	@echo "... src/utils/Crypto.i"
+	@echo "... src/utils/Crypto.s"
+	@echo "... src/utils/TokenGenerator.o"
+	@echo "... src/utils/TokenGenerator.i"
+	@echo "... src/utils/TokenGenerator.s"
 	@echo "... third_party/sqlite3/sqlite3.o"
 	@echo "... third_party/sqlite3/sqlite3.i"
 	@echo "... third_party/sqlite3/sqlite3.s"

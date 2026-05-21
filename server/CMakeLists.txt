@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Threads REQUIRED)
 
 add_library(sqlite3 STATIC third_party/sqlite3/sqlite3.c)
+target_compile_definitions(sqlite3 PRIVATE SQLITE_THREADSAFE=1)
 target_include_directories(sqlite3 PUBLIC third_party/sqlite3)
 
 add_executable(LiveKitServer
@@ -23,6 +24,11 @@ add_executable(LiveKitServer
     src/network/HttpServer.cpp
     src/network/Router.cpp
     src/utils/Config.cpp
+    src/utils/Crypto.cpp
+    src/utils/TokenGenerator.cpp
+    src/database/Database.cpp
+    src/database/UserDao.cpp
+    src/business/UserService.cpp
 )
 
 target_include_directories(LiveKitServer PRIVATE
@@ -34,4 +40,6 @@ target_link_libraries(LiveKitServer PRIVATE
     Threads::Threads
     sqlite3
     dl
+    ssl
+    crypto
 )

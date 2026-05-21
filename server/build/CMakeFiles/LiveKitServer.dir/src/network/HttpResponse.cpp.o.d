@@ -137,4 +137,84 @@ CMakeFiles/LiveKitServer.dir/src/network/HttpResponse.cpp.o: \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h
+ /usr/include/c++/11/bits/erase_if.h \
+ /home/hy/LiveKit/server/third_party/nlohmann/json.hpp \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/c++/11/cstddef \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/std_function.h /usr/include/c++/11/typeinfo \
+ /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/c++/11/bits/streambuf_iterator.h \
+ /usr/include/c++/11/streambuf /usr/include/c++/11/bits/ios_base.h \
+ /usr/include/c++/11/bits/locale_classes.h \
+ /usr/include/c++/11/bits/locale_classes.tcc \
+ /usr/include/c++/11/system_error \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+ /usr/include/c++/11/stdexcept /usr/include/c++/11/exception \
+ /usr/include/c++/11/bits/exception_ptr.h \
+ /usr/include/c++/11/bits/cxxabi_init_exception.h \
+ /usr/include/c++/11/bits/nested_exception.h \
+ /usr/include/c++/11/bits/streambuf.tcc /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/forward_list \
+ /usr/include/c++/11/bits/forward_list.h \
+ /usr/include/c++/11/bits/forward_list.tcc /usr/include/c++/11/map \
+ /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/valarray \
+ /usr/include/c++/11/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/11/bits/valarray_array.h \
+ /usr/include/c++/11/bits/valarray_array.tcc \
+ /usr/include/c++/11/bits/valarray_before.h \
+ /usr/include/c++/11/bits/slice_array.h \
+ /usr/include/c++/11/bits/valarray_after.h \
+ /usr/include/c++/11/bits/gslice.h \
+ /usr/include/c++/11/bits/gslice_array.h \
+ /usr/include/c++/11/bits/mask_array.h \
+ /usr/include/c++/11/bits/indirect_array.h /usr/include/c++/11/version \
+ /usr/include/c++/11/cassert /usr/include/assert.h \
+ /usr/include/c++/11/limits /usr/include/c++/11/cstring \
+ /usr/include/string.h /usr/include/strings.h /usr/include/c++/11/numeric \
+ /usr/include/c++/11/bits/stl_numeric.h /usr/include/c++/11/istream \
+ /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
+ /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+ /usr/include/c++/11/bits/locale_facets.tcc \
+ /usr/include/c++/11/bits/basic_ios.tcc /usr/include/c++/11/ostream \
+ /usr/include/c++/11/bits/ostream.tcc \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h \
+ /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc

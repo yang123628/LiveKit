@@ -215,11 +215,41 @@ CMakeFiles/LiveKitServer.dir/src/main.cpp.o: \
  /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /home/hy/LiveKit/server/src/network/HttpResponse.h \
- /home/hy/LiveKit/server/src/utils/Config.h /usr/include/c++/11/map \
+ /home/hy/LiveKit/server/third_party/nlohmann/json.hpp \
+ /usr/include/c++/11/cstddef /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/c++/11/forward_list /usr/include/c++/11/bits/forward_list.h \
+ /usr/include/c++/11/bits/forward_list.tcc /usr/include/c++/11/map \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
- /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/csignal \
- /usr/include/signal.h \
+ /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/valarray \
+ /usr/include/c++/11/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/11/bits/valarray_array.h \
+ /usr/include/c++/11/bits/valarray_array.tcc \
+ /usr/include/c++/11/bits/valarray_before.h \
+ /usr/include/c++/11/bits/slice_array.h \
+ /usr/include/c++/11/bits/valarray_after.h \
+ /usr/include/c++/11/bits/gslice.h \
+ /usr/include/c++/11/bits/gslice_array.h \
+ /usr/include/c++/11/bits/mask_array.h \
+ /usr/include/c++/11/bits/indirect_array.h /usr/include/c++/11/version \
+ /usr/include/c++/11/cassert /usr/include/assert.h \
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
+ /home/hy/LiveKit/server/src/network/HttpResponse.h \
+ /home/hy/LiveKit/server/src/utils/Config.h \
+ /home/hy/LiveKit/server/src/database/Database.h \
+ /home/hy/LiveKit/server/third_party/sqlite3/sqlite3.h \
+ /home/hy/LiveKit/server/src/business/UserService.h \
+ /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
