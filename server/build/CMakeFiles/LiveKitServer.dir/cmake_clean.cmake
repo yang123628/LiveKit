@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o"
+  "CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o"
   "CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o.d"
   "CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o"

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/hy/LiveKit/server/src/business/RoomManager.cpp" "CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o.d"
   "/home/hy/LiveKit/server/src/business/RoomService.cpp" "CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/business/RoomService.cpp.o.d"
   "/home/hy/LiveKit/server/src/business/UserService.cpp" "CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/business/UserService.cpp.o.d"
   "/home/hy/LiveKit/server/src/core/EpollWrapper.cpp" "CMakeFiles/LiveKitServer.dir/src/core/EpollWrapper.cpp.o" "gcc" "CMakeFiles/LiveKitServer.dir/src/core/EpollWrapper.cpp.o.d"

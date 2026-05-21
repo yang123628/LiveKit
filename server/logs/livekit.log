@@ -99,3 +99,72 @@
 [2026-05-21 13:14:24.518] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:45352 fd=9
 [2026-05-21 13:14:24.519] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:45352
 [2026-05-21 13:14:24.519] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 13:49:43.011] [INFO] [/home/hy/LiveKit/server/src/main.cpp:171] LiveKit Server starting...
+[2026-05-21 13:49:43.011] [INFO] [/home/hy/LiveKit/server/src/main.cpp:172] port=9094 thread_count=4
+[2026-05-21 13:49:43.014] [INFO] [/home/hy/LiveKit/server/src/database/Database.cpp:31] database opened: ./data/livekit.db
+[2026-05-21 13:49:43.014] [INFO] [/home/hy/LiveKit/server/src/database/Database.cpp:66] executing SQL file: scripts/init_db.sql size=2730
+[2026-05-21 13:49:43.035] [INFO] [/home/hy/LiveKit/server/src/database/Database.cpp:69] SQL file executed successfully: scripts/init_db.sql
+[2026-05-21 13:49:43.036] [INFO] [/home/hy/LiveKit/server/src/core/ThreadPool.cpp:18] ThreadPool started with 4 threads
+[2026-05-21 13:49:43.036] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:59] EventLoop started on port 9094
+[2026-05-21 13:49:58.316] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:42] new http connection: 127.0.0.1:44242
+[2026-05-21 13:49:58.316] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:44242 fd=9
+[2026-05-21 13:49:58.318] [INFO] [/home/hy/LiveKit/server/src/database/UserDao.cpp:19] user created: id=1 username=anchor1
+[2026-05-21 13:49:58.319] [INFO] [/home/hy/LiveKit/server/src/utils/TokenGenerator.cpp:34] token stored for user_id=1
+[2026-05-21 13:49:58.320] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:44242
+[2026-05-21 13:49:58.320] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 13:49:58.326] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:42] new http connection: 127.0.0.1:44246
+[2026-05-21 13:49:58.326] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:44246 fd=9
+[2026-05-21 13:49:58.329] [INFO] [/home/hy/LiveKit/server/src/database/UserDao.cpp:19] user created: id=2 username=viewer1
+[2026-05-21 13:49:58.331] [INFO] [/home/hy/LiveKit/server/src/utils/TokenGenerator.cpp:34] token stored for user_id=2
+[2026-05-21 13:49:58.331] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:44246
+[2026-05-21 13:49:58.331] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 13:49:58.338] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:42] new http connection: 127.0.0.1:44258
+[2026-05-21 13:49:58.338] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:44258 fd=9
+[2026-05-21 13:49:58.339] [INFO] [/home/hy/LiveKit/server/src/database/UserDao.cpp:19] user created: id=3 username=viewer2
+[2026-05-21 13:49:58.340] [INFO] [/home/hy/LiveKit/server/src/utils/TokenGenerator.cpp:34] token stored for user_id=3
+[2026-05-21 13:49:58.340] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:44258
+[2026-05-21 13:49:58.340] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 13:50:14.730] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:42] new http connection: 127.0.0.1:56392
+[2026-05-21 13:50:14.730] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:56392 fd=9
+[2026-05-21 13:50:14.732] [INFO] [/home/hy/LiveKit/server/src/database/RoomDao.cpp:22] room created: id=1 anchor_id=1
+[2026-05-21 13:50:14.733] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:56392
+[2026-05-21 13:50:14.733] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 13:50:14.798] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:42] new http connection: 127.0.0.1:56408
+[2026-05-21 13:50:14.798] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:56408 fd=9
+[2026-05-21 13:50:14.799] [INFO] [/home/hy/LiveKit/server/src/business/RoomManager.cpp:20] user viewer1 joined room 1, viewers=1
+[2026-05-21 13:50:14.801] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:56408
+[2026-05-21 13:50:14.801] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 13:50:14.838] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:42] new http connection: 127.0.0.1:56412
+[2026-05-21 13:50:14.838] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:56412 fd=9
+[2026-05-21 13:50:14.839] [INFO] [/home/hy/LiveKit/server/src/business/RoomManager.cpp:20] user viewer2 joined room 1, viewers=2
+[2026-05-21 13:50:14.841] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:56412
+[2026-05-21 13:50:14.841] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 13:50:14.876] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:42] new http connection: 127.0.0.1:56418
+[2026-05-21 13:50:14.876] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:56418 fd=9
+[2026-05-21 13:50:14.878] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:56418
+[2026-05-21 13:50:14.878] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 13:50:33.108] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:42] new http connection: 127.0.0.1:44746
+[2026-05-21 13:50:33.108] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:44746 fd=9
+[2026-05-21 13:50:33.108] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:44746
+[2026-05-21 13:50:33.109] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 13:50:33.133] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:42] new http connection: 127.0.0.1:44758
+[2026-05-21 13:50:33.133] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:44758 fd=9
+[2026-05-21 13:50:33.134] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:44758
+[2026-05-21 13:50:33.134] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 13:50:33.162] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:42] new http connection: 127.0.0.1:44762
+[2026-05-21 13:50:33.162] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:44762 fd=9
+[2026-05-21 13:50:33.162] [INFO] [/home/hy/LiveKit/server/src/business/RoomManager.cpp:33] user viewer1 left room 1, viewers=1
+[2026-05-21 13:50:33.164] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:44762
+[2026-05-21 13:50:33.164] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 13:50:33.191] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:42] new http connection: 127.0.0.1:44764
+[2026-05-21 13:50:33.191] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:44764 fd=9
+[2026-05-21 13:50:33.192] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:44764
+[2026-05-21 13:50:33.192] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 13:50:33.219] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:42] new http connection: 127.0.0.1:44774
+[2026-05-21 13:50:33.219] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:44774 fd=9
+[2026-05-21 13:50:33.220] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:44774
+[2026-05-21 13:50:33.220] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 13:50:33.248] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:42] new http connection: 127.0.0.1:44778
+[2026-05-21 13:50:33.248] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:44778 fd=9
+[2026-05-21 13:50:33.248] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:44778
+[2026-05-21 13:50:33.249] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9

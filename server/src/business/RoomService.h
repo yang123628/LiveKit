@@ -10,4 +10,6 @@ public:
     static nlohmann::json getRoomList(const std::string& category);
     static nlohmann::json getRoomInfo(int roomId);
     static nlohmann::json endRoom(const std::string& token, int roomId);
+    static nlohmann::json joinRoom(const std::string& token, int roomId);
+    static nlohmann::json leaveRoom(const std::string& token, int roomId);
 };

@@ -121,6 +121,30 @@ void registerRoutes(HttpServer& server) {
         nlohmann::json data = result.value("data", nlohmann::json::object());
         resp.setJson(code, msg, data);
     });
+
+    server.router().post("/api/live/join", [](HttpRequest& req, HttpResponse& resp) {
+        auto json = req.getJson();
+        std::string token = json.value("token", "");
+        int roomId = json.value("room_id", 0);
+
+        nlohmann::json result = RoomService::joinRoom(token, roomId);
+        int code = result.value("code", -1);
+        std::string msg = result.value("msg", "");
+        nlohmann::json data = result.value("data", nlohmann::json::object());
+        resp.setJson(code, msg, data);
+    });
+
+    server.router().post("/api/live/leave", [](HttpRequest& req, HttpResponse& resp) {
+        auto json = req.getJson();
+        std::string token = json.value("token", "");
+        int roomId = json.value("room_id", 0);
+
+        nlohmann::json result = RoomService::leaveRoom(token, roomId);
+        int code = result.value("code", -1);
+        std::string msg = result.value("msg", "");
+        nlohmann::json data = result.value("data", nlohmann::json::object());
+        resp.setJson(code, msg, data);
+    });
 }
 
 int main(int argc, char* argv[]) {

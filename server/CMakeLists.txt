@@ -31,6 +31,7 @@ add_executable(LiveKitServer
     src/database/RoomDao.cpp
     src/business/UserService.cpp
     src/business/RoomService.cpp
+    src/business/RoomManager.cpp
 )
 
 target_include_directories(LiveKitServer PRIVATE

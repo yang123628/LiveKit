@@ -1,4 +1,5 @@
 #include "business/RoomService.h"
+#include "business/RoomManager.h"
 #include "database/RoomDao.h"
 #include "database/UserDao.h"
 #include "business/UserService.h"
@@ -21,6 +22,11 @@ static std::string generateStreamKey() {
         key += chars[buf[i] % chars.size()];
     }
     return key;
+}
+
+static std::string getRtmpBaseUrl() {
+    std::string serverIp = Config::instance().get("nginx", "server_ip", "127.0.0.1");
+    return "rtmp://" + serverIp + "/live/";
 }
 
 nlohmann::json RoomService::createRoom(const std::string& token, const std::string& title,
@@ -59,9 +65,7 @@ nlohmann::json RoomService::createRoom(const std::string& token, const std::stri
         return result;
     }
 
-    std::string rtmpHost = Config::instance().get("nginx", "rtmp_host", "127.0.0.1");
-    int rtmpPort = Config::instance().getInt("nginx", "rtmp_port", 1935);
-    std::string pushUrl = "rtmp://" + rtmpHost + "/live/" + streamKey;
+    std::string pushUrl = getRtmpBaseUrl() + streamKey;
 
     nlohmann::json data;
     data["room_id"] = roomId;
@@ -94,7 +98,7 @@ nlohmann::json RoomService::getRoomList(const std::string& category) {
         item["title"] = room.title;
         item["anchor_name"] = anchor.username;
         item["anchor_avatar_id"] = anchor.avatar_id;
-        item["viewer_count"] = room.viewer_count;
+        item["viewer_count"] = RoomManager::instance().getViewerCount(room.id);
         item["category"] = room.category;
         item["mode"] = room.mode;
         item["status"] = room.status;
@@ -133,12 +137,22 @@ nlohmann::json RoomService::getRoomInfo(int roomId) {
     roomJson["title"] = room.title;
     roomJson["anchor_name"] = anchor.username;
     roomJson["anchor_avatar_id"] = anchor.avatar_id;
-    roomJson["viewer_count"] = room.viewer_count;
+    roomJson["viewer_count"] = RoomManager::instance().getViewerCount(room.id);
     roomJson["category"] = room.category;
     roomJson["mode"] = room.mode;
     roomJson["status"] = room.status;
+    roomJson["stream_key"] = room.stream_key;
+    roomJson["play_url"] = getRtmpBaseUrl() + room.stream_key;
 
     nlohmann::json viewerList = nlohmann::json::array();
+    auto viewers = RoomManager::instance().getViewerList(room.id);
+    for (const auto& v : viewers) {
+        nlohmann::json viewer;
+        viewer["id"] = v.user_id;
+        viewer["username"] = v.username;
+        viewer["avatar_id"] = v.avatar_id;
+        viewerList.push_back(viewer);
+    }
 
     nlohmann::json data;
     data["room_info"] = roomJson;
@@ -185,7 +199,88 @@ nlohmann::json RoomService::endRoom(const std::string& token, int roomId) {
         return result;
     }
 
+    RoomManager::instance().clearRoom(roomId);
+
     result["code"] = 0;
     result["msg"] = "直播已结束";
+    return result;
+}
+
+nlohmann::json RoomService::joinRoom(const std::string& token, int roomId) {
+    nlohmann::json result;
+
+    int userId = 0;
+    if (!UserService::verifyToken(token, userId)) {
+        result["code"] = 2001;
+        result["msg"] = "无效的token";
+        return result;
+    }
+
+    RoomInfo room;
+    if (!RoomDao::findRoomById(roomId, room)) {
+        result["code"] = 2005;
+        result["msg"] = "直播间不存在";
+        return result;
+    }
+
+    if (room.status != "live") {
+        result["code"] = 2007;
+        result["msg"] = "直播已结束";
+        return result;
+    }
+
+    UserInfo user;
+    if (!UserDao::findUserById(userId, user)) {
+        result["code"] = 2009;
+        result["msg"] = "用户不存在";
+        return result;
+    }
+
+    if (!RoomManager::instance().joinRoom(roomId, userId, user.username, user.avatar_id)) {
+        result["code"] = 2010;
+        result["msg"] = "已在直播间中";
+        return result;
+    }
+
+    int viewerCount = RoomManager::instance().getViewerCount(roomId);
+    RoomDao::updateViewerCount(roomId, viewerCount);
+
+    nlohmann::json data;
+    data["room_id"] = roomId;
+    data["viewer_count"] = viewerCount;
+    data["play_url"] = getRtmpBaseUrl() + room.stream_key;
+
+    result["code"] = 0;
+    result["msg"] = "加入成功";
+    result["data"] = data;
+    return result;
+}
+
+nlohmann::json RoomService::leaveRoom(const std::string& token, int roomId) {
+    nlohmann::json result;
+
+    int userId = 0;
+    if (!UserService::verifyToken(token, userId)) {
+        result["code"] = 2001;
+        result["msg"] = "无效的token";
+        return result;
+    }
+
+    if (!RoomManager::instance().leaveRoom(roomId, userId)) {
+        result["code"] = 2011;
+        result["msg"] = "不在该直播间中";
+        return result;
+    }
+
+    int viewerCount = RoomManager::instance().getViewerCount(roomId);
+    RoomDao::updateViewerCount(roomId, viewerCount);
+
+    nlohmann::json data;
+    data["room_id"] = roomId;
+    data["viewer_count"] = viewerCount;
+
+    result["code"] = 0;
+    result["msg"] = "离开成功";
+    result["data"] = data;
     return result;
 }

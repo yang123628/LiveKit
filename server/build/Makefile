@@ -142,6 +142,30 @@ LiveKitServer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/build
 .PHONY : LiveKitServer/fast
 
+src/business/RoomManager.o: src/business/RoomManager.cpp.o
+.PHONY : src/business/RoomManager.o
+
+# target to build an object file
+src/business/RoomManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.o
+.PHONY : src/business/RoomManager.cpp.o
+
+src/business/RoomManager.i: src/business/RoomManager.cpp.i
+.PHONY : src/business/RoomManager.i
+
+# target to preprocess a source file
+src/business/RoomManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.i
+.PHONY : src/business/RoomManager.cpp.i
+
+src/business/RoomManager.s: src/business/RoomManager.cpp.s
+.PHONY : src/business/RoomManager.s
+
+# target to generate assembly for a file
+src/business/RoomManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/RoomManager.cpp.s
+.PHONY : src/business/RoomManager.cpp.s
+
 src/business/RoomService.o: src/business/RoomService.cpp.o
 .PHONY : src/business/RoomService.o
 
@@ -656,6 +680,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... LiveKitServer"
 	@echo "... sqlite3"
+	@echo "... src/business/RoomManager.o"
+	@echo "... src/business/RoomManager.i"
+	@echo "... src/business/RoomManager.s"
 	@echo "... src/business/RoomService.o"
 	@echo "... src/business/RoomService.i"
 	@echo "... src/business/RoomService.s"
