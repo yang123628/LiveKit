@@ -567,3 +567,86 @@ QLabel#danmakuTitle {
 #anchorDanmaku {
     background: transparent;
 }
+
+#giftPanelContent {
+    background-color: #16213e;
+    border-radius: 12px;
+    border: 1px solid #0f3460;
+}
+
+QPushButton#giftButton {
+    background-color: #0f3460;
+    border: 2px solid #1a4a8a;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+QPushButton#giftButton:hover {
+    background-color: #1a4a8a;
+    border: 2px solid #e94560;
+}
+
+QPushButton#giftButton:pressed {
+    background-color: #0a2540;
+}
+
+QLabel#giftNameLabel {
+    color: #c0c0c0;
+    font-size: 11px;
+    background: transparent;
+}
+
+QPushButton#giftOpenButton {
+    background-color: #0f3460;
+    color: #ffffff;
+    border: none;
+    border-radius: 16px;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
+QPushButton#giftOpenButton:hover {
+    background-color: #1a4a8a;
+}
+
+QPushButton#giftOpenButton:pressed {
+    background-color: #0a2540;
+}
+
+QPushButton#likeButton {
+    background-color: rgba(233, 69, 96, 40);
+    color: #e94560;
+    border: 2px solid #e94560;
+    border-radius: 22px;
+    font-size: 22px;
+    padding: 0px;
+}
+
+QPushButton#likeButton:hover {
+    background-color: rgba(233, 69, 96, 80);
+}
+
+QPushButton#likeButton:pressed {
+    background-color: rgba(233, 69, 96, 120);
+}
+
+QLabel#likeCountLabel {
+    color: #e94560;
+    font-size: 13px;
+    font-weight: bold;
+    background: transparent;
+}
+
+QLabel#giftAnimText {
+    color: #e0e0e0;
+    font-size: 13px;
+    background: transparent;
+}
+
+#rightOverlay {
+    background: transparent;
+}
+
+#floatingHearts {
+    background: transparent;
+}

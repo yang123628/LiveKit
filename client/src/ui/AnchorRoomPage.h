@@ -17,6 +17,8 @@ class PicInPic;
 class PicInPicWidget;
 class DanmakuWidget;
 class WebSocketClient;
+class GiftAnimation;
+class FloatingHeartsWidget;
 
 class AnchorRoomPage : public QWidget {
     Q_OBJECT
@@ -41,7 +43,10 @@ private:
     OpenGLWidget* m_preview;
     DanmakuWidget* m_danmakuWidget;
     QLabel* m_viewerCountLabel;
+    QLabel* m_likeCountLabel;
     QPushButton* m_stopButton;
+    GiftAnimation* m_giftAnimation;
+    FloatingHeartsWidget* m_floatingHearts;
 
     VideoPusher* m_pusher;
     CameraCapture* m_cameraCapture;
@@ -54,6 +59,7 @@ private:
     int m_liveMode;
     bool m_isLiving;
     int m_viewerCount;
+    int m_likeCount;
     int m_roomId;
     QTimer* m_viewerTimer;
     QImage m_cameraPipFrame;

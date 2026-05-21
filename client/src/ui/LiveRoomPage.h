@@ -12,6 +12,10 @@ class OpenGLWidget;
 class VideoPlayer;
 class DanmakuWidget;
 class WebSocketClient;
+class GiftPanel;
+class GiftAnimation;
+class LikeButton;
+class FloatingHeartsWidget;
 
 class LiveRoomPage : public QWidget {
     Q_OBJECT
@@ -39,12 +43,20 @@ private:
     QPushButton* m_sendButton;
     QPushButton* m_backButton;
     QPushButton* m_fullscreenButton;
+    QPushButton* m_giftButton;
+    GiftPanel* m_giftPanel;
+    GiftAnimation* m_giftAnimation;
+    LikeButton* m_likeButton;
+    FloatingHeartsWidget* m_floatingHearts;
+    QLabel* m_likeCountLabel;
     QSlider* m_volumeSlider;
     QLabel* m_volumeLabel;
     QWidget* m_controlBar;
     QWidget* m_danmakuInputBar;
+    QWidget* m_videoContainer;
 
     QString m_playUrl;
     int m_roomId;
+    int m_likeCount;
     bool m_isFullscreen;
 };

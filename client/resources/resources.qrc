@@ -10,5 +10,11 @@
         <file alias="avatars/avatar_6.svg">avatars/avatar_6.svg</file>
         <file alias="avatars/avatar_7.svg">avatars/avatar_7.svg</file>
         <file alias="avatars/avatar_8.svg">avatars/avatar_8.svg</file>
+        <file alias="gifts/gift_1.svg">gifts/gift_1.svg</file>
+        <file alias="gifts/gift_2.svg">gifts/gift_2.svg</file>
+        <file alias="gifts/gift_3.svg">gifts/gift_3.svg</file>
+        <file alias="gifts/gift_4.svg">gifts/gift_4.svg</file>
+        <file alias="gifts/gift_5.svg">gifts/gift_5.svg</file>
+        <file alias="gifts/gift_6.svg">gifts/gift_6.svg</file>
     </qresource>
 </RCC>

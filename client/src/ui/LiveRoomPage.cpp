@@ -1,6 +1,10 @@
 #include "ui/LiveRoomPage.h"
 #include "ui/OpenGLWidget.h"
 #include "ui/DanmakuWidget.h"
+#include "ui/GiftPanel.h"
+#include "ui/GiftAnimation.h"
+#include "ui/LikeButton.h"
+#include "ui/FloatingHeartsWidget.h"
 #include "core/VideoPlayer.h"
 #include "network/WebSocketClient.h"
 #include "app/Application.h"
@@ -10,7 +14,9 @@ LiveRoomPage::LiveRoomPage(QWidget* parent)
     : QWidget(parent)
     , m_player(nullptr)
     , m_webSocket(nullptr)
+    , m_giftPanel(nullptr)
     , m_roomId(0)
+    , m_likeCount(0)
     , m_isFullscreen(false)
 {
     setupUI();
@@ -29,9 +35,9 @@ void LiveRoomPage::setupUI() {
     contentLayout->setContentsMargins(0, 0, 0, 0);
     contentLayout->setSpacing(0);
 
-    auto* videoContainer = new QWidget(this);
-    videoContainer->setObjectName("videoContainer");
-    auto* videoLayout = new QVBoxLayout(videoContainer);
+    m_videoContainer = new QWidget(this);
+    m_videoContainer->setObjectName("videoContainer");
+    auto* videoLayout = new QVBoxLayout(m_videoContainer);
     videoLayout->setContentsMargins(0, 0, 0, 0);
     videoLayout->setSpacing(0);
 
@@ -44,9 +50,41 @@ void LiveRoomPage::setupUI() {
     m_danmakuWidget->setFixedHeight(200);
     videoLayout->addWidget(m_danmakuWidget);
 
-    contentLayout->addWidget(videoContainer, 1);
+    contentLayout->addWidget(m_videoContainer, 1);
+
+    auto* rightOverlay = new QWidget(this);
+    rightOverlay->setObjectName("rightOverlay");
+    rightOverlay->setFixedWidth(60);
+    rightOverlay->setAttribute(Qt::WA_TranslucentBackground);
+    auto* rightLayout = new QVBoxLayout(rightOverlay);
+    rightLayout->setContentsMargins(4, 10, 4, 10);
+    rightLayout->setSpacing(8);
+
+    m_likeButton = new LikeButton(this);
+    rightLayout->addWidget(m_likeButton, 0, Qt::AlignHCenter);
+
+    m_likeCountLabel = new QLabel(QStringLiteral("0"), this);
+    m_likeCountLabel->setObjectName("likeCountLabel");
+    m_likeCountLabel->setAlignment(Qt::AlignCenter);
+    m_likeCountLabel->setFixedHeight(20);
+    rightLayout->addWidget(m_likeCountLabel, 0, Qt::AlignHCenter);
+
+    rightLayout->addStretch();
+
+    m_floatingHearts = new FloatingHeartsWidget(this);
+    m_floatingHearts->setObjectName("floatingHearts");
+    m_floatingHearts->setFixedWidth(80);
+    m_floatingHearts->setMinimumHeight(200);
+    rightLayout->addWidget(m_floatingHearts, 1);
+
+    contentLayout->addWidget(rightOverlay);
 
     mainLayout->addLayout(contentLayout, 1);
+
+    m_giftAnimation = new GiftAnimation(m_videoContainer);
+    m_giftAnimation->setObjectName("giftAnimation");
+    m_giftAnimation->move(10, 10);
+    m_giftAnimation->raise();
 
     m_danmakuInputBar = new QWidget(this);
     m_danmakuInputBar->setObjectName("danmakuInputBar");
@@ -65,6 +103,12 @@ void LiveRoomPage::setupUI() {
     m_sendButton->setObjectName("danmakuSendButton");
     m_sendButton->setFixedSize(60, 32);
     inputLayout->addWidget(m_sendButton);
+
+    m_giftButton = new QPushButton(QStringLiteral("🎁"), this);
+    m_giftButton->setObjectName("giftOpenButton");
+    m_giftButton->setFixedSize(44, 32);
+    m_giftButton->setToolTip(QStringLiteral("送礼物"));
+    inputLayout->addWidget(m_giftButton);
 
     mainLayout->addWidget(m_danmakuInputBar);
 
@@ -98,6 +142,8 @@ void LiveRoomPage::setupUI() {
     controlLayout->addWidget(m_fullscreenButton);
 
     mainLayout->addWidget(m_controlBar);
+
+    m_giftPanel = new GiftPanel(this);
 
     connect(m_backButton, &QPushButton::clicked, [this]() {
         leaveRoom();
@@ -136,11 +182,40 @@ void LiveRoomPage::setupUI() {
 
     connect(m_sendButton, &QPushButton::clicked, sendDanmaku);
     connect(m_danmakuInput, &QLineEdit::returnPressed, sendDanmaku);
+
+    connect(m_giftButton, &QPushButton::clicked, [this]() {
+        if (m_giftPanel->isPanelVisible()) {
+            m_giftPanel->hidePanel();
+        } else {
+            QPoint pos = m_giftButton->mapToGlobal(QPoint(0, -m_giftPanel->height()));
+            m_giftPanel->move(pos);
+            m_giftPanel->showPanel();
+        }
+    });
+
+    connect(m_giftPanel, &GiftPanel::SIG_giftSelected, this, [this](int giftId) {
+        if (m_webSocket && m_webSocket->isConnected()) {
+            m_webSocket->sendGift(giftId);
+        }
+        m_giftAnimation->showGift(
+            Application::instance().currentUser().username(), giftId);
+    });
+
+    connect(m_likeButton, &LikeButton::clicked, this, [this]() {
+        if (m_webSocket && m_webSocket->isConnected()) {
+            m_webSocket->sendLike();
+        }
+        m_likeCount++;
+        m_likeCountLabel->setText(QString::number(m_likeCount));
+        m_floatingHearts->addHeart();
+    });
 }
 
 void LiveRoomPage::enterRoom(const QString& playUrl, int roomId) {
     m_playUrl = playUrl;
     m_roomId = roomId;
+    m_likeCount = 0;
+    m_likeCountLabel->setText(QStringLiteral("0"));
 
     if (m_player) {
         m_player->stop();
@@ -171,6 +246,7 @@ void LiveRoomPage::leaveRoom() {
     m_danmakuWidget->clearDanmaku();
     m_playUrl.clear();
     m_roomId = 0;
+    m_likeCount = 0;
 }
 
 void LiveRoomPage::connectWebSocket() {
@@ -185,17 +261,17 @@ void LiveRoomPage::connectWebSocket() {
 
     connect(m_webSocket, &WebSocketClient::giftReceived,
         this, [this](const QString& username, int giftId, const QString& giftName) {
-            Q_UNUSED(giftId)
             m_danmakuWidget->addDanmaku(
                 QStringLiteral("系统"),
                 QStringLiteral("%1 送出了 %2").arg(username).arg(giftName));
+            m_giftAnimation->showGift(username, giftId);
         });
 
     connect(m_webSocket, &WebSocketClient::likeReceived,
         this, [this](int count) {
-            m_danmakuWidget->addDanmaku(
-                QStringLiteral("系统"),
-                QStringLiteral("点赞数: %1").arg(count));
+            m_likeCount = count;
+            m_likeCountLabel->setText(QString::number(count));
+            m_floatingHearts->addHeart();
         });
 
     connect(m_webSocket, &WebSocketClient::viewerCountChanged,

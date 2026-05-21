@@ -261,6 +261,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/model/GiftInfo.obj: src/model/GiftInfo.cpp.obj
+.PHONY : src/model/GiftInfo.obj
+
+# target to build an object file
+src/model/GiftInfo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/model/GiftInfo.cpp.obj
+.PHONY : src/model/GiftInfo.cpp.obj
+
+src/model/GiftInfo.i: src/model/GiftInfo.cpp.i
+.PHONY : src/model/GiftInfo.i
+
+# target to preprocess a source file
+src/model/GiftInfo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/model/GiftInfo.cpp.i
+.PHONY : src/model/GiftInfo.cpp.i
+
+src/model/GiftInfo.s: src/model/GiftInfo.cpp.s
+.PHONY : src/model/GiftInfo.s
+
+# target to generate assembly for a file
+src/model/GiftInfo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/model/GiftInfo.cpp.s
+.PHONY : src/model/GiftInfo.cpp.s
+
 src/model/RoomInfo.obj: src/model/RoomInfo.cpp.obj
 .PHONY : src/model/RoomInfo.obj
 
@@ -476,6 +500,102 @@ src/ui/DanmakuWidget.s: src/ui/DanmakuWidget.cpp.s
 src/ui/DanmakuWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/DanmakuWidget.cpp.s
 .PHONY : src/ui/DanmakuWidget.cpp.s
+
+src/ui/FloatingHeartsWidget.obj: src/ui/FloatingHeartsWidget.cpp.obj
+.PHONY : src/ui/FloatingHeartsWidget.obj
+
+# target to build an object file
+src/ui/FloatingHeartsWidget.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/FloatingHeartsWidget.cpp.obj
+.PHONY : src/ui/FloatingHeartsWidget.cpp.obj
+
+src/ui/FloatingHeartsWidget.i: src/ui/FloatingHeartsWidget.cpp.i
+.PHONY : src/ui/FloatingHeartsWidget.i
+
+# target to preprocess a source file
+src/ui/FloatingHeartsWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/FloatingHeartsWidget.cpp.i
+.PHONY : src/ui/FloatingHeartsWidget.cpp.i
+
+src/ui/FloatingHeartsWidget.s: src/ui/FloatingHeartsWidget.cpp.s
+.PHONY : src/ui/FloatingHeartsWidget.s
+
+# target to generate assembly for a file
+src/ui/FloatingHeartsWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/FloatingHeartsWidget.cpp.s
+.PHONY : src/ui/FloatingHeartsWidget.cpp.s
+
+src/ui/GiftAnimation.obj: src/ui/GiftAnimation.cpp.obj
+.PHONY : src/ui/GiftAnimation.obj
+
+# target to build an object file
+src/ui/GiftAnimation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/GiftAnimation.cpp.obj
+.PHONY : src/ui/GiftAnimation.cpp.obj
+
+src/ui/GiftAnimation.i: src/ui/GiftAnimation.cpp.i
+.PHONY : src/ui/GiftAnimation.i
+
+# target to preprocess a source file
+src/ui/GiftAnimation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/GiftAnimation.cpp.i
+.PHONY : src/ui/GiftAnimation.cpp.i
+
+src/ui/GiftAnimation.s: src/ui/GiftAnimation.cpp.s
+.PHONY : src/ui/GiftAnimation.s
+
+# target to generate assembly for a file
+src/ui/GiftAnimation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/GiftAnimation.cpp.s
+.PHONY : src/ui/GiftAnimation.cpp.s
+
+src/ui/GiftPanel.obj: src/ui/GiftPanel.cpp.obj
+.PHONY : src/ui/GiftPanel.obj
+
+# target to build an object file
+src/ui/GiftPanel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/GiftPanel.cpp.obj
+.PHONY : src/ui/GiftPanel.cpp.obj
+
+src/ui/GiftPanel.i: src/ui/GiftPanel.cpp.i
+.PHONY : src/ui/GiftPanel.i
+
+# target to preprocess a source file
+src/ui/GiftPanel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/GiftPanel.cpp.i
+.PHONY : src/ui/GiftPanel.cpp.i
+
+src/ui/GiftPanel.s: src/ui/GiftPanel.cpp.s
+.PHONY : src/ui/GiftPanel.s
+
+# target to generate assembly for a file
+src/ui/GiftPanel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/GiftPanel.cpp.s
+.PHONY : src/ui/GiftPanel.cpp.s
+
+src/ui/LikeButton.obj: src/ui/LikeButton.cpp.obj
+.PHONY : src/ui/LikeButton.obj
+
+# target to build an object file
+src/ui/LikeButton.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/LikeButton.cpp.obj
+.PHONY : src/ui/LikeButton.cpp.obj
+
+src/ui/LikeButton.i: src/ui/LikeButton.cpp.i
+.PHONY : src/ui/LikeButton.i
+
+# target to preprocess a source file
+src/ui/LikeButton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/LikeButton.cpp.i
+.PHONY : src/ui/LikeButton.cpp.i
+
+src/ui/LikeButton.s: src/ui/LikeButton.cpp.s
+.PHONY : src/ui/LikeButton.s
+
+# target to generate assembly for a file
+src/ui/LikeButton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/LikeButton.cpp.s
+.PHONY : src/ui/LikeButton.cpp.s
 
 src/ui/LiveHallPage.obj: src/ui/LiveHallPage.cpp.obj
 .PHONY : src/ui/LiveHallPage.obj
@@ -694,6 +814,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/model/GiftInfo.obj
+	@echo ... src/model/GiftInfo.i
+	@echo ... src/model/GiftInfo.s
 	@echo ... src/model/RoomInfo.obj
 	@echo ... src/model/RoomInfo.i
 	@echo ... src/model/RoomInfo.s
@@ -721,6 +844,18 @@ help:
 	@echo ... src/ui/DanmakuWidget.obj
 	@echo ... src/ui/DanmakuWidget.i
 	@echo ... src/ui/DanmakuWidget.s
+	@echo ... src/ui/FloatingHeartsWidget.obj
+	@echo ... src/ui/FloatingHeartsWidget.i
+	@echo ... src/ui/FloatingHeartsWidget.s
+	@echo ... src/ui/GiftAnimation.obj
+	@echo ... src/ui/GiftAnimation.i
+	@echo ... src/ui/GiftAnimation.s
+	@echo ... src/ui/GiftPanel.obj
+	@echo ... src/ui/GiftPanel.i
+	@echo ... src/ui/GiftPanel.s
+	@echo ... src/ui/LikeButton.obj
+	@echo ... src/ui/LikeButton.i
+	@echo ... src/ui/LikeButton.s
 	@echo ... src/ui/LiveHallPage.obj
 	@echo ... src/ui/LiveHallPage.i
 	@echo ... src/ui/LiveHallPage.s

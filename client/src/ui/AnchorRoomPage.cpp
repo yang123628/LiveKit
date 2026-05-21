@@ -1,6 +1,8 @@
 #include "ui/AnchorRoomPage.h"
 #include "ui/OpenGLWidget.h"
 #include "ui/DanmakuWidget.h"
+#include "ui/GiftAnimation.h"
+#include "ui/FloatingHeartsWidget.h"
 #include "core/VideoPusher.h"
 #include "core/CameraCapture.h"
 #include "core/DesktopCapture.h"
@@ -23,6 +25,7 @@ AnchorRoomPage::AnchorRoomPage(QWidget* parent)
     , m_liveMode(0)
     , m_isLiving(false)
     , m_viewerCount(0)
+    , m_likeCount(0)
     , m_roomId(0)
 {
     setupUI();
@@ -52,6 +55,11 @@ void AnchorRoomPage::setupUI() {
     m_preview->setObjectName("anchorPreview");
     leftLayout->addWidget(m_preview, 1);
 
+    m_giftAnimation = new GiftAnimation(m_preview);
+    m_giftAnimation->setObjectName("giftAnimation");
+    m_giftAnimation->move(10, 10);
+    m_giftAnimation->raise();
+
     auto* controlBar = new QWidget(this);
     controlBar->setObjectName("anchorControlBar");
     controlBar->setFixedHeight(60);
@@ -61,6 +69,10 @@ void AnchorRoomPage::setupUI() {
     m_viewerCountLabel = new QLabel(QStringLiteral("在线: 0"), this);
     m_viewerCountLabel->setObjectName("viewerCountLabel");
     controlLayout->addWidget(m_viewerCountLabel);
+
+    m_likeCountLabel = new QLabel(QStringLiteral("♥ 0"), this);
+    m_likeCountLabel->setObjectName("likeCountLabel");
+    controlLayout->addWidget(m_likeCountLabel);
 
     controlLayout->addStretch();
 
@@ -89,6 +101,11 @@ void AnchorRoomPage::setupUI() {
     m_danmakuWidget = new DanmakuWidget(rightPanel);
     m_danmakuWidget->setObjectName("anchorDanmaku");
     rightLayout->addWidget(m_danmakuWidget, 1);
+
+    m_floatingHearts = new FloatingHeartsWidget(rightPanel);
+    m_floatingHearts->setObjectName("floatingHearts");
+    m_floatingHearts->setFixedHeight(120);
+    rightLayout->addWidget(m_floatingHearts);
 
     mainLayout->addWidget(rightPanel);
 
@@ -135,6 +152,8 @@ void AnchorRoomPage::stopLive() {
     m_preview->clearFrame();
     m_danmakuWidget->clearDanmaku();
     m_viewerCountLabel->setText(QStringLiteral("在线: 0"));
+    m_likeCount = 0;
+    m_likeCountLabel->setText(QStringLiteral("♥ 0"));
 }
 
 void AnchorRoomPage::initCapture(int mode) {
@@ -232,17 +251,17 @@ void AnchorRoomPage::connectWebSocket() {
 
     connect(m_webSocket, &WebSocketClient::giftReceived,
         this, [this](const QString& username, int giftId, const QString& giftName) {
-            Q_UNUSED(giftId)
             m_danmakuWidget->addDanmaku(
                 QStringLiteral("系统"),
                 QStringLiteral("%1 送出了 %2").arg(username).arg(giftName));
+            m_giftAnimation->showGift(username, giftId);
         });
 
     connect(m_webSocket, &WebSocketClient::likeReceived,
         this, [this](int count) {
-            m_danmakuWidget->addDanmaku(
-                QStringLiteral("系统"),
-                QStringLiteral("点赞数: %1").arg(count));
+            m_likeCount = count;
+            m_likeCountLabel->setText(QStringLiteral("♥ %1").arg(count));
+            m_floatingHearts->addHeart();
         });
 
     connect(m_webSocket, &WebSocketClient::viewerCountChanged,

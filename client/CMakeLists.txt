@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(LiveKitClient VERSION 0.5.0 LANGUAGES CXX)
+project(LiveKitClient VERSION 0.6.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -55,6 +55,10 @@ set(SOURCES
     src/ui/StartLivePage.cpp
     src/ui/PicInPicWidget.cpp
     src/ui/DanmakuWidget.cpp
+    src/ui/GiftPanel.cpp
+    src/ui/GiftAnimation.cpp
+    src/ui/LikeButton.cpp
+    src/ui/FloatingHeartsWidget.cpp
     src/theme/ThemeManager.cpp
     src/network/ApiResponse.cpp
     src/network/IHttpClient.cpp
@@ -63,6 +67,7 @@ set(SOURCES
     src/network/WebSocketClient.cpp
     src/model/UserInfo.cpp
     src/model/RoomInfo.cpp
+    src/model/GiftInfo.cpp
 )
 
 set(HEADERS
@@ -77,6 +82,10 @@ set(HEADERS
     src/ui/StartLivePage.h
     src/ui/PicInPicWidget.h
     src/ui/DanmakuWidget.h
+    src/ui/GiftPanel.h
+    src/ui/GiftAnimation.h
+    src/ui/LikeButton.h
+    src/ui/FloatingHeartsWidget.h
     src/theme/ThemeManager.h
     src/network/ApiResponse.h
     src/network/IHttpClient.h
@@ -85,6 +94,7 @@ set(HEADERS
     src/network/WebSocketClient.h
     src/model/UserInfo.h
     src/model/RoomInfo.h
+    src/model/GiftInfo.h
 )
 
 if(HAS_FFMPEG AND HAS_SDL2 AND HAS_OPENCV)

@@ -380,17 +380,36 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qgraphicseffect.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QLabel \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qlabel.h \
- D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_LiveHallPage.cpp \
- D:/vskelin/LiveKit/client/src/ui/LiveHallPage.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QHBoxLayout \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_FloatingHeartsWidget.cpp \
+ D:/vskelin/LiveKit/client/src/ui/FloatingHeartsWidget.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/QList \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qevent.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qcoreevent.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qurl.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qfile.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qfiledevice.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qvector2d.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qtouchdevice.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_GiftAnimation.cpp \
+ D:/vskelin/LiveKit/client/src/ui/GiftAnimation.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QQueue \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qqueue.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_GiftPanel.cpp \
+ D:/vskelin/LiveKit/client/src/ui/GiftPanel.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QGridLayout \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qgridlayout.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QPushButton \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qpushbutton.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractbutton.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QVector \
+ D:/vskelin/LiveKit/client/src/model/GiftInfo.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_LikeButton.cpp \
+ D:/vskelin/LiveKit/client/src/ui/LikeButton.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_LiveHallPage.cpp \
+ D:/vskelin/LiveKit/client/src/ui/LiveHallPage.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QHBoxLayout \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QScrollArea \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qscrollarea.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QGridLayout \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qgridlayout.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QVector \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QButtonGroup \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qbuttongroup.h \
  D:/vskelin/LiveKit/client/src/model/RoomInfo.h \
@@ -406,7 +425,6 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qmovie.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qimagereader.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qcoreapplication.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qcoreevent.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qeventloop.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qimageiohandler.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qplugin.h \
@@ -629,7 +647,6 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qopenglversionfunctions.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/QOpenGLShaderProgram \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qopenglshaderprogram.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qvector2d.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qvector3d.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qvector4d.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qmatrix4x4.h \
@@ -647,12 +664,6 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qpoint.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_RegisterPage.cpp \
  D:/vskelin/LiveKit/client/src/ui/RegisterPage.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/QList \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qevent.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qurl.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qfile.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qfiledevice.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qtouchdevice.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_RoomCard.cpp \
  D:/vskelin/LiveKit/client/src/ui/RoomCard.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QGraphicsDropShadowEffect \
