@@ -1,10 +1,12 @@
 CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\mocs_compilation.cpp \
- D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YLADOPUWMF/moc_ThemeManager.cpp \
- D:/vskelin/LiveKit/client/src/theme/ThemeManager.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QString \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstring.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qchar.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\UFQQIFJZKK/moc_HttpClient.cpp \
+ D:/vskelin/LiveKit/client/src/network/HttpClient.h \
+ D:/vskelin/LiveKit/client/src/network/IHttpClient.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QObject \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobject.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobjectdefs.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qnamespace.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qglobal.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/type_traits \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -89,9 +91,11 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qglobalstatic.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qnumeric.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qversiontagging.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstring.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qchar.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qbytearray.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qrefcount.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qnamespace.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qarraydata.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/x86_64-w64-mingw32/include/string.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/x86_64-w64-mingw32/include/sec_api/string_s.h \
@@ -176,11 +180,6 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstringliteral.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstringalgorithms.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstringview.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QObject \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobject.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobjectdefs.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobjectdefs_impl.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstring.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qlist.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qalgorithms.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qiterator.h \
@@ -222,18 +221,89 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/x86_64-w64-mingw32/include/_timeval.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/x86_64-w64-mingw32/include/pthread_time.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/parse_numbers.h \
- D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_MainWindow.cpp \
- D:/vskelin/LiveKit/client/src/ui/MainWindow.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QMainWindow \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qmainwindow.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonObject \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonobject.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonvalue.h \
+ D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/functional \
+ D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/std_function.h \
+ D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/refwrap.h \
+ D:/vskelin/LiveKit/client/src/network/ApiResponse.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QString \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstring.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QNetworkAccessManager \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qnetworkaccessmanager.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qtnetworkglobal.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qtnetwork-config.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qnetworkrequest.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QSharedDataPointer \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qshareddata.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qhash.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QString \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QUrl \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qurl.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QVariant \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qvariant.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qmap.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobject.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QVector \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qvector.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QObject \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QSslConfiguration \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qsslconfiguration.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qshareddata.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qsslsocket.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qtcpsocket.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qabstractsocket.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qiodevice.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qdebug.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qtextstream.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qlocale.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qvariant.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qvector.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qset.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qcontiguouscache.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qsharedpointer.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qsslerror.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qsslcertificate.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qcryptographichash.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qdatetime.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qssl.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QFlags \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qflags.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QMetaType \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qmetatype.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QNetworkReply \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qnetworkreply.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QIODevice \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qiodevice.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QNetworkRequest \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qnetworkrequest.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QNetworkAccessManager \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QTimer \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qtimer.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qbasictimer.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonDocument \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsondocument.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\UFQQIFJZKK/moc_IHttpClient.cpp \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\UFQQIFJZKK/moc_MockHttpClient.cpp \
+ D:/vskelin/LiveKit/client/src/network/MockHttpClient.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonArray \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonarray.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YLADOPUWMF/moc_ThemeManager.cpp \
+ D:/vskelin/LiveKit/client/src/theme/ThemeManager.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_LoginPage.cpp \
+ D:/vskelin/LiveKit/client/src/ui/LoginPage.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QWidget \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qwidget.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qtguiglobal.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qtgui-config.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qtwidgets-config.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qwidget.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qwindowdefs.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qwindowdefs_win.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobject.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qmargins.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qpaintdevice.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qrect.h \
@@ -244,42 +314,69 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qrgb.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qrgba64.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qbrush.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qvector.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qmatrix.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qpolygon.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qregion.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qdatastream.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qiodevice.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qline.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qtransform.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qpainterpath.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qimage.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qpixelformat.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qpixmap.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qsharedpointer.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qshareddata.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qhash.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qsharedpointer_impl.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qfont.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qfontmetrics.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qfontinfo.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qsizepolicy.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qcursor.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qkeysequence.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qtabwidget.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qicon.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QStackedWidget \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qstackedwidget.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QLineEdit \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qlineedit.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qframe.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qwidget.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qtextcursor.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qtextformat.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qpen.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qtextoption.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QPushButton \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qpushbutton.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractbutton.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qicon.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QLabel \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qlabel.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QHBoxLayout \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QVBoxLayout \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qboxlayout.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qlayout.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qlayoutitem.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qboxlayout.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qgridlayout.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QVBoxLayout
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/QMovie \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qmovie.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qimagereader.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qcoreapplication.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qcoreevent.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qeventloop.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qimageiohandler.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qplugin.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qpointer.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonobject.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qfactoryinterface.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_MainWindow.cpp \
+ D:/vskelin/LiveKit/client/src/ui/MainWindow.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QMainWindow \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qmainwindow.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qtabwidget.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QStackedWidget \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qstackedwidget.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QHBoxLayout \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_RegisterPage.cpp \
+ D:/vskelin/LiveKit/client/src/ui/RegisterPage.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QGridLayout \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qgridlayout.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/QList \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qevent.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qurl.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qfile.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qfiledevice.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qvector2d.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qtouchdevice.h

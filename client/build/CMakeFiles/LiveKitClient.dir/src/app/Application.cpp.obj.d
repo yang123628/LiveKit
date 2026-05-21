@@ -250,9 +250,13 @@ CMakeFiles/LiveKitClient.dir/src/app/Application.cpp.obj: \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/shared_ptr_base.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/shared_ptr_atomic.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward/auto_ptr.h \
- D:/vskelin/LiveKit/client/src/app/AppConfig.h \
+ D:/vskelin/LiveKit/client/src/model/UserInfo.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QString \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstring.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonObject \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonobject.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonvalue.h \
+ D:/vskelin/LiveKit/client/src/app/AppConfig.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QSettings \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qsettings.h \
  D:/vskelin/LiveKit/client/src/ui/MainWindow.h \
@@ -305,4 +309,12 @@ CMakeFiles/LiveKitClient.dir/src/app/Application.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QVBoxLayout \
  D:/vskelin/LiveKit/client/src/theme/ThemeManager.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QObject \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobject.h
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobject.h \
+ D:/vskelin/LiveKit/client/src/network/MockHttpClient.h \
+ D:/vskelin/LiveKit/client/src/network/IHttpClient.h \
+ D:/vskelin/LiveKit/client/src/network/ApiResponse.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QTimer \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qtimer.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qbasictimer.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonArray \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonarray.h

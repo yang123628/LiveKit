@@ -154,6 +154,10 @@
 		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Multimedia/Qt5Multimedia_DSServicePlugin.cmake",
 		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Multimedia/Qt5Multimedia_QM3uPlaylistPlugin.cmake",
 		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Multimedia/Qt5Multimedia_QWindowsAudioPlugin.cmake",
+		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Svg/Qt5SvgConfigVersion.cmake",
+		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Svg/Qt5SvgConfig.cmake",
+		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Svg/Qt5Svg_QSvgIconPlugin.cmake",
+		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Svg/Qt5Svg_QSvgPlugin.cmake",
 		"D:/vskelin/LiveKit/client/resources/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "D:/vskelin/LiveKit/client",
@@ -175,15 +179,57 @@
 			null
 		],
 		[
+			"D:/vskelin/LiveKit/client/src/model/UserInfo.h",
+			"MU",
+			"VNQA4LF4BW/moc_UserInfo.cpp",
+			null
+		],
+		[
+			"D:/vskelin/LiveKit/client/src/network/ApiResponse.h",
+			"MU",
+			"UFQQIFJZKK/moc_ApiResponse.cpp",
+			null
+		],
+		[
+			"D:/vskelin/LiveKit/client/src/network/HttpClient.h",
+			"MU",
+			"UFQQIFJZKK/moc_HttpClient.cpp",
+			null
+		],
+		[
+			"D:/vskelin/LiveKit/client/src/network/IHttpClient.h",
+			"MU",
+			"UFQQIFJZKK/moc_IHttpClient.cpp",
+			null
+		],
+		[
+			"D:/vskelin/LiveKit/client/src/network/MockHttpClient.h",
+			"MU",
+			"UFQQIFJZKK/moc_MockHttpClient.cpp",
+			null
+		],
+		[
 			"D:/vskelin/LiveKit/client/src/theme/ThemeManager.h",
 			"MU",
 			"YLADOPUWMF/moc_ThemeManager.cpp",
 			null
 		],
 		[
+			"D:/vskelin/LiveKit/client/src/ui/LoginPage.h",
+			"MU",
+			"YPKJ5OE7LN/moc_LoginPage.cpp",
+			null
+		],
+		[
 			"D:/vskelin/LiveKit/client/src/ui/MainWindow.h",
 			"MU",
 			"YPKJ5OE7LN/moc_MainWindow.cpp",
+			null
+		],
+		[
+			"D:/vskelin/LiveKit/client/src/ui/RegisterPage.h",
+			"MU",
+			"YPKJ5OE7LN/moc_RegisterPage.cpp",
 			null
 		]
 	],
@@ -196,6 +242,7 @@
 		"QT_GUI_LIB",
 		"QT_MULTIMEDIA_LIB",
 		"QT_NETWORK_LIB",
+		"QT_SVG_LIB",
 		"QT_WEBSOCKETS_LIB",
 		"QT_WIDGETS_LIB"
 	],
@@ -218,6 +265,7 @@
 		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork",
 		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWebSockets",
 		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtMultimedia",
+		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtSvg",
 		"D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++",
 		"D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32",
 		"D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward",
@@ -253,8 +301,19 @@
 		[ "D:/vskelin/LiveKit/client/src/app/AppConfig.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/app/Application.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/main.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/model/UserInfo.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/network/ApiResponse.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/network/HttpClient.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/network/IHttpClient.cpp", "MU", null ],
+		[
+			"D:/vskelin/LiveKit/client/src/network/MockHttpClient.cpp",
+			"MU",
+			null
+		],
 		[ "D:/vskelin/LiveKit/client/src/theme/ThemeManager.cpp", "MU", null ],
-		[ "D:/vskelin/LiveKit/client/src/ui/MainWindow.cpp", "MU", null ]
+		[ "D:/vskelin/LiveKit/client/src/ui/LoginPage.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/ui/MainWindow.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/ui/RegisterPage.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -2,5 +2,13 @@
     <qresource prefix="/">
         <file alias="qss/dark.qss">qss/dark.qss</file>
         <file alias="qss/light.qss">qss/light.qss</file>
+        <file alias="avatars/avatar_1.svg">avatars/avatar_1.svg</file>
+        <file alias="avatars/avatar_2.svg">avatars/avatar_2.svg</file>
+        <file alias="avatars/avatar_3.svg">avatars/avatar_3.svg</file>
+        <file alias="avatars/avatar_4.svg">avatars/avatar_4.svg</file>
+        <file alias="avatars/avatar_5.svg">avatars/avatar_5.svg</file>
+        <file alias="avatars/avatar_6.svg">avatars/avatar_6.svg</file>
+        <file alias="avatars/avatar_7.svg">avatars/avatar_7.svg</file>
+        <file alias="avatars/avatar_8.svg">avatars/avatar_8.svg</file>
     </qresource>
 </RCC>

@@ -261,6 +261,126 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/model/UserInfo.obj: src/model/UserInfo.cpp.obj
+.PHONY : src/model/UserInfo.obj
+
+# target to build an object file
+src/model/UserInfo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.obj
+.PHONY : src/model/UserInfo.cpp.obj
+
+src/model/UserInfo.i: src/model/UserInfo.cpp.i
+.PHONY : src/model/UserInfo.i
+
+# target to preprocess a source file
+src/model/UserInfo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.i
+.PHONY : src/model/UserInfo.cpp.i
+
+src/model/UserInfo.s: src/model/UserInfo.cpp.s
+.PHONY : src/model/UserInfo.s
+
+# target to generate assembly for a file
+src/model/UserInfo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.s
+.PHONY : src/model/UserInfo.cpp.s
+
+src/network/ApiResponse.obj: src/network/ApiResponse.cpp.obj
+.PHONY : src/network/ApiResponse.obj
+
+# target to build an object file
+src/network/ApiResponse.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.obj
+.PHONY : src/network/ApiResponse.cpp.obj
+
+src/network/ApiResponse.i: src/network/ApiResponse.cpp.i
+.PHONY : src/network/ApiResponse.i
+
+# target to preprocess a source file
+src/network/ApiResponse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.i
+.PHONY : src/network/ApiResponse.cpp.i
+
+src/network/ApiResponse.s: src/network/ApiResponse.cpp.s
+.PHONY : src/network/ApiResponse.s
+
+# target to generate assembly for a file
+src/network/ApiResponse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.s
+.PHONY : src/network/ApiResponse.cpp.s
+
+src/network/HttpClient.obj: src/network/HttpClient.cpp.obj
+.PHONY : src/network/HttpClient.obj
+
+# target to build an object file
+src/network/HttpClient.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.obj
+.PHONY : src/network/HttpClient.cpp.obj
+
+src/network/HttpClient.i: src/network/HttpClient.cpp.i
+.PHONY : src/network/HttpClient.i
+
+# target to preprocess a source file
+src/network/HttpClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.i
+.PHONY : src/network/HttpClient.cpp.i
+
+src/network/HttpClient.s: src/network/HttpClient.cpp.s
+.PHONY : src/network/HttpClient.s
+
+# target to generate assembly for a file
+src/network/HttpClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/HttpClient.cpp.s
+.PHONY : src/network/HttpClient.cpp.s
+
+src/network/IHttpClient.obj: src/network/IHttpClient.cpp.obj
+.PHONY : src/network/IHttpClient.obj
+
+# target to build an object file
+src/network/IHttpClient.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/IHttpClient.cpp.obj
+.PHONY : src/network/IHttpClient.cpp.obj
+
+src/network/IHttpClient.i: src/network/IHttpClient.cpp.i
+.PHONY : src/network/IHttpClient.i
+
+# target to preprocess a source file
+src/network/IHttpClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/IHttpClient.cpp.i
+.PHONY : src/network/IHttpClient.cpp.i
+
+src/network/IHttpClient.s: src/network/IHttpClient.cpp.s
+.PHONY : src/network/IHttpClient.s
+
+# target to generate assembly for a file
+src/network/IHttpClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/IHttpClient.cpp.s
+.PHONY : src/network/IHttpClient.cpp.s
+
+src/network/MockHttpClient.obj: src/network/MockHttpClient.cpp.obj
+.PHONY : src/network/MockHttpClient.obj
+
+# target to build an object file
+src/network/MockHttpClient.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.obj
+.PHONY : src/network/MockHttpClient.cpp.obj
+
+src/network/MockHttpClient.i: src/network/MockHttpClient.cpp.i
+.PHONY : src/network/MockHttpClient.i
+
+# target to preprocess a source file
+src/network/MockHttpClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.i
+.PHONY : src/network/MockHttpClient.cpp.i
+
+src/network/MockHttpClient.s: src/network/MockHttpClient.cpp.s
+.PHONY : src/network/MockHttpClient.s
+
+# target to generate assembly for a file
+src/network/MockHttpClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.s
+.PHONY : src/network/MockHttpClient.cpp.s
+
 src/theme/ThemeManager.obj: src/theme/ThemeManager.cpp.obj
 .PHONY : src/theme/ThemeManager.obj
 
@@ -285,6 +405,30 @@ src/theme/ThemeManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/theme/ThemeManager.cpp.s
 .PHONY : src/theme/ThemeManager.cpp.s
 
+src/ui/LoginPage.obj: src/ui/LoginPage.cpp.obj
+.PHONY : src/ui/LoginPage.obj
+
+# target to build an object file
+src/ui/LoginPage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/LoginPage.cpp.obj
+.PHONY : src/ui/LoginPage.cpp.obj
+
+src/ui/LoginPage.i: src/ui/LoginPage.cpp.i
+.PHONY : src/ui/LoginPage.i
+
+# target to preprocess a source file
+src/ui/LoginPage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/LoginPage.cpp.i
+.PHONY : src/ui/LoginPage.cpp.i
+
+src/ui/LoginPage.s: src/ui/LoginPage.cpp.s
+.PHONY : src/ui/LoginPage.s
+
+# target to generate assembly for a file
+src/ui/LoginPage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/LoginPage.cpp.s
+.PHONY : src/ui/LoginPage.cpp.s
+
 src/ui/MainWindow.obj: src/ui/MainWindow.cpp.obj
 .PHONY : src/ui/MainWindow.obj
 
@@ -308,6 +452,30 @@ src/ui/MainWindow.s: src/ui/MainWindow.cpp.s
 src/ui/MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/MainWindow.cpp.s
 .PHONY : src/ui/MainWindow.cpp.s
+
+src/ui/RegisterPage.obj: src/ui/RegisterPage.cpp.obj
+.PHONY : src/ui/RegisterPage.obj
+
+# target to build an object file
+src/ui/RegisterPage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/RegisterPage.cpp.obj
+.PHONY : src/ui/RegisterPage.cpp.obj
+
+src/ui/RegisterPage.i: src/ui/RegisterPage.cpp.i
+.PHONY : src/ui/RegisterPage.i
+
+# target to preprocess a source file
+src/ui/RegisterPage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/RegisterPage.cpp.i
+.PHONY : src/ui/RegisterPage.cpp.i
+
+src/ui/RegisterPage.s: src/ui/RegisterPage.cpp.s
+.PHONY : src/ui/RegisterPage.s
+
+# target to generate assembly for a file
+src/ui/RegisterPage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/RegisterPage.cpp.s
+.PHONY : src/ui/RegisterPage.cpp.s
 
 # Help Target
 help:
@@ -334,12 +502,33 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/model/UserInfo.obj
+	@echo ... src/model/UserInfo.i
+	@echo ... src/model/UserInfo.s
+	@echo ... src/network/ApiResponse.obj
+	@echo ... src/network/ApiResponse.i
+	@echo ... src/network/ApiResponse.s
+	@echo ... src/network/HttpClient.obj
+	@echo ... src/network/HttpClient.i
+	@echo ... src/network/HttpClient.s
+	@echo ... src/network/IHttpClient.obj
+	@echo ... src/network/IHttpClient.i
+	@echo ... src/network/IHttpClient.s
+	@echo ... src/network/MockHttpClient.obj
+	@echo ... src/network/MockHttpClient.i
+	@echo ... src/network/MockHttpClient.s
 	@echo ... src/theme/ThemeManager.obj
 	@echo ... src/theme/ThemeManager.i
 	@echo ... src/theme/ThemeManager.s
+	@echo ... src/ui/LoginPage.obj
+	@echo ... src/ui/LoginPage.i
+	@echo ... src/ui/LoginPage.s
 	@echo ... src/ui/MainWindow.obj
 	@echo ... src/ui/MainWindow.i
 	@echo ... src/ui/MainWindow.s
+	@echo ... src/ui/RegisterPage.obj
+	@echo ... src/ui/RegisterPage.i
+	@echo ... src/ui/RegisterPage.s
 .PHONY : help
 
 

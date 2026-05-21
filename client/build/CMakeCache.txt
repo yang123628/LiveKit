@@ -137,13 +137,13 @@ CMAKE_PROJECT_NAME:STATIC=LiveKitClient
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=0.1.0
+CMAKE_PROJECT_VERSION:STATIC=0.2.0
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=1
+CMAKE_PROJECT_VERSION_MINOR:STATIC=2
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_PATCH:STATIC=0
@@ -260,6 +260,9 @@ Qt5Multimedia_DIR:PATH=D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Multimedi
 
 //The directory containing a CMake configuration file for Qt5Network.
 Qt5Network_DIR:PATH=D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Network
+
+//The directory containing a CMake configuration file for Qt5Svg.
+Qt5Svg_DIR:PATH=D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Svg
 
 //The directory containing a CMake configuration file for Qt5WebSockets.
 Qt5WebSockets_DIR:PATH=D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5WebSockets

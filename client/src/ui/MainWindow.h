@@ -7,6 +7,9 @@
 #include <QHBoxLayout>
 #include <QVBoxLayout>
 
+class LoginPage;
+class RegisterPage;
+
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
@@ -15,15 +18,29 @@ public:
     ~MainWindow() = default;
 
     void switchPage(int index);
+    void showAuthPage();
+    void showMainPage();
 
 private:
     void setupUI();
     void setupNavigationBar();
     void setupPages();
+    void setupAuthPages();
+    void checkAutoLogin();
 
     QWidget* m_centralWidget;
     QVBoxLayout* m_mainLayout;
-    QStackedWidget* m_stackedWidget;
+
+    QStackedWidget* m_topStack;
+
+    QWidget* m_authPage;
+    QStackedWidget* m_authStack;
+    LoginPage* m_loginPage;
+    RegisterPage* m_registerPage;
+
+    QWidget* m_mainPage;
+    QVBoxLayout* m_mainPageLayout;
+    QStackedWidget* m_contentStack;
     QWidget* m_navigationBar;
     QHBoxLayout* m_navLayout;
 
