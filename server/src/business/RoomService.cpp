@@ -199,6 +199,11 @@ nlohmann::json RoomService::endRoom(const std::string& token, int roomId) {
         return result;
     }
 
+    nlohmann::json liveEndMsg;
+    liveEndMsg["type"] = "live_end";
+    liveEndMsg["reason"] = "主播结束了直播";
+    RoomManager::instance().broadcastToRoom(roomId, liveEndMsg.dump());
+
     RoomManager::instance().clearRoom(roomId);
 
     result["code"] = 0;
@@ -236,7 +241,7 @@ nlohmann::json RoomService::joinRoom(const std::string& token, int roomId) {
         return result;
     }
 
-    if (!RoomManager::instance().joinRoom(roomId, userId, user.username, user.avatar_id)) {
+    if (!RoomManager::instance().joinRoom(roomId, userId, user.username, user.avatar_id, nullptr)) {
         result["code"] = 2010;
         result["msg"] = "已在直播间中";
         return result;
@@ -266,11 +271,7 @@ nlohmann::json RoomService::leaveRoom(const std::string& token, int roomId) {
         return result;
     }
 
-    if (!RoomManager::instance().leaveRoom(roomId, userId)) {
-        result["code"] = 2011;
-        result["msg"] = "不在该直播间中";
-        return result;
-    }
+    RoomManager::instance().leaveRoom(roomId, userId);
 
     int viewerCount = RoomManager::instance().getViewerCount(roomId);
     RoomDao::updateViewerCount(roomId, viewerCount);

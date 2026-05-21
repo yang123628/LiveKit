@@ -168,3 +168,60 @@
 [2026-05-21 13:50:33.248] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:44778 fd=9
 [2026-05-21 13:50:33.248] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:54] http connection closed: 127.0.0.1:44778
 [2026-05-21 13:50:33.249] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 14:29:26.038] [INFO] [/home/hy/LiveKit/server/src/main.cpp:339] LiveKit Server starting...
+[2026-05-21 14:29:26.038] [INFO] [/home/hy/LiveKit/server/src/main.cpp:340] port=9095 thread_count=4
+[2026-05-21 14:29:26.041] [INFO] [/home/hy/LiveKit/server/src/database/Database.cpp:31] database opened: ./data/livekit.db
+[2026-05-21 14:29:26.041] [INFO] [/home/hy/LiveKit/server/src/database/Database.cpp:66] executing SQL file: scripts/init_db.sql size=2730
+[2026-05-21 14:29:26.057] [INFO] [/home/hy/LiveKit/server/src/database/Database.cpp:69] SQL file executed successfully: scripts/init_db.sql
+[2026-05-21 14:29:26.057] [INFO] [/home/hy/LiveKit/server/src/core/ThreadPool.cpp:18] ThreadPool started with 4 threads
+[2026-05-21 14:29:26.057] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:59] EventLoop started on port 9095
+[2026-05-21 14:29:36.605] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:44] new connection: 127.0.0.1:47470
+[2026-05-21 14:29:36.606] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:47470 fd=9
+[2026-05-21 14:29:36.609] [INFO] [/home/hy/LiveKit/server/src/database/UserDao.cpp:19] user created: id=1 username=anchor1
+[2026-05-21 14:29:36.610] [INFO] [/home/hy/LiveKit/server/src/utils/TokenGenerator.cpp:34] token stored for user_id=1
+[2026-05-21 14:29:36.610] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:73] connection closed: 127.0.0.1:47470
+[2026-05-21 14:29:36.610] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 14:29:36.617] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:44] new connection: 127.0.0.1:47476
+[2026-05-21 14:29:36.617] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:47476 fd=9
+[2026-05-21 14:29:36.618] [INFO] [/home/hy/LiveKit/server/src/utils/TokenGenerator.cpp:34] token stored for user_id=1
+[2026-05-21 14:29:36.620] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:73] connection closed: 127.0.0.1:47476
+[2026-05-21 14:29:36.620] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 14:29:36.628] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:44] new connection: 127.0.0.1:47482
+[2026-05-21 14:29:36.628] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:47482 fd=9
+[2026-05-21 14:29:36.629] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:73] connection closed: 127.0.0.1:47482
+[2026-05-21 14:29:36.629] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 14:29:43.873] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:44] new connection: 127.0.0.1:38126
+[2026-05-21 14:29:43.873] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:38126 fd=9
+[2026-05-21 14:29:43.875] [INFO] [/home/hy/LiveKit/server/src/database/RoomDao.cpp:22] room created: id=1 anchor_id=1
+[2026-05-21 14:29:43.875] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:73] connection closed: 127.0.0.1:38126
+[2026-05-21 14:29:43.875] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 14:30:31.743] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:44] new connection: 127.0.0.1:57872
+[2026-05-21 14:30:31.743] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:57872 fd=9
+[2026-05-21 14:30:31.744] [INFO] [/home/hy/LiveKit/server/src/business/RoomManager.cpp:25] ws user anchor1 joined room 1, viewers=1
+[2026-05-21 14:30:31.745] [INFO] [/home/hy/LiveKit/server/src/main.cpp:88] ws open: user=anchor1 room=1
+[2026-05-21 14:30:33.769] [INFO] [/home/hy/LiveKit/server/src/business/RoomManager.cpp:62] ws user anchor1 left room 1 (fd disconnect), viewers=0
+[2026-05-21 14:30:33.770] [INFO] [/home/hy/LiveKit/server/src/main.cpp:172] ws close: user=anchor1 room=1
+[2026-05-21 14:30:33.770] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:73] connection closed: 127.0.0.1:57872
+[2026-05-21 14:30:33.770] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 14:31:07.046] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:44] new connection: 127.0.0.1:48456
+[2026-05-21 14:31:07.046] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:48456 fd=9
+[2026-05-21 14:31:07.048] [INFO] [/home/hy/LiveKit/server/src/database/UserDao.cpp:19] user created: id=2 username=viewer2
+[2026-05-21 14:31:07.049] [INFO] [/home/hy/LiveKit/server/src/utils/TokenGenerator.cpp:34] token stored for user_id=2
+[2026-05-21 14:31:07.049] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:73] connection closed: 127.0.0.1:48456
+[2026-05-21 14:31:07.049] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9
+[2026-05-21 14:31:07.049] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:44] new connection: 127.0.0.1:48464
+[2026-05-21 14:31:07.049] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:48464 fd=9
+[2026-05-21 14:31:07.049] [INFO] [/home/hy/LiveKit/server/src/business/RoomManager.cpp:25] ws user anchor1 joined room 1, viewers=1
+[2026-05-21 14:31:07.050] [INFO] [/home/hy/LiveKit/server/src/main.cpp:88] ws open: user=anchor1 room=1
+[2026-05-21 14:31:08.059] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:44] new connection: 127.0.0.1:48478
+[2026-05-21 14:31:08.059] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:152] new connection from 127.0.0.1:48478 fd=10
+[2026-05-21 14:31:08.060] [INFO] [/home/hy/LiveKit/server/src/business/RoomManager.cpp:25] ws user viewer2 joined room 1, viewers=2
+[2026-05-21 14:31:08.061] [INFO] [/home/hy/LiveKit/server/src/main.cpp:88] ws open: user=viewer2 room=1
+[2026-05-21 14:31:13.101] [INFO] [/home/hy/LiveKit/server/src/business/RoomManager.cpp:62] ws user viewer2 left room 1 (fd disconnect), viewers=1
+[2026-05-21 14:31:13.102] [INFO] [/home/hy/LiveKit/server/src/main.cpp:172] ws close: user=viewer2 room=1
+[2026-05-21 14:31:13.102] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:73] connection closed: 127.0.0.1:48478
+[2026-05-21 14:31:13.102] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=10
+[2026-05-21 14:31:14.619] [INFO] [/home/hy/LiveKit/server/src/business/RoomManager.cpp:62] ws user anchor1 left room 1 (fd disconnect), viewers=0
+[2026-05-21 14:31:14.620] [INFO] [/home/hy/LiveKit/server/src/main.cpp:172] ws close: user=anchor1 room=1
+[2026-05-21 14:31:14.620] [INFO] [/home/hy/LiveKit/server/src/network/HttpServer.cpp:73] connection closed: 127.0.0.1:48464
+[2026-05-21 14:31:14.620] [INFO] [/home/hy/LiveKit/server/src/core/EventLoop.cpp:170] connection closed fd=9

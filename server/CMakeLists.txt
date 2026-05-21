@@ -23,15 +23,19 @@ add_executable(LiveKitServer
     src/network/HttpResponse.cpp
     src/network/HttpServer.cpp
     src/network/Router.cpp
+    src/network/WebSocketFrame.cpp
+    src/network/WebSocketHandler.cpp
     src/utils/Config.cpp
     src/utils/Crypto.cpp
     src/utils/TokenGenerator.cpp
     src/database/Database.cpp
     src/database/UserDao.cpp
     src/database/RoomDao.cpp
+    src/database/GiftDao.cpp
     src/business/UserService.cpp
     src/business/RoomService.cpp
     src/business/RoomManager.cpp
+    src/business/GiftService.cpp
 )
 
 target_include_directories(LiveKitServer PRIVATE

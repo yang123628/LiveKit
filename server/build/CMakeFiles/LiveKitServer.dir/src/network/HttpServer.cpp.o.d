@@ -144,14 +144,14 @@ CMakeFiles/LiveKitServer.dir/src/network/HttpServer.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
- /usr/include/c++/11/bits/basic_string.tcc \
+ /usr/include/c++/11/bits/basic_string.tcc /usr/include/c++/11/functional \
+ /usr/include/c++/11/bits/std_function.h \
  /home/hy/LiveKit/server/src/core/EventLoop.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
  /usr/include/c++/11/bits/hashtable_policy.h \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/functional \
- /usr/include/c++/11/bits/std_function.h /usr/include/c++/11/mutex \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/mutex \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/limits /usr/include/c++/11/ctime \
  /usr/include/c++/11/bits/parse_numbers.h \
@@ -259,6 +259,7 @@ CMakeFiles/LiveKitServer.dir/src/network/HttpServer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
  /usr/include/arpa/inet.h /home/hy/LiveKit/server/src/network/Buffer.h \
+ /home/hy/LiveKit/server/src/network/WebSocketHandler.h \
  /home/hy/LiveKit/server/src/core/Logger.h /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \

@@ -142,6 +142,30 @@ LiveKitServer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/build
 .PHONY : LiveKitServer/fast
 
+src/business/GiftService.o: src/business/GiftService.cpp.o
+.PHONY : src/business/GiftService.o
+
+# target to build an object file
+src/business/GiftService.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.o
+.PHONY : src/business/GiftService.cpp.o
+
+src/business/GiftService.i: src/business/GiftService.cpp.i
+.PHONY : src/business/GiftService.i
+
+# target to preprocess a source file
+src/business/GiftService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.i
+.PHONY : src/business/GiftService.cpp.i
+
+src/business/GiftService.s: src/business/GiftService.cpp.s
+.PHONY : src/business/GiftService.s
+
+# target to generate assembly for a file
+src/business/GiftService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/business/GiftService.cpp.s
+.PHONY : src/business/GiftService.cpp.s
+
 src/business/RoomManager.o: src/business/RoomManager.cpp.o
 .PHONY : src/business/RoomManager.o
 
@@ -357,6 +381,30 @@ src/database/Database.s: src/database/Database.cpp.s
 src/database/Database.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/Database.cpp.s
 .PHONY : src/database/Database.cpp.s
+
+src/database/GiftDao.o: src/database/GiftDao.cpp.o
+.PHONY : src/database/GiftDao.o
+
+# target to build an object file
+src/database/GiftDao.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.o
+.PHONY : src/database/GiftDao.cpp.o
+
+src/database/GiftDao.i: src/database/GiftDao.cpp.i
+.PHONY : src/database/GiftDao.i
+
+# target to preprocess a source file
+src/database/GiftDao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.i
+.PHONY : src/database/GiftDao.cpp.i
+
+src/database/GiftDao.s: src/database/GiftDao.cpp.s
+.PHONY : src/database/GiftDao.s
+
+# target to generate assembly for a file
+src/database/GiftDao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/database/GiftDao.cpp.s
+.PHONY : src/database/GiftDao.cpp.s
 
 src/database/RoomDao.o: src/database/RoomDao.cpp.o
 .PHONY : src/database/RoomDao.o
@@ -574,6 +622,54 @@ src/network/Router.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/network/Router.cpp.s
 .PHONY : src/network/Router.cpp.s
 
+src/network/WebSocketFrame.o: src/network/WebSocketFrame.cpp.o
+.PHONY : src/network/WebSocketFrame.o
+
+# target to build an object file
+src/network/WebSocketFrame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/network/WebSocketFrame.cpp.o
+.PHONY : src/network/WebSocketFrame.cpp.o
+
+src/network/WebSocketFrame.i: src/network/WebSocketFrame.cpp.i
+.PHONY : src/network/WebSocketFrame.i
+
+# target to preprocess a source file
+src/network/WebSocketFrame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/network/WebSocketFrame.cpp.i
+.PHONY : src/network/WebSocketFrame.cpp.i
+
+src/network/WebSocketFrame.s: src/network/WebSocketFrame.cpp.s
+.PHONY : src/network/WebSocketFrame.s
+
+# target to generate assembly for a file
+src/network/WebSocketFrame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/network/WebSocketFrame.cpp.s
+.PHONY : src/network/WebSocketFrame.cpp.s
+
+src/network/WebSocketHandler.o: src/network/WebSocketHandler.cpp.o
+.PHONY : src/network/WebSocketHandler.o
+
+# target to build an object file
+src/network/WebSocketHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/network/WebSocketHandler.cpp.o
+.PHONY : src/network/WebSocketHandler.cpp.o
+
+src/network/WebSocketHandler.i: src/network/WebSocketHandler.cpp.i
+.PHONY : src/network/WebSocketHandler.i
+
+# target to preprocess a source file
+src/network/WebSocketHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/network/WebSocketHandler.cpp.i
+.PHONY : src/network/WebSocketHandler.cpp.i
+
+src/network/WebSocketHandler.s: src/network/WebSocketHandler.cpp.s
+.PHONY : src/network/WebSocketHandler.s
+
+# target to generate assembly for a file
+src/network/WebSocketHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiveKitServer.dir/build.make CMakeFiles/LiveKitServer.dir/src/network/WebSocketHandler.cpp.s
+.PHONY : src/network/WebSocketHandler.cpp.s
+
 src/utils/Config.o: src/utils/Config.cpp.o
 .PHONY : src/utils/Config.o
 
@@ -680,6 +776,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... LiveKitServer"
 	@echo "... sqlite3"
+	@echo "... src/business/GiftService.o"
+	@echo "... src/business/GiftService.i"
+	@echo "... src/business/GiftService.s"
 	@echo "... src/business/RoomManager.o"
 	@echo "... src/business/RoomManager.i"
 	@echo "... src/business/RoomManager.s"
@@ -707,6 +806,9 @@ help:
 	@echo "... src/database/Database.o"
 	@echo "... src/database/Database.i"
 	@echo "... src/database/Database.s"
+	@echo "... src/database/GiftDao.o"
+	@echo "... src/database/GiftDao.i"
+	@echo "... src/database/GiftDao.s"
 	@echo "... src/database/RoomDao.o"
 	@echo "... src/database/RoomDao.i"
 	@echo "... src/database/RoomDao.s"
@@ -734,6 +836,12 @@ help:
 	@echo "... src/network/Router.o"
 	@echo "... src/network/Router.i"
 	@echo "... src/network/Router.s"
+	@echo "... src/network/WebSocketFrame.o"
+	@echo "... src/network/WebSocketFrame.i"
+	@echo "... src/network/WebSocketFrame.s"
+	@echo "... src/network/WebSocketHandler.o"
+	@echo "... src/network/WebSocketHandler.i"
+	@echo "... src/network/WebSocketHandler.s"
 	@echo "... src/utils/Config.o"
 	@echo "... src/utils/Config.i"
 	@echo "... src/utils/Config.s"

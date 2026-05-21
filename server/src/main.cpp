@@ -2,12 +2,20 @@
 #include "network/HttpServer.h"
 #include "network/HttpRequest.h"
 #include "network/HttpResponse.h"
+#include "network/WebSocketHandler.h"
+#include "network/Connection.h"
 #include "utils/Config.h"
 #include "database/Database.h"
 #include "business/UserService.h"
 #include "business/RoomService.h"
+#include "business/RoomManager.h"
+#include "business/GiftService.h"
+#include "database/RoomDao.h"
+#include "database/UserDao.h"
 #include <csignal>
 #include <iostream>
+#include <chrono>
+#include <thread>
 #include <nlohmann/json.hpp>
 
 HttpServer* g_server = nullptr;
@@ -16,6 +24,158 @@ void signalHandler(int signum) {
     LOG_INFO("received signal " << signum << ", shutting down...");
     if (g_server) {
         g_server->stop();
+    }
+}
+
+static std::string getTimestamp() {
+    auto now = std::chrono::system_clock::now();
+    auto timeT = std::chrono::system_clock::to_time_t(now);
+    char buf[64];
+    std::strftime(buf, sizeof(buf), "%Y-%m-%d %H:%M:%S", std::localtime(&timeT));
+    return std::string(buf);
+}
+
+static std::unordered_map<int, int> g_likeCounts;
+static std::mutex g_likeMutex;
+
+void onWsOpen(std::shared_ptr<Connection> conn, const std::string& rawData) {
+    HttpRequest req;
+    req.parse(rawData);
+    std::string token = req.getParam("token");
+    std::string roomIdStr = req.getParam("room_id");
+    int roomId = 0;
+    try { roomId = std::stoi(roomIdStr); } catch (...) { return; }
+
+    int userId = 0;
+    if (!UserService::verifyToken(token, userId)) {
+        WebSocketHandler::sendClose(conn, 4001, "invalid token");
+        return;
+    }
+
+    RoomInfo room;
+    if (!RoomDao::findRoomById(roomId, room) || room.status != "live") {
+        WebSocketHandler::sendClose(conn, 4002, "room not live");
+        return;
+    }
+
+    UserInfo user;
+    if (!UserDao::findUserById(userId, user)) {
+        WebSocketHandler::sendClose(conn, 4003, "user not found");
+        return;
+    }
+
+    WsContext* ctx = WebSocketHandler::getWsContext(conn);
+    if (!ctx) return;
+    ctx->userId = userId;
+    ctx->username = user.username;
+    ctx->avatarId = user.avatar_id;
+    ctx->roomId = roomId;
+
+    RoomManager::instance().joinRoom(roomId, userId, user.username, user.avatar_id, conn);
+    int viewerCount = RoomManager::instance().getViewerCount(roomId);
+    RoomDao::updateViewerCount(roomId, viewerCount);
+
+    nlohmann::json joinMsg;
+    joinMsg["type"] = "viewer_join";
+    joinMsg["username"] = user.username;
+    RoomManager::instance().broadcastToRoom(roomId, joinMsg.dump(), conn->fd());
+
+    nlohmann::json countMsg;
+    countMsg["type"] = "viewer_count";
+    countMsg["count"] = viewerCount;
+    RoomManager::instance().broadcastToRoom(roomId, countMsg.dump());
+
+    LOG_INFO("ws open: user=" << user.username << " room=" << roomId);
+}
+
+void onWsMessage(std::shared_ptr<Connection> conn, const std::string& payload) {
+    WsContext* ctx = WebSocketHandler::getWsContext(conn);
+    if (!ctx || !ctx->handshakeDone) return;
+
+    nlohmann::json msg;
+    try {
+        msg = nlohmann::json::parse(payload);
+    } catch (...) {
+        return;
+    }
+
+    std::string type = msg.value("type", "");
+    int roomId = ctx->roomId;
+    int userId = ctx->userId;
+    std::string username = ctx->username;
+
+    if (type == "danmaku") {
+        std::string content = msg.value("content", "");
+        if (content.empty()) return;
+
+        nlohmann::json broadcast;
+        broadcast["type"] = "danmaku";
+        broadcast["username"] = username;
+        broadcast["content"] = content;
+        broadcast["timestamp"] = getTimestamp();
+        RoomManager::instance().broadcastToRoom(roomId, broadcast.dump());
+
+    } else if (type == "gift") {
+        int giftId = msg.value("gift_id", 0);
+        if (giftId <= 0) return;
+
+        nlohmann::json giftResult = GiftService::sendGift(roomId, userId, giftId);
+        if (giftResult.value("code", -1) != 0) return;
+
+        nlohmann::json broadcast;
+        broadcast["type"] = "gift";
+        broadcast["username"] = username;
+        broadcast["gift_id"] = giftId;
+        broadcast["gift_name"] = giftResult["data"].value("gift_name", "");
+        broadcast["timestamp"] = getTimestamp();
+        RoomManager::instance().broadcastToRoom(roomId, broadcast.dump());
+
+    } else if (type == "like") {
+        int count = 1;
+        {
+            std::lock_guard<std::mutex> lock(g_likeMutex);
+            g_likeCounts[roomId] += count;
+            count = g_likeCounts[roomId];
+        }
+
+        nlohmann::json broadcast;
+        broadcast["type"] = "like";
+        broadcast["count"] = count;
+        broadcast["timestamp"] = getTimestamp();
+        RoomManager::instance().broadcastToRoom(roomId, broadcast.dump());
+    }
+}
+
+void onWsClose(std::shared_ptr<Connection> conn) {
+    WsContext* ctx = WebSocketHandler::getWsContext(conn);
+    if (!ctx) return;
+
+    int roomId = ctx->roomId;
+    int userId = ctx->userId;
+    std::string username = ctx->username;
+
+    RoomManager::instance().leaveRoomByFd(conn->fd());
+
+    int viewerCount = RoomManager::instance().getViewerCount(roomId);
+    RoomDao::updateViewerCount(roomId, viewerCount);
+
+    nlohmann::json leaveMsg;
+    leaveMsg["type"] = "viewer_leave";
+    leaveMsg["username"] = username;
+    RoomManager::instance().broadcastToRoom(roomId, leaveMsg.dump());
+
+    nlohmann::json countMsg;
+    countMsg["type"] = "viewer_count";
+    countMsg["count"] = viewerCount;
+    RoomManager::instance().broadcastToRoom(roomId, countMsg.dump());
+
+    LOG_INFO("ws close: user=" << username << " room=" << roomId);
+}
+
+void heartbeatThread() {
+    while (true) {
+        std::this_thread::sleep_for(std::chrono::seconds(30));
+        WebSocketHandler::sendPing(std::shared_ptr<Connection>());
     }
 }
 
@@ -145,6 +305,14 @@ void registerRoutes(HttpServer& server) {
         nlohmann::json data = result.value("data", nlohmann::json::object());
         resp.setJson(code, msg, data);
     });
+
+    server.router().get("/api/gifts", [](HttpRequest& req, HttpResponse& resp) {
+        nlohmann::json result = GiftService::getGiftList();
+        int code = result.value("code", -1);
+        std::string msg = result.value("msg", "");
+        nlohmann::json data = result.value("data", nlohmann::json::object());
+        resp.setJson(code, msg, data);
+    });
 }
 
 int main(int argc, char* argv[]) {
@@ -186,6 +354,10 @@ int main(int argc, char* argv[]) {
 
     HttpServer server(port, threadCount);
     g_server = &server;
+
+    server.setWsOpenCallback(onWsOpen);
+    WebSocketHandler::setMessageCallback(onWsMessage);
+    server.setWsCloseCallback(onWsClose);
 
     registerRoutes(server);
 
