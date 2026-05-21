@@ -1,12 +1,13 @@
 #include "ui/LiveHallPage.h"
 #include "ui/RoomCard.h"
+#include "ui/ReplayCard.h"
 #include "app/Application.h"
 #include "network/IHttpClient.h"
 #include "network/ApiResponse.h"
-#include <QSvgRenderer>
 
 LiveHallPage::LiveHallPage(QWidget* parent)
     : QWidget(parent)
+    , m_currentMode(0)
     , m_selectedCategory(0)
 {
     m_categories = QStringList{
@@ -21,7 +22,13 @@ LiveHallPage::LiveHallPage(QWidget* parent)
 
     m_refreshTimer = new QTimer(this);
     m_refreshTimer->setInterval(30000);
-    connect(m_refreshTimer, &QTimer::timeout, this, &LiveHallPage::loadRooms);
+    connect(m_refreshTimer, &QTimer::timeout, this, [this]() {
+        if (m_currentMode == 0) {
+            loadRooms();
+        } else {
+            loadReplays();
+        }
+    });
     m_refreshTimer->start();
 }
 
@@ -31,12 +38,19 @@ void LiveHallPage::setupUI() {
     mainLayout->setSpacing(0);
 
     setupHeader();
+    setupModeTabs();
     setupCategoryBar();
     setupRoomGrid();
+    setupReplayGrid();
+
+    m_contentStack = new QStackedWidget(this);
+    m_contentStack->addWidget(m_roomScrollArea);
+    m_contentStack->addWidget(m_replayScrollArea);
 
     mainLayout->addWidget(m_header);
+    mainLayout->addWidget(m_liveTab->parentWidget());
     mainLayout->addWidget(m_categoryBar);
-    mainLayout->addWidget(m_scrollArea, 1);
+    mainLayout->addWidget(m_contentStack, 1);
 }
 
 void LiveHallPage::setupHeader() {
@@ -52,6 +66,43 @@ void LiveHallPage::setupHeader() {
 
     m_headerLayout->addWidget(m_logoLabel);
     m_headerLayout->addStretch();
+}
+
+void LiveHallPage::setupModeTabs() {
+    auto* tabBar = new QWidget(this);
+    tabBar->setObjectName("hallModeBar");
+    tabBar->setFixedHeight(40);
+
+    auto* tabLayout = new QHBoxLayout(tabBar);
+    tabLayout->setContentsMargins(24, 4, 24, 4);
+    tabLayout->setSpacing(4);
+
+    m_modeGroup = new QButtonGroup(this);
+    m_modeGroup->setExclusive(true);
+
+    m_liveTab = new QPushButton(QStringLiteral("直播"), tabBar);
+    m_liveTab->setObjectName("modeTabButton");
+    m_liveTab->setCheckable(true);
+    m_liveTab->setChecked(true);
+    m_liveTab->setFixedHeight(30);
+    m_liveTab->setMinimumWidth(60);
+    m_liveTab->setCursor(Qt::PointingHandCursor);
+    m_modeGroup->addButton(m_liveTab, 0);
+    tabLayout->addWidget(m_liveTab);
+
+    m_replayTab = new QPushButton(QStringLiteral("回放"), tabBar);
+    m_replayTab->setObjectName("modeTabButton");
+    m_replayTab->setCheckable(true);
+    m_replayTab->setFixedHeight(30);
+    m_replayTab->setMinimumWidth(60);
+    m_replayTab->setCursor(Qt::PointingHandCursor);
+    m_modeGroup->addButton(m_replayTab, 1);
+    tabLayout->addWidget(m_replayTab);
+
+    tabLayout->addStretch();
+
+    connect(m_modeGroup, static_cast<void(QButtonGroup::*)(int)>(&QButtonGroup::buttonClicked),
+        this, &LiveHallPage::switchMode);
 }
 
 void LiveHallPage::setupCategoryBar() {
@@ -83,30 +134,67 @@ void LiveHallPage::setupCategoryBar() {
     connect(m_categoryGroup, static_cast<void(QButtonGroup::*)(int)>(&QButtonGroup::buttonClicked), [this](int id) {
         m_selectedCategory = id;
         m_currentCategory = (id == 0) ? "" : m_categories[id];
-        loadRooms();
+        if (m_currentMode == 0) {
+            loadRooms();
+        } else {
+            loadReplays();
+        }
     });
 }
 
 void LiveHallPage::setupRoomGrid() {
-    m_scrollArea = new QScrollArea(this);
-    m_scrollArea->setObjectName("hallScrollArea");
-    m_scrollArea->setWidgetResizable(true);
-    m_scrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    m_roomScrollArea = new QScrollArea(this);
+    m_roomScrollArea->setObjectName("hallScrollArea");
+    m_roomScrollArea->setWidgetResizable(true);
+    m_roomScrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
-    m_scrollContent = new QWidget(m_scrollArea);
-    m_scrollContent->setObjectName("hallScrollContent");
+    m_roomScrollContent = new QWidget(m_roomScrollArea);
+    m_roomScrollContent->setObjectName("hallScrollContent");
 
-    m_gridLayout = new QGridLayout(m_scrollContent);
-    m_gridLayout->setContentsMargins(24, 16, 24, 16);
-    m_gridLayout->setSpacing(12);
-    m_gridLayout->setAlignment(Qt::AlignTop | Qt::AlignLeft);
+    m_roomGridLayout = new QGridLayout(m_roomScrollContent);
+    m_roomGridLayout->setContentsMargins(24, 16, 24, 16);
+    m_roomGridLayout->setSpacing(12);
+    m_roomGridLayout->setAlignment(Qt::AlignTop | Qt::AlignLeft);
 
-    m_emptyLabel = new QLabel(QStringLiteral("暂无直播"), m_scrollContent);
-    m_emptyLabel->setObjectName("hallEmptyLabel");
-    m_emptyLabel->setAlignment(Qt::AlignCenter);
-    m_emptyLabel->hide();
+    m_roomEmptyLabel = new QLabel(QStringLiteral("暂无直播"), m_roomScrollContent);
+    m_roomEmptyLabel->setObjectName("hallEmptyLabel");
+    m_roomEmptyLabel->setAlignment(Qt::AlignCenter);
+    m_roomEmptyLabel->hide();
 
-    m_scrollArea->setWidget(m_scrollContent);
+    m_roomScrollArea->setWidget(m_roomScrollContent);
+}
+
+void LiveHallPage::setupReplayGrid() {
+    m_replayScrollArea = new QScrollArea(this);
+    m_replayScrollArea->setObjectName("hallScrollArea");
+    m_replayScrollArea->setWidgetResizable(true);
+    m_replayScrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+
+    m_replayScrollContent = new QWidget(m_replayScrollArea);
+    m_replayScrollContent->setObjectName("hallScrollContent");
+
+    m_replayGridLayout = new QGridLayout(m_replayScrollContent);
+    m_replayGridLayout->setContentsMargins(24, 16, 24, 16);
+    m_replayGridLayout->setSpacing(12);
+    m_replayGridLayout->setAlignment(Qt::AlignTop | Qt::AlignLeft);
+
+    m_replayEmptyLabel = new QLabel(QStringLiteral("暂无回放"), m_replayScrollContent);
+    m_replayEmptyLabel->setObjectName("hallEmptyLabel");
+    m_replayEmptyLabel->setAlignment(Qt::AlignCenter);
+    m_replayEmptyLabel->hide();
+
+    m_replayScrollArea->setWidget(m_replayScrollContent);
+}
+
+void LiveHallPage::switchMode(int mode) {
+    m_currentMode = mode;
+    if (mode == 0) {
+        m_contentStack->setCurrentWidget(m_roomScrollArea);
+        loadRooms();
+    } else {
+        m_contentStack->setCurrentWidget(m_replayScrollArea);
+        loadReplays();
+    }
 }
 
 void LiveHallPage::loadRooms() {
@@ -125,31 +213,50 @@ void LiveHallPage::loadRooms() {
     });
 }
 
+void LiveHallPage::loadReplays() {
+    auto* client = Application::instance().httpClient();
+    client->get("/api/live/replays", [this](const ApiResponse& resp) {
+        if (resp.isSuccess()) {
+            auto replaysArr = resp.data().value("replays").toArray();
+            auto replays = ReplayInfo::fromJsonArray(replaysArr);
+            populateReplayCards(replays);
+        }
+    });
+}
+
 void LiveHallPage::clearRoomCards() {
     for (auto* card : m_roomCards) {
-        m_gridLayout->removeWidget(card);
+        m_roomGridLayout->removeWidget(card);
         delete card;
     }
     m_roomCards.clear();
+}
+
+void LiveHallPage::clearReplayCards() {
+    for (auto* card : m_replayCards) {
+        m_replayGridLayout->removeWidget(card);
+        delete card;
+    }
+    m_replayCards.clear();
 }
 
 void LiveHallPage::populateRoomCards(const QVector<RoomInfo>& rooms) {
     clearRoomCards();
 
     if (rooms.isEmpty()) {
-        m_emptyLabel->show();
-        m_gridLayout->addWidget(m_emptyLabel, 0, 0, 1, 4);
+        m_roomEmptyLabel->show();
+        m_roomGridLayout->addWidget(m_roomEmptyLabel, 0, 0, 1, 4);
         return;
     }
 
-    m_emptyLabel->hide();
+    m_roomEmptyLabel->hide();
 
     int col = 0;
     int row = 0;
     const int maxCols = 4;
 
     for (const auto& room : rooms) {
-        auto* card = new RoomCard(m_scrollContent);
+        auto* card = new RoomCard(m_roomScrollContent);
         card->setRoomId(room.roomId());
         card->setAnchorAvatar(room.anchorAvatarId());
         card->setAnchorName(room.anchorName());
@@ -159,7 +266,7 @@ void LiveHallPage::populateRoomCards(const QVector<RoomInfo>& rooms) {
 
         connect(card, &RoomCard::clicked, this, &LiveHallPage::roomClicked);
 
-        m_gridLayout->addWidget(card, row, col);
+        m_roomGridLayout->addWidget(card, row, col);
         m_roomCards.append(card);
 
         col++;
@@ -170,11 +277,59 @@ void LiveHallPage::populateRoomCards(const QVector<RoomInfo>& rooms) {
     }
 }
 
+void LiveHallPage::populateReplayCards(const QVector<ReplayInfo>& replays) {
+    clearReplayCards();
+
+    if (replays.isEmpty()) {
+        m_replayEmptyLabel->show();
+        m_replayGridLayout->addWidget(m_replayEmptyLabel, 0, 0, 1, 4);
+        return;
+    }
+
+    m_replayEmptyLabel->hide();
+
+    int col = 0;
+    int row = 0;
+    const int maxCols = 4;
+
+    for (const auto& replay : replays) {
+        auto* card = new ReplayCard(m_replayScrollContent);
+        card->setReplayId(replay.replayId());
+        card->setPlayUrl(replay.playUrl());
+        card->setAnchorAvatar(replay.anchorAvatarId());
+        card->setAnchorName(replay.anchorName());
+        card->setTitle(replay.title());
+        card->setDuration(replay.durationText());
+
+        connect(card, &ReplayCard::clicked, this, [this](int replayId, const QString& playUrl) {
+            Q_UNUSED(replayId)
+            emit replayClicked(playUrl);
+        });
+
+        m_replayGridLayout->addWidget(card, row, col);
+        m_replayCards.append(card);
+
+        col++;
+        if (col >= maxCols) {
+            col = 0;
+            row++;
+        }
+    }
+}
+
 void LiveHallPage::refreshRooms() {
-    loadRooms();
+    if (m_currentMode == 0) {
+        loadRooms();
+    } else {
+        loadReplays();
+    }
 }
 
 void LiveHallPage::setCategoryFilter(const QString& category) {
     m_currentCategory = category;
-    loadRooms();
+    if (m_currentMode == 0) {
+        loadRooms();
+    } else {
+        loadReplays();
+    }
 }

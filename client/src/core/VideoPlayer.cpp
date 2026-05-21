@@ -128,6 +128,14 @@ bool VideoPlayer::play(const QString& url) {
     m_paused = false;
     m_audioClock = 0.0;
 
+    if (m_fmtCtx->duration > 0) {
+        emit SIG_durationChanged(m_fmtCtx->duration / 1000);
+    } else if (m_videoStreamIdx >= 0 && m_fmtCtx->streams[m_videoStreamIdx]->duration > 0) {
+        int64_t dur = m_fmtCtx->streams[m_videoStreamIdx]->duration
+            * 1000 * av_q2d(m_fmtCtx->streams[m_videoStreamIdx]->time_base);
+        emit SIG_durationChanged(dur);
+    }
+
     m_demuxThreadHandle = QThread::create([this]() { demuxThread(); });
     m_videoThreadHandle = QThread::create([this]() { videoThread(); });
     m_audioThreadHandle = QThread::create([this]() { audioThread(); });
@@ -198,7 +206,28 @@ void VideoPlayer::stop() {
 }
 
 void VideoPlayer::seek(int64_t ms) {
-    Q_UNUSED(ms)
+    if (!m_fmtCtx || !m_running) return;
+
+    m_seeking = true;
+    m_videoQueue->clear();
+    m_audioQueue->clear();
+
+    int64_t ts = ms * 1000;
+    int streamIdx = m_videoStreamIdx;
+    if (streamIdx < 0) streamIdx = 0;
+
+    int ret = av_seek_frame(m_fmtCtx, streamIdx, ts,
+        AVSEEK_FLAG_BACKWARD | AVSEEK_FLAG_ANY);
+    if (ret < 0) {
+        ret = avformat_seek_file(m_fmtCtx, streamIdx, INT64_MIN, ts, INT64_MAX, 0);
+    }
+
+    if (ret >= 0) {
+        if (m_videoCodecCtx) avcodec_flush_buffers(m_videoCodecCtx);
+        if (m_audioCodecCtx) avcodec_flush_buffers(m_audioCodecCtx);
+    }
+
+    m_seeking = false;
 }
 
 bool VideoPlayer::isPlaying() const {
@@ -300,6 +329,7 @@ void VideoPlayer::videoThread() {
                 dstData, dstLineSize);
 
             emit SIG_frameReady(img);
+            emit SIG_positionChanged(static_cast<int64_t>(pts * 1000));
             av_frame_unref(frame);
         }
     }

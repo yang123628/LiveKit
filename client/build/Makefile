@@ -285,6 +285,30 @@ src/model/GiftInfo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/model/GiftInfo.cpp.s
 .PHONY : src/model/GiftInfo.cpp.s
 
+src/model/ReplayInfo.obj: src/model/ReplayInfo.cpp.obj
+.PHONY : src/model/ReplayInfo.obj
+
+# target to build an object file
+src/model/ReplayInfo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/model/ReplayInfo.cpp.obj
+.PHONY : src/model/ReplayInfo.cpp.obj
+
+src/model/ReplayInfo.i: src/model/ReplayInfo.cpp.i
+.PHONY : src/model/ReplayInfo.i
+
+# target to preprocess a source file
+src/model/ReplayInfo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/model/ReplayInfo.cpp.i
+.PHONY : src/model/ReplayInfo.cpp.i
+
+src/model/ReplayInfo.s: src/model/ReplayInfo.cpp.s
+.PHONY : src/model/ReplayInfo.s
+
+# target to generate assembly for a file
+src/model/ReplayInfo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/model/ReplayInfo.cpp.s
+.PHONY : src/model/ReplayInfo.cpp.s
+
 src/model/RoomInfo.obj: src/model/RoomInfo.cpp.obj
 .PHONY : src/model/RoomInfo.obj
 
@@ -741,6 +765,30 @@ src/ui/RegisterPage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/RegisterPage.cpp.s
 .PHONY : src/ui/RegisterPage.cpp.s
 
+src/ui/ReplayCard.obj: src/ui/ReplayCard.cpp.obj
+.PHONY : src/ui/ReplayCard.obj
+
+# target to build an object file
+src/ui/ReplayCard.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/ReplayCard.cpp.obj
+.PHONY : src/ui/ReplayCard.cpp.obj
+
+src/ui/ReplayCard.i: src/ui/ReplayCard.cpp.i
+.PHONY : src/ui/ReplayCard.i
+
+# target to preprocess a source file
+src/ui/ReplayCard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/ReplayCard.cpp.i
+.PHONY : src/ui/ReplayCard.cpp.i
+
+src/ui/ReplayCard.s: src/ui/ReplayCard.cpp.s
+.PHONY : src/ui/ReplayCard.s
+
+# target to generate assembly for a file
+src/ui/ReplayCard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/ReplayCard.cpp.s
+.PHONY : src/ui/ReplayCard.cpp.s
+
 src/ui/RoomCard.obj: src/ui/RoomCard.cpp.obj
 .PHONY : src/ui/RoomCard.obj
 
@@ -817,6 +865,9 @@ help:
 	@echo ... src/model/GiftInfo.obj
 	@echo ... src/model/GiftInfo.i
 	@echo ... src/model/GiftInfo.s
+	@echo ... src/model/ReplayInfo.obj
+	@echo ... src/model/ReplayInfo.i
+	@echo ... src/model/ReplayInfo.s
 	@echo ... src/model/RoomInfo.obj
 	@echo ... src/model/RoomInfo.i
 	@echo ... src/model/RoomInfo.s
@@ -874,6 +925,9 @@ help:
 	@echo ... src/ui/RegisterPage.obj
 	@echo ... src/ui/RegisterPage.i
 	@echo ... src/ui/RegisterPage.s
+	@echo ... src/ui/ReplayCard.obj
+	@echo ... src/ui/ReplayCard.i
+	@echo ... src/ui/ReplayCard.s
 	@echo ... src/ui/RoomCard.obj
 	@echo ... src/ui/RoomCard.i
 	@echo ... src/ui/RoomCard.s

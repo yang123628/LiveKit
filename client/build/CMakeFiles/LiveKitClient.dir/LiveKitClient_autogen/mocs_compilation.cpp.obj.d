@@ -412,7 +412,10 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qscrollarea.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QButtonGroup \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qbuttongroup.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QStackedWidget \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qstackedwidget.h \
  D:/vskelin/LiveKit/client/src/model/RoomInfo.h \
+ D:/vskelin/LiveKit/client/src/model/ReplayInfo.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_LoginPage.cpp \
  D:/vskelin/LiveKit/client/src/ui/LoginPage.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QLineEdit \
@@ -435,8 +438,6 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/vskelin/LiveKit/client/src/ui/MainWindow.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QMainWindow \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qmainwindow.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QStackedWidget \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qstackedwidget.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_OpenGLWidget.cpp \
  D:/vskelin/LiveKit/client/src/ui/OpenGLWidget.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QOpenGLWidget \
@@ -664,8 +665,8 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qpoint.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_RegisterPage.cpp \
  D:/vskelin/LiveKit/client/src/ui/RegisterPage.h \
- D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_RoomCard.cpp \
- D:/vskelin/LiveKit/client/src/ui/RoomCard.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_ReplayCard.cpp \
+ D:/vskelin/LiveKit/client/src/ui/ReplayCard.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QGraphicsDropShadowEffect \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtSvg/QSvgRenderer \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtSvg/qsvgrenderer.h \
@@ -675,6 +676,8 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qpainter.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/QPixmap \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qpixmap.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_RoomCard.cpp \
+ D:/vskelin/LiveKit/client/src/ui/RoomCard.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_StartLivePage.cpp \
  D:/vskelin/LiveKit/client/src/ui/StartLivePage.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QComboBox \

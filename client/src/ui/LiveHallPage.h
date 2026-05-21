@@ -10,8 +10,10 @@
 #include <QTimer>
 #include <QVector>
 #include <QButtonGroup>
+#include <QStackedWidget>
 
 #include "model/RoomInfo.h"
+#include "model/ReplayInfo.h"
 
 class RoomCard;
 
@@ -27,19 +29,31 @@ public:
 
 signals:
     void roomClicked(int roomId);
+    void replayClicked(const QString& playUrl);
 
 private:
     void setupUI();
     void setupHeader();
+    void setupModeTabs();
     void setupCategoryBar();
     void setupRoomGrid();
+    void setupReplayGrid();
     void loadRooms();
+    void loadReplays();
     void clearRoomCards();
+    void clearReplayCards();
     void populateRoomCards(const QVector<RoomInfo>& rooms);
+    void populateReplayCards(const QVector<ReplayInfo>& replays);
+    void switchMode(int mode);
 
     QWidget* m_header;
     QLabel* m_logoLabel;
     QHBoxLayout* m_headerLayout;
+
+    QPushButton* m_liveTab;
+    QPushButton* m_replayTab;
+    QButtonGroup* m_modeGroup;
+    int m_currentMode;
 
     QWidget* m_categoryBar;
     QHBoxLayout* m_categoryLayout;
@@ -47,12 +61,19 @@ private:
     QStringList m_categories;
     int m_selectedCategory;
 
-    QScrollArea* m_scrollArea;
-    QWidget* m_scrollContent;
-    QGridLayout* m_gridLayout;
-    QList<RoomCard*> m_roomCards;
+    QStackedWidget* m_contentStack;
 
-    QLabel* m_emptyLabel;
+    QScrollArea* m_roomScrollArea;
+    QWidget* m_roomScrollContent;
+    QGridLayout* m_roomGridLayout;
+    QList<RoomCard*> m_roomCards;
+    QLabel* m_roomEmptyLabel;
+
+    QScrollArea* m_replayScrollArea;
+    QWidget* m_replayScrollContent;
+    QGridLayout* m_replayGridLayout;
+    QList<QWidget*> m_replayCards;
+    QLabel* m_replayEmptyLabel;
 
     QTimer* m_refreshTimer;
     QString m_currentCategory;

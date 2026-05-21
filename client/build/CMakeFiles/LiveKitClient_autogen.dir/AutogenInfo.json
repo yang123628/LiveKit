@@ -114,6 +114,12 @@
 			null
 		],
 		[
+			"D:/vskelin/LiveKit/client/src/model/ReplayInfo.h",
+			"MU",
+			"VNQA4LF4BW/moc_ReplayInfo.cpp",
+			null
+		],
+		[
 			"D:/vskelin/LiveKit/client/src/model/RoomInfo.h",
 			"MU",
 			"VNQA4LF4BW/moc_RoomInfo.cpp",
@@ -228,6 +234,12 @@
 			null
 		],
 		[
+			"D:/vskelin/LiveKit/client/src/ui/ReplayCard.h",
+			"MU",
+			"YPKJ5OE7LN/moc_ReplayCard.cpp",
+			null
+		],
+		[
 			"D:/vskelin/LiveKit/client/src/ui/RoomCard.h",
 			"MU",
 			"YPKJ5OE7LN/moc_RoomCard.cpp",
@@ -311,6 +323,7 @@
 		[ "D:/vskelin/LiveKit/client/src/app/Application.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/main.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/model/GiftInfo.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/model/ReplayInfo.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/model/RoomInfo.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/model/UserInfo.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/network/ApiResponse.cpp", "MU", null ],
@@ -342,6 +355,7 @@
 		[ "D:/vskelin/LiveKit/client/src/ui/OpenGLWidget.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/PicInPicWidget.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/RegisterPage.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/ui/ReplayCard.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/RoomCard.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/StartLivePage.cpp", "MU", null ]
 	],

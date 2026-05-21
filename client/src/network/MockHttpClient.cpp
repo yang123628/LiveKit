@@ -16,6 +16,8 @@ void MockHttpClient::get(const QString& path, const Callback& callback) {
             handleGetAvatars(callback);
         } else if (path.startsWith("/api/live/rooms")) {
             handleGetRooms(path, callback);
+        } else if (path == "/api/live/replays") {
+            handleGetReplays(callback);
         } else {
             QJsonObject resp;
             resp["code"] = -1;
@@ -235,5 +237,47 @@ void MockHttpClient::handleEndLive(const QJsonObject& body, const Callback& call
     QJsonObject resp;
     resp["code"] = 0;
     resp["msg"] = QString::fromUtf8("ok");
+    callback(ApiResponse(resp));
+}
+
+void MockHttpClient::handleGetReplays(const Callback& callback) {
+    QJsonArray replaysArr;
+
+    auto addReplay = [&](int id, const QString& title, const QString& anchor,
+                         int avatarId, int duration, const QString& playUrl) {
+        QJsonObject obj;
+        obj["replay_id"] = id;
+        obj["title"] = title;
+        obj["anchor_name"] = anchor;
+        obj["anchor_avatar_id"] = avatarId;
+        obj["duration"] = duration;
+        obj["cover_url"] = "";
+        obj["play_url"] = playUrl;
+        replaysArr.append(obj);
+    };
+
+    QString serverAddr = baseUrl();
+    serverAddr.replace("http://", "");
+
+    addReplay(1, QStringLiteral("英雄联盟排位赛精彩回放"), QStringLiteral("小明"), 1, 3720,
+        QString("http://%1/recordings/replay_1.mp4").arg(serverAddr));
+    addReplay(2, QStringLiteral("吉他弹唱完整版"), QStringLiteral("音乐人"), 5, 5400,
+        QString("http://%1/recordings/replay_2.mp4").arg(serverAddr));
+    addReplay(3, QStringLiteral("原神深渊挑战回放"), QStringLiteral("阿杰"), 3, 2100,
+        QString("http://%1/recordings/replay_3.mp4").arg(serverAddr));
+    addReplay(4, QStringLiteral("深夜聊天室录播"), QStringLiteral("小美"), 4, 7200,
+        QString("http://%1/recordings/replay_4.mp4").arg(serverAddr));
+    addReplay(5, QStringLiteral("Minecraft建筑全过程"), QStringLiteral("方块哥"), 6, 4800,
+        QString("http://%1/recordings/replay_5.mp4").arg(serverAddr));
+    addReplay(6, QStringLiteral("编程直播回放"), QStringLiteral("程序员老王"), 8, 3600,
+        QString("http://%1/recordings/replay_6.mp4").arg(serverAddr));
+
+    QJsonObject data;
+    data["replays"] = replaysArr;
+
+    QJsonObject resp;
+    resp["code"] = 0;
+    resp["msg"] = QString::fromUtf8("ok");
+    resp["data"] = data;
     callback(ApiResponse(resp));
 }

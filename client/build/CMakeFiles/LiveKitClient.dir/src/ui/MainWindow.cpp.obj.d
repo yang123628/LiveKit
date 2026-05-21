@@ -331,6 +331,7 @@ CMakeFiles/LiveKitClient.dir/src/ui/MainWindow.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonobject.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonArray \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonarray.h \
+ D:/vskelin/LiveKit/client/src/model/ReplayInfo.h \
  D:/vskelin/LiveKit/client/src/ui/StartLivePage.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QComboBox \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qcombobox.h \

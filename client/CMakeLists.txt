@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(LiveKitClient VERSION 0.6.0 LANGUAGES CXX)
+project(LiveKitClient VERSION 0.7.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -51,6 +51,7 @@ set(SOURCES
     src/ui/RegisterPage.cpp
     src/ui/LiveHallPage.cpp
     src/ui/RoomCard.cpp
+    src/ui/ReplayCard.cpp
     src/ui/OpenGLWidget.cpp
     src/ui/StartLivePage.cpp
     src/ui/PicInPicWidget.cpp
@@ -68,6 +69,7 @@ set(SOURCES
     src/model/UserInfo.cpp
     src/model/RoomInfo.cpp
     src/model/GiftInfo.cpp
+    src/model/ReplayInfo.cpp
 )
 
 set(HEADERS
@@ -78,6 +80,7 @@ set(HEADERS
     src/ui/RegisterPage.h
     src/ui/LiveHallPage.h
     src/ui/RoomCard.h
+    src/ui/ReplayCard.h
     src/ui/OpenGLWidget.h
     src/ui/StartLivePage.h
     src/ui/PicInPicWidget.h
@@ -95,6 +98,7 @@ set(HEADERS
     src/model/UserInfo.h
     src/model/RoomInfo.h
     src/model/GiftInfo.h
+    src/model/ReplayInfo.h
 )
 
 if(HAS_FFMPEG AND HAS_SDL2 AND HAS_OPENCV)
@@ -108,6 +112,7 @@ if(HAS_FFMPEG AND HAS_SDL2 AND HAS_OPENCV)
         src/core/VideoPlayer.cpp
         src/ui/AnchorRoomPage.cpp
         src/ui/LiveRoomPage.cpp
+        src/ui/ReplayPlayerPage.cpp
     )
     list(APPEND HEADERS
         src/core/PacketQueue.h
@@ -119,6 +124,7 @@ if(HAS_FFMPEG AND HAS_SDL2 AND HAS_OPENCV)
         src/core/VideoPlayer.h
         src/ui/AnchorRoomPage.h
         src/ui/LiveRoomPage.h
+        src/ui/ReplayPlayerPage.h
     )
     add_definitions(-DHAS_FFMPEG -DHAS_SDL2 -DHAS_OPENCV)
 endif()

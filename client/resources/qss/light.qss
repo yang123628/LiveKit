@@ -656,3 +656,90 @@ QLabel#giftAnimText {
 #floatingHearts {
     background: transparent;
 }
+
+#hallModeBar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+QPushButton#modeTabButton {
+    background-color: transparent;
+    color: #999999;
+    border: 2px solid transparent;
+    border-radius: 14px;
+    padding: 2px 16px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QPushButton#modeTabButton:hover {
+    color: #333333;
+    border: 2px solid #e0e0e0;
+}
+
+QPushButton#modeTabButton:checked {
+    background-color: #4a90d9;
+    color: #ffffff;
+    border: 2px solid #4a90d9;
+}
+
+QLabel#replayDurationLabel {
+    background-color: rgba(0, 0, 0, 180);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#replayVideoWidget {
+    background-color: #000000;
+    border: none;
+}
+
+#replayControlBar {
+    background-color: #f5f5f5;
+    border-top: 1px solid #e0e0e0;
+}
+
+QSlider#replayProgressSlider::groove:horizontal {
+    background-color: #e0e0e0;
+    height: 4px;
+    border-radius: 2px;
+}
+
+QSlider#replayProgressSlider::handle:horizontal {
+    background-color: #4a90d9;
+    width: 14px;
+    height: 14px;
+    margin: -5px 0;
+    border-radius: 7px;
+}
+
+QSlider#replayProgressSlider::sub-page:horizontal {
+    background-color: #4a90d9;
+    border-radius: 2px;
+}
+
+QPushButton#playPauseButton {
+    background-color: #4a90d9;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QPushButton#playPauseButton:hover {
+    background-color: #5aa0e9;
+}
+
+QPushButton#playPauseButton:pressed {
+    background-color: #3a80c9;
+}
+
+QLabel#replayTimeLabel {
+    color: #999999;
+    font-size: 13px;
+}

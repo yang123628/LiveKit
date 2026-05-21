@@ -13,6 +13,7 @@ class LiveHallPage;
 class StartLivePage;
 class AnchorRoomPage;
 class LiveRoomPage;
+class ReplayPlayerPage;
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -26,6 +27,7 @@ public:
     void showMainPage();
     void showLiveRoom(const QString& playUrl, int roomId);
     void showAnchorRoom(const QString& pushUrl, int mode, int roomId);
+    void showReplayRoom(const QString& playUrl);
 
 private:
     void setupUI();
@@ -61,6 +63,7 @@ private:
 #ifdef HAS_FFMPEG
     AnchorRoomPage* m_pageAnchorRoom;
     LiveRoomPage* m_pageLiveRoom;
+    ReplayPlayerPage* m_pageReplayRoom;
 #endif
 
     int m_currentIndex;

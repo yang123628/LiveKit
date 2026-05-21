@@ -15,5 +15,6 @@
 #include "YPKJ5OE7LN/moc_OpenGLWidget.cpp"
 #include "YPKJ5OE7LN/moc_PicInPicWidget.cpp"
 #include "YPKJ5OE7LN/moc_RegisterPage.cpp"
+#include "YPKJ5OE7LN/moc_ReplayCard.cpp"
 #include "YPKJ5OE7LN/moc_RoomCard.cpp"
 #include "YPKJ5OE7LN/moc_StartLivePage.cpp"

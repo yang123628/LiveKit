@@ -11,6 +11,7 @@
 #ifdef HAS_FFMPEG
 #include "ui/AnchorRoomPage.h"
 #include "ui/LiveRoomPage.h"
+#include "ui/ReplayPlayerPage.h"
 #endif
 
 MainWindow::MainWindow(QWidget* parent)
@@ -128,6 +129,15 @@ void MainWindow::setupPages() {
 #endif
     });
 
+    connect(m_pageLiveHall, &LiveHallPage::replayClicked, [this](const QString& playUrl) {
+#ifdef HAS_FFMPEG
+        showReplayRoom(playUrl);
+#else
+        Q_UNUSED(playUrl)
+        qDebug() << "FFmpeg not available, cannot play replay";
+#endif
+    });
+
     m_pageStartLive = new StartLivePage(this);
     m_pageStartLive->setObjectName("pageStartLive");
 
@@ -187,6 +197,13 @@ void MainWindow::setupPages() {
     connect(m_pageLiveRoom, &LiveRoomPage::SIG_backToHall, [this]() {
         switchPage(0);
     });
+
+    m_pageReplayRoom = new ReplayPlayerPage(this);
+    m_pageReplayRoom->setObjectName("pageReplayRoom");
+
+    connect(m_pageReplayRoom, &ReplayPlayerPage::SIG_backToHall, [this]() {
+        switchPage(0);
+    });
 #endif
 
     m_pageProfile = new QWidget(this);
@@ -204,6 +221,7 @@ void MainWindow::setupPages() {
 #ifdef HAS_FFMPEG
     m_contentStack->addWidget(m_pageAnchorRoom);
     m_contentStack->addWidget(m_pageLiveRoom);
+    m_contentStack->addWidget(m_pageReplayRoom);
 #endif
 }
 
@@ -256,6 +274,16 @@ void MainWindow::showAnchorRoom(const QString& pushUrl, int mode, int roomId) {
     Q_UNUSED(pushUrl)
     Q_UNUSED(mode)
     Q_UNUSED(roomId)
+#endif
+}
+
+void MainWindow::showReplayRoom(const QString& playUrl) {
+#ifdef HAS_FFMPEG
+    m_contentStack->setCurrentWidget(m_pageReplayRoom);
+    m_pageReplayRoom->play(playUrl);
+    m_navigationBar->hide();
+#else
+    Q_UNUSED(playUrl)
 #endif
 }
 

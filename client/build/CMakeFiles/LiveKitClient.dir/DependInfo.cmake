@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/vskelin/LiveKit/client/src/app/Application.cpp" "CMakeFiles/LiveKitClient.dir/src/app/Application.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/app/Application.cpp.obj.d"
   "D:/vskelin/LiveKit/client/src/main.cpp" "CMakeFiles/LiveKitClient.dir/src/main.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/main.cpp.obj.d"
   "D:/vskelin/LiveKit/client/src/model/GiftInfo.cpp" "CMakeFiles/LiveKitClient.dir/src/model/GiftInfo.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/model/GiftInfo.cpp.obj.d"
+  "D:/vskelin/LiveKit/client/src/model/ReplayInfo.cpp" "CMakeFiles/LiveKitClient.dir/src/model/ReplayInfo.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/model/ReplayInfo.cpp.obj.d"
   "D:/vskelin/LiveKit/client/src/model/RoomInfo.cpp" "CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.obj.d"
   "D:/vskelin/LiveKit/client/src/model/UserInfo.cpp" "CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/model/UserInfo.cpp.obj.d"
   "D:/vskelin/LiveKit/client/src/network/ApiResponse.cpp" "CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/network/ApiResponse.cpp.obj.d"
@@ -33,6 +34,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/vskelin/LiveKit/client/src/ui/OpenGLWidget.cpp" "CMakeFiles/LiveKitClient.dir/src/ui/OpenGLWidget.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/ui/OpenGLWidget.cpp.obj.d"
   "D:/vskelin/LiveKit/client/src/ui/PicInPicWidget.cpp" "CMakeFiles/LiveKitClient.dir/src/ui/PicInPicWidget.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/ui/PicInPicWidget.cpp.obj.d"
   "D:/vskelin/LiveKit/client/src/ui/RegisterPage.cpp" "CMakeFiles/LiveKitClient.dir/src/ui/RegisterPage.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/ui/RegisterPage.cpp.obj.d"
+  "D:/vskelin/LiveKit/client/src/ui/ReplayCard.cpp" "CMakeFiles/LiveKitClient.dir/src/ui/ReplayCard.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/ui/ReplayCard.cpp.obj.d"
   "D:/vskelin/LiveKit/client/src/ui/RoomCard.cpp" "CMakeFiles/LiveKitClient.dir/src/ui/RoomCard.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/ui/RoomCard.cpp.obj.d"
   "D:/vskelin/LiveKit/client/src/ui/StartLivePage.cpp" "CMakeFiles/LiveKitClient.dir/src/ui/StartLivePage.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/ui/StartLivePage.cpp.obj.d"
   )
