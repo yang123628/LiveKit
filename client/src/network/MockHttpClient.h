@@ -19,6 +19,9 @@ private:
     void handleGetRooms(const QString& path, const Callback& callback);
     void handleLogin(const QJsonObject& body, const Callback& callback);
     void handleRegister(const QJsonObject& body, const Callback& callback);
+    void handleCreateLive(const QJsonObject& body, const Callback& callback);
+    void handleEndLive(const QJsonObject& body, const Callback& callback);
 
     int m_nextUserId;
+    int m_nextRoomId;
 };

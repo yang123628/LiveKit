@@ -118,9 +118,6 @@ CMAKE_OBJCOPY:FILEPATH=D:/Qt/Qt5.12.11/Tools/mingw730_64/bin/objcopy.exe
 //Path to a program.
 CMAKE_OBJDUMP:FILEPATH=D:/Qt/Qt5.12.11/Tools/mingw730_64/bin/objdump.exe
 
-//No help, variable specified on the command line.
-CMAKE_PREFIX_PATH:UNINITIALIZED=D:\Qt\Qt5.12.11\5.12.11\mingw73_64
-
 //Value Computed by CMake
 CMAKE_PROJECT_COMPAT_VERSION:STATIC=
 
@@ -137,13 +134,13 @@ CMAKE_PROJECT_NAME:STATIC=LiveKitClient
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=0.3.0
+CMAKE_PROJECT_VERSION:STATIC=0.4.0
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=3
+CMAKE_PROJECT_VERSION_MINOR:STATIC=4
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_PATCH:STATIC=0
@@ -260,6 +257,9 @@ Qt5Multimedia_DIR:PATH=D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Multimedi
 
 //The directory containing a CMake configuration file for Qt5Network.
 Qt5Network_DIR:PATH=D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Network
+
+//The directory containing a CMake configuration file for Qt5OpenGL.
+Qt5OpenGL_DIR:PATH=D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5OpenGL
 
 //The directory containing a CMake configuration file for Qt5Svg.
 Qt5Svg_DIR:PATH=D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Svg

@@ -43,6 +43,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Network/Qt5NetworkConfig.cmake"
   "D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake"
   "D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake"
+  "D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake"
+  "D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake"
   "D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Svg/Qt5SvgConfig.cmake"
   "D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Svg/Qt5SvgConfigVersion.cmake"
   "D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Svg/Qt5Svg_QSvgIconPlugin.cmake"

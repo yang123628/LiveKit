@@ -19,7 +19,7 @@ void Application::initialize(int& argc, char** argv) {
     m_app = std::make_unique<QApplication>(argc, argv);
 
     QApplication::setApplicationName("LiveKit");
-    QApplication::setApplicationVersion("0.2.0");
+    QApplication::setApplicationVersion("0.4.0");
     QApplication::setOrganizationName("LiveKit");
 
     AppConfig::instance().load();

@@ -158,6 +158,8 @@
 		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Svg/Qt5SvgConfig.cmake",
 		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Svg/Qt5Svg_QSvgIconPlugin.cmake",
 		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5Svg/Qt5Svg_QSvgPlugin.cmake",
+		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake",
+		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake",
 		"D:/vskelin/LiveKit/client/resources/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "D:/vskelin/LiveKit/client",
@@ -239,6 +241,18 @@
 			null
 		],
 		[
+			"D:/vskelin/LiveKit/client/src/ui/OpenGLWidget.h",
+			"MU",
+			"YPKJ5OE7LN/moc_OpenGLWidget.cpp",
+			null
+		],
+		[
+			"D:/vskelin/LiveKit/client/src/ui/PicInPicWidget.h",
+			"MU",
+			"YPKJ5OE7LN/moc_PicInPicWidget.cpp",
+			null
+		],
+		[
 			"D:/vskelin/LiveKit/client/src/ui/RegisterPage.h",
 			"MU",
 			"YPKJ5OE7LN/moc_RegisterPage.cpp",
@@ -248,6 +262,12 @@
 			"D:/vskelin/LiveKit/client/src/ui/RoomCard.h",
 			"MU",
 			"YPKJ5OE7LN/moc_RoomCard.cpp",
+			null
+		],
+		[
+			"D:/vskelin/LiveKit/client/src/ui/StartLivePage.h",
+			"MU",
+			"YPKJ5OE7LN/moc_StartLivePage.cpp",
 			null
 		]
 	],
@@ -260,6 +280,7 @@
 		"QT_GUI_LIB",
 		"QT_MULTIMEDIA_LIB",
 		"QT_NETWORK_LIB",
+		"QT_OPENGL_LIB",
 		"QT_SVG_LIB",
 		"QT_WEBSOCKETS_LIB",
 		"QT_WIDGETS_LIB"
@@ -284,6 +305,7 @@
 		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWebSockets",
 		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtMultimedia",
 		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtSvg",
+		"D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtOpenGL",
 		"D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++",
 		"D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32",
 		"D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward",
@@ -333,8 +355,11 @@
 		[ "D:/vskelin/LiveKit/client/src/ui/LiveHallPage.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/LoginPage.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/MainWindow.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/ui/OpenGLWidget.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/ui/PicInPicWidget.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/RegisterPage.cpp", "MU", null ],
-		[ "D:/vskelin/LiveKit/client/src/ui/RoomCard.cpp", "MU", null ]
+		[ "D:/vskelin/LiveKit/client/src/ui/RoomCard.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/ui/StartLivePage.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

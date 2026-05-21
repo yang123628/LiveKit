@@ -6,5 +6,8 @@
 #include "YPKJ5OE7LN/moc_LiveHallPage.cpp"
 #include "YPKJ5OE7LN/moc_LoginPage.cpp"
 #include "YPKJ5OE7LN/moc_MainWindow.cpp"
+#include "YPKJ5OE7LN/moc_OpenGLWidget.cpp"
+#include "YPKJ5OE7LN/moc_PicInPicWidget.cpp"
 #include "YPKJ5OE7LN/moc_RegisterPage.cpp"
 #include "YPKJ5OE7LN/moc_RoomCard.cpp"
+#include "YPKJ5OE7LN/moc_StartLivePage.cpp"

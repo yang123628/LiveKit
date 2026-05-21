@@ -10,6 +10,9 @@
 class LoginPage;
 class RegisterPage;
 class LiveHallPage;
+class StartLivePage;
+class AnchorRoomPage;
+class LiveRoomPage;
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -21,6 +24,8 @@ public:
     void switchPage(int index);
     void showAuthPage();
     void showMainPage();
+    void showLiveRoom(const QString& playUrl, int roomId);
+    void showAnchorRoom(const QString& pushUrl, int mode);
 
 private:
     void setupUI();
@@ -50,8 +55,13 @@ private:
     QPushButton* m_btnProfile;
 
     LiveHallPage* m_pageLiveHall;
-    QWidget* m_pageStartLive;
+    StartLivePage* m_pageStartLive;
     QWidget* m_pageProfile;
+
+#ifdef HAS_FFMPEG
+    AnchorRoomPage* m_pageAnchorRoom;
+    LiveRoomPage* m_pageLiveRoom;
+#endif
 
     int m_currentIndex;
 };

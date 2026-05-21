@@ -331,6 +331,23 @@ CMakeFiles/LiveKitClient.dir/src/ui/MainWindow.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonobject.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonArray \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonarray.h \
+ D:/vskelin/LiveKit/client/src/ui/StartLivePage.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QComboBox \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qcombobox.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractitemdelegate.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qstyleoption.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qlocale.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractspinbox.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qvalidator.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qregularexpression.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qslider.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractslider.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qstyle.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qtabbar.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qrubberband.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qabstractitemmodel.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QRadioButton \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qradiobutton.h \
  D:/vskelin/LiveKit/client/src/theme/ThemeManager.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QObject \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobject.h \
@@ -342,7 +359,6 @@ CMakeFiles/LiveKitClient.dir/src/ui/MainWindow.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qapplication.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qguiapplication.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qinputmethod.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qlocale.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/memory \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_raw_storage_iter.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/ext/concurrence.h \

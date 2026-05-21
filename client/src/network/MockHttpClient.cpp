@@ -6,6 +6,7 @@
 MockHttpClient::MockHttpClient(QObject* parent)
     : IHttpClient(parent)
     , m_nextUserId(1)
+    , m_nextRoomId(100)
 {
 }
 
@@ -30,6 +31,10 @@ void MockHttpClient::post(const QString& path, const QJsonObject& body, const Ca
             handleLogin(body, callback);
         } else if (path == "/api/register") {
             handleRegister(body, callback);
+        } else if (path == "/api/live/create") {
+            handleCreateLive(body, callback);
+        } else if (path == "/api/live/end") {
+            handleEndLive(body, callback);
         } else {
             QJsonObject resp;
             resp["code"] = -1;
@@ -178,5 +183,57 @@ void MockHttpClient::handleRegister(const QJsonObject& body, const Callback& cal
     resp["code"] = 0;
     resp["msg"] = QString::fromUtf8("ok");
     resp["data"] = data;
+    callback(ApiResponse(resp));
+}
+
+void MockHttpClient::handleCreateLive(const QJsonObject& body, const Callback& callback) {
+    auto token = body.value("token").toString();
+    auto title = body.value("title").toString();
+    auto category = body.value("category").toString();
+    int mode = body.value("mode").toInt(0);
+
+    if (token.isEmpty()) {
+        QJsonObject resp;
+        resp["code"] = 3001;
+        resp["msg"] = QString::fromUtf8("未登录");
+        callback(ApiResponse(resp));
+        return;
+    }
+
+    if (title.length() < 2) {
+        QJsonObject resp;
+        resp["code"] = 3002;
+        resp["msg"] = QString::fromUtf8("直播标题至少2个字符");
+        callback(ApiResponse(resp));
+        return;
+    }
+
+    int roomId = m_nextRoomId++;
+    QString streamKey = QString("stream_%1").arg(roomId);
+    QString serverAddr = baseUrl();
+    serverAddr.replace("http://", "");
+    QString pushUrl = QString("rtmp://%1/live/%2").arg(serverAddr).arg(streamKey);
+
+    QJsonObject data;
+    data["room_id"] = roomId;
+    data["stream_key"] = streamKey;
+    data["push_url"] = pushUrl;
+    data["title"] = title;
+    data["category"] = category;
+    data["mode"] = mode;
+
+    QJsonObject resp;
+    resp["code"] = 0;
+    resp["msg"] = QString::fromUtf8("ok");
+    resp["data"] = data;
+    callback(ApiResponse(resp));
+}
+
+void MockHttpClient::handleEndLive(const QJsonObject& body, const Callback& callback) {
+    Q_UNUSED(body)
+
+    QJsonObject resp;
+    resp["code"] = 0;
+    resp["msg"] = QString::fromUtf8("ok");
     callback(ApiResponse(resp));
 }

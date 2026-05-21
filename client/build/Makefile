@@ -501,6 +501,54 @@ src/ui/MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/MainWindow.cpp.s
 .PHONY : src/ui/MainWindow.cpp.s
 
+src/ui/OpenGLWidget.obj: src/ui/OpenGLWidget.cpp.obj
+.PHONY : src/ui/OpenGLWidget.obj
+
+# target to build an object file
+src/ui/OpenGLWidget.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/OpenGLWidget.cpp.obj
+.PHONY : src/ui/OpenGLWidget.cpp.obj
+
+src/ui/OpenGLWidget.i: src/ui/OpenGLWidget.cpp.i
+.PHONY : src/ui/OpenGLWidget.i
+
+# target to preprocess a source file
+src/ui/OpenGLWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/OpenGLWidget.cpp.i
+.PHONY : src/ui/OpenGLWidget.cpp.i
+
+src/ui/OpenGLWidget.s: src/ui/OpenGLWidget.cpp.s
+.PHONY : src/ui/OpenGLWidget.s
+
+# target to generate assembly for a file
+src/ui/OpenGLWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/OpenGLWidget.cpp.s
+.PHONY : src/ui/OpenGLWidget.cpp.s
+
+src/ui/PicInPicWidget.obj: src/ui/PicInPicWidget.cpp.obj
+.PHONY : src/ui/PicInPicWidget.obj
+
+# target to build an object file
+src/ui/PicInPicWidget.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/PicInPicWidget.cpp.obj
+.PHONY : src/ui/PicInPicWidget.cpp.obj
+
+src/ui/PicInPicWidget.i: src/ui/PicInPicWidget.cpp.i
+.PHONY : src/ui/PicInPicWidget.i
+
+# target to preprocess a source file
+src/ui/PicInPicWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/PicInPicWidget.cpp.i
+.PHONY : src/ui/PicInPicWidget.cpp.i
+
+src/ui/PicInPicWidget.s: src/ui/PicInPicWidget.cpp.s
+.PHONY : src/ui/PicInPicWidget.s
+
+# target to generate assembly for a file
+src/ui/PicInPicWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/PicInPicWidget.cpp.s
+.PHONY : src/ui/PicInPicWidget.cpp.s
+
 src/ui/RegisterPage.obj: src/ui/RegisterPage.cpp.obj
 .PHONY : src/ui/RegisterPage.obj
 
@@ -548,6 +596,30 @@ src/ui/RoomCard.s: src/ui/RoomCard.cpp.s
 src/ui/RoomCard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/RoomCard.cpp.s
 .PHONY : src/ui/RoomCard.cpp.s
+
+src/ui/StartLivePage.obj: src/ui/StartLivePage.cpp.obj
+.PHONY : src/ui/StartLivePage.obj
+
+# target to build an object file
+src/ui/StartLivePage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/StartLivePage.cpp.obj
+.PHONY : src/ui/StartLivePage.cpp.obj
+
+src/ui/StartLivePage.i: src/ui/StartLivePage.cpp.i
+.PHONY : src/ui/StartLivePage.i
+
+# target to preprocess a source file
+src/ui/StartLivePage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/StartLivePage.cpp.i
+.PHONY : src/ui/StartLivePage.cpp.i
+
+src/ui/StartLivePage.s: src/ui/StartLivePage.cpp.s
+.PHONY : src/ui/StartLivePage.s
+
+# target to generate assembly for a file
+src/ui/StartLivePage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/StartLivePage.cpp.s
+.PHONY : src/ui/StartLivePage.cpp.s
 
 # Help Target
 help:
@@ -604,12 +676,21 @@ help:
 	@echo ... src/ui/MainWindow.obj
 	@echo ... src/ui/MainWindow.i
 	@echo ... src/ui/MainWindow.s
+	@echo ... src/ui/OpenGLWidget.obj
+	@echo ... src/ui/OpenGLWidget.i
+	@echo ... src/ui/OpenGLWidget.s
+	@echo ... src/ui/PicInPicWidget.obj
+	@echo ... src/ui/PicInPicWidget.i
+	@echo ... src/ui/PicInPicWidget.s
 	@echo ... src/ui/RegisterPage.obj
 	@echo ... src/ui/RegisterPage.i
 	@echo ... src/ui/RegisterPage.s
 	@echo ... src/ui/RoomCard.obj
 	@echo ... src/ui/RoomCard.i
 	@echo ... src/ui/RoomCard.s
+	@echo ... src/ui/StartLivePage.obj
+	@echo ... src/ui/StartLivePage.i
+	@echo ... src/ui/StartLivePage.s
 .PHONY : help
 
 

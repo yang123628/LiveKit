@@ -23,8 +23,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/vskelin/LiveKit/client/src/ui/LiveHallPage.cpp" "CMakeFiles/LiveKitClient.dir/src/ui/LiveHallPage.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/ui/LiveHallPage.cpp.obj.d"
   "D:/vskelin/LiveKit/client/src/ui/LoginPage.cpp" "CMakeFiles/LiveKitClient.dir/src/ui/LoginPage.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/ui/LoginPage.cpp.obj.d"
   "D:/vskelin/LiveKit/client/src/ui/MainWindow.cpp" "CMakeFiles/LiveKitClient.dir/src/ui/MainWindow.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/ui/MainWindow.cpp.obj.d"
+  "D:/vskelin/LiveKit/client/src/ui/OpenGLWidget.cpp" "CMakeFiles/LiveKitClient.dir/src/ui/OpenGLWidget.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/ui/OpenGLWidget.cpp.obj.d"
+  "D:/vskelin/LiveKit/client/src/ui/PicInPicWidget.cpp" "CMakeFiles/LiveKitClient.dir/src/ui/PicInPicWidget.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/ui/PicInPicWidget.cpp.obj.d"
   "D:/vskelin/LiveKit/client/src/ui/RegisterPage.cpp" "CMakeFiles/LiveKitClient.dir/src/ui/RegisterPage.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/ui/RegisterPage.cpp.obj.d"
   "D:/vskelin/LiveKit/client/src/ui/RoomCard.cpp" "CMakeFiles/LiveKitClient.dir/src/ui/RoomCard.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/ui/RoomCard.cpp.obj.d"
+  "D:/vskelin/LiveKit/client/src/ui/StartLivePage.cpp" "CMakeFiles/LiveKitClient.dir/src/ui/StartLivePage.cpp.obj" "gcc" "CMakeFiles/LiveKitClient.dir/src/ui/StartLivePage.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
