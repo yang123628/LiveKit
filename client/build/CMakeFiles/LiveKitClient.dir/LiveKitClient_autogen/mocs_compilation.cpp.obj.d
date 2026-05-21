@@ -292,10 +292,23 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/vskelin/LiveKit/client/src/network/MockHttpClient.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonArray \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonarray.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\UFQQIFJZKK/moc_WebSocketClient.cpp \
+ D:/vskelin/LiveKit/client/src/network/WebSocketClient.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWebSockets/QWebSocket \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWebSockets/qwebsocket.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QAbstractSocket \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qabstractsocket.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QNetworkProxy \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qnetworkproxy.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qhostaddress.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/QSslError \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtNetwork/qsslerror.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWebSockets/qwebsockets_global.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWebSockets/qwebsocketprotocol.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YLADOPUWMF/moc_ThemeManager.cpp \
  D:/vskelin/LiveKit/client/src/theme/ThemeManager.h \
- D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_LiveHallPage.cpp \
- D:/vskelin/LiveKit/client/src/ui/LiveHallPage.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_DanmakuWidget.cpp \
+ D:/vskelin/LiveKit/client/src/ui/DanmakuWidget.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QWidget \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qwidget.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -336,18 +349,45 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qlayoutitem.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qboxlayout.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qgridlayout.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QHBoxLayout \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QLabel \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qlabel.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QListWidget \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qlistwidget.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qlistview.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractitemview.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qframe.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qwidget.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qabstractitemmodel.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qitemselectionmodel.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractitemdelegate.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qstyleoption.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractspinbox.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qvalidator.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qregularexpression.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qicon.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qslider.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractslider.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qstyle.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qtabbar.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qtabwidget.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qrubberband.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QListWidgetItem \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QPropertyAnimation \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qpropertyanimation.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qvariantanimation.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qeasingcurve.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qabstractanimation.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QGraphicsOpacityEffect \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qgraphicseffect.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QLabel \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qlabel.h \
+ D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_LiveHallPage.cpp \
+ D:/vskelin/LiveKit/client/src/ui/LiveHallPage.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QHBoxLayout \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QPushButton \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qpushbutton.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractbutton.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qicon.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QScrollArea \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qscrollarea.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QGridLayout \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qgridlayout.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QVector \
@@ -377,7 +417,6 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/vskelin/LiveKit/client/src/ui/MainWindow.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QMainWindow \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qmainwindow.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qtabwidget.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QStackedWidget \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qstackedwidget.h \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_OpenGLWidget.cpp \
@@ -617,12 +656,6 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:\vskelin\LiveKit\client\build\LiveKitClient_autogen\YPKJ5OE7LN/moc_RoomCard.cpp \
  D:/vskelin/LiveKit/client/src/ui/RoomCard.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QGraphicsDropShadowEffect \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qgraphicseffect.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QPropertyAnimation \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qpropertyanimation.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qvariantanimation.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qeasingcurve.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qabstractanimation.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtSvg/QSvgRenderer \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtSvg/qsvgrenderer.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qxmlstream.h \
@@ -635,16 +668,5 @@ CMakeFiles/LiveKitClient.dir/LiveKitClient_autogen/mocs_compilation.cpp.obj: \
  D:/vskelin/LiveKit/client/src/ui/StartLivePage.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QComboBox \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qcombobox.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractitemdelegate.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qstyleoption.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractspinbox.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qvalidator.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qregularexpression.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qslider.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractslider.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qstyle.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qtabbar.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qrubberband.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qabstractitemmodel.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QRadioButton \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qradiobutton.h

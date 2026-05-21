@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(LiveKitClient VERSION 0.4.0 LANGUAGES CXX)
+project(LiveKitClient VERSION 0.5.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -54,11 +54,13 @@ set(SOURCES
     src/ui/OpenGLWidget.cpp
     src/ui/StartLivePage.cpp
     src/ui/PicInPicWidget.cpp
+    src/ui/DanmakuWidget.cpp
     src/theme/ThemeManager.cpp
     src/network/ApiResponse.cpp
     src/network/IHttpClient.cpp
     src/network/HttpClient.cpp
     src/network/MockHttpClient.cpp
+    src/network/WebSocketClient.cpp
     src/model/UserInfo.cpp
     src/model/RoomInfo.cpp
 )
@@ -74,11 +76,13 @@ set(HEADERS
     src/ui/OpenGLWidget.h
     src/ui/StartLivePage.h
     src/ui/PicInPicWidget.h
+    src/ui/DanmakuWidget.h
     src/theme/ThemeManager.h
     src/network/ApiResponse.h
     src/network/IHttpClient.h
     src/network/HttpClient.h
     src/network/MockHttpClient.h
+    src/network/WebSocketClient.h
     src/model/UserInfo.h
     src/model/RoomInfo.h
 )

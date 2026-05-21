@@ -405,6 +405,30 @@ src/network/MockHttpClient.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.s
 .PHONY : src/network/MockHttpClient.cpp.s
 
+src/network/WebSocketClient.obj: src/network/WebSocketClient.cpp.obj
+.PHONY : src/network/WebSocketClient.obj
+
+# target to build an object file
+src/network/WebSocketClient.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/WebSocketClient.cpp.obj
+.PHONY : src/network/WebSocketClient.cpp.obj
+
+src/network/WebSocketClient.i: src/network/WebSocketClient.cpp.i
+.PHONY : src/network/WebSocketClient.i
+
+# target to preprocess a source file
+src/network/WebSocketClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/WebSocketClient.cpp.i
+.PHONY : src/network/WebSocketClient.cpp.i
+
+src/network/WebSocketClient.s: src/network/WebSocketClient.cpp.s
+.PHONY : src/network/WebSocketClient.s
+
+# target to generate assembly for a file
+src/network/WebSocketClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/network/WebSocketClient.cpp.s
+.PHONY : src/network/WebSocketClient.cpp.s
+
 src/theme/ThemeManager.obj: src/theme/ThemeManager.cpp.obj
 .PHONY : src/theme/ThemeManager.obj
 
@@ -428,6 +452,30 @@ src/theme/ThemeManager.s: src/theme/ThemeManager.cpp.s
 src/theme/ThemeManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/theme/ThemeManager.cpp.s
 .PHONY : src/theme/ThemeManager.cpp.s
+
+src/ui/DanmakuWidget.obj: src/ui/DanmakuWidget.cpp.obj
+.PHONY : src/ui/DanmakuWidget.obj
+
+# target to build an object file
+src/ui/DanmakuWidget.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/DanmakuWidget.cpp.obj
+.PHONY : src/ui/DanmakuWidget.cpp.obj
+
+src/ui/DanmakuWidget.i: src/ui/DanmakuWidget.cpp.i
+.PHONY : src/ui/DanmakuWidget.i
+
+# target to preprocess a source file
+src/ui/DanmakuWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/DanmakuWidget.cpp.i
+.PHONY : src/ui/DanmakuWidget.cpp.i
+
+src/ui/DanmakuWidget.s: src/ui/DanmakuWidget.cpp.s
+.PHONY : src/ui/DanmakuWidget.s
+
+# target to generate assembly for a file
+src/ui/DanmakuWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LiveKitClient.dir\build.make CMakeFiles/LiveKitClient.dir/src/ui/DanmakuWidget.cpp.s
+.PHONY : src/ui/DanmakuWidget.cpp.s
 
 src/ui/LiveHallPage.obj: src/ui/LiveHallPage.cpp.obj
 .PHONY : src/ui/LiveHallPage.obj
@@ -664,9 +712,15 @@ help:
 	@echo ... src/network/MockHttpClient.obj
 	@echo ... src/network/MockHttpClient.i
 	@echo ... src/network/MockHttpClient.s
+	@echo ... src/network/WebSocketClient.obj
+	@echo ... src/network/WebSocketClient.i
+	@echo ... src/network/WebSocketClient.s
 	@echo ... src/theme/ThemeManager.obj
 	@echo ... src/theme/ThemeManager.i
 	@echo ... src/theme/ThemeManager.s
+	@echo ... src/ui/DanmakuWidget.obj
+	@echo ... src/ui/DanmakuWidget.i
+	@echo ... src/ui/DanmakuWidget.s
 	@echo ... src/ui/LiveHallPage.obj
 	@echo ... src/ui/LiveHallPage.i
 	@echo ... src/ui/LiveHallPage.s

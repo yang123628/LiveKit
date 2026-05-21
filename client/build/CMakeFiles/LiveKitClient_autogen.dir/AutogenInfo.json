@@ -217,9 +217,21 @@
 			null
 		],
 		[
+			"D:/vskelin/LiveKit/client/src/network/WebSocketClient.h",
+			"MU",
+			"UFQQIFJZKK/moc_WebSocketClient.cpp",
+			null
+		],
+		[
 			"D:/vskelin/LiveKit/client/src/theme/ThemeManager.h",
 			"MU",
 			"YLADOPUWMF/moc_ThemeManager.cpp",
+			null
+		],
+		[
+			"D:/vskelin/LiveKit/client/src/ui/DanmakuWidget.h",
+			"MU",
+			"YPKJ5OE7LN/moc_DanmakuWidget.cpp",
 			null
 		],
 		[
@@ -351,7 +363,13 @@
 			"MU",
 			null
 		],
+		[
+			"D:/vskelin/LiveKit/client/src/network/WebSocketClient.cpp",
+			"MU",
+			null
+		],
 		[ "D:/vskelin/LiveKit/client/src/theme/ThemeManager.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/ui/DanmakuWidget.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/LiveHallPage.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/LoginPage.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/MainWindow.cpp", "MU", null ],

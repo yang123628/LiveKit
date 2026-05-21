@@ -507,3 +507,63 @@ QPushButton#fullscreenButton {
 QPushButton#fullscreenButton:hover {
     background-color: #0f3460;
 }
+
+#danmakuInputBar {
+    background-color: #16213e;
+    border-top: 1px solid #0f3460;
+}
+
+QLineEdit#danmakuInput {
+    background-color: #0f3460;
+    color: #e0e0e0;
+    border: 2px solid #0f3460;
+    border-radius: 16px;
+    padding: 6px 14px;
+    font-size: 13px;
+}
+
+QLineEdit#danmakuInput:focus {
+    border: 2px solid #e94560;
+}
+
+QLineEdit#danmakuInput::placeholder {
+    color: #607090;
+}
+
+QPushButton#danmakuSendButton {
+    background-color: #e94560;
+    color: #ffffff;
+    border: none;
+    border-radius: 16px;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QPushButton#danmakuSendButton:hover {
+    background-color: #ff5a70;
+}
+
+QPushButton#danmakuSendButton:pressed {
+    background-color: #c73a54;
+}
+
+#anchorDanmakuPanel {
+    background-color: #16213e;
+    border-left: 1px solid #0f3460;
+}
+
+QLabel#danmakuTitle {
+    color: #e0e0e0;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #0f3460;
+}
+
+#danmakuOverlay {
+    background: transparent;
+}
+
+#anchorDanmaku {
+    background: transparent;
+}

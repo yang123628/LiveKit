@@ -145,14 +145,15 @@ void MainWindow::setupPages() {
                 if (resp.isSuccess()) {
                     QJsonObject data = resp.data();
                     QString pushUrl = data["push_url"].toString();
+                    int roomId = data["room_id"].toInt();
                     if (pushUrl.isEmpty()) {
                         QString serverIp = Application::instance().config()->serverAddress();
                         serverIp.replace("http://", "");
                         pushUrl = QString("rtmp://%1/live/stream_%2")
                             .arg(serverIp)
-                            .arg(data["room_id"].toInt());
+                            .arg(roomId);
                     }
-                    showAnchorRoom(pushUrl, mode);
+                    showAnchorRoom(pushUrl, mode, roomId);
                 } else {
                     qDebug() << "Create live failed:" << resp.msg();
                 }
@@ -246,14 +247,15 @@ void MainWindow::showLiveRoom(const QString& playUrl, int roomId) {
 #endif
 }
 
-void MainWindow::showAnchorRoom(const QString& pushUrl, int mode) {
+void MainWindow::showAnchorRoom(const QString& pushUrl, int mode, int roomId) {
 #ifdef HAS_FFMPEG
     m_contentStack->setCurrentWidget(m_pageAnchorRoom);
-    m_pageAnchorRoom->startLive(pushUrl, mode);
+    m_pageAnchorRoom->startLive(pushUrl, mode, roomId);
     m_navigationBar->hide();
 #else
     Q_UNUSED(pushUrl)
     Q_UNUSED(mode)
+    Q_UNUSED(roomId)
 #endif
 }
 

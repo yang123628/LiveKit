@@ -15,6 +15,8 @@ class DesktopCapture;
 class AudioCapture;
 class PicInPic;
 class PicInPicWidget;
+class DanmakuWidget;
+class WebSocketClient;
 
 class AnchorRoomPage : public QWidget {
     Q_OBJECT
@@ -23,7 +25,7 @@ public:
     explicit AnchorRoomPage(QWidget* parent = nullptr);
     ~AnchorRoomPage();
 
-    void startLive(const QString& pushUrl, int mode);
+    void startLive(const QString& pushUrl, int mode, int roomId);
     void stopLive();
 
 signals:
@@ -33,8 +35,11 @@ private:
     void setupUI();
     void initCapture(int mode);
     void releaseCapture();
+    void connectWebSocket();
+    void disconnectWebSocket();
 
     OpenGLWidget* m_preview;
+    DanmakuWidget* m_danmakuWidget;
     QLabel* m_viewerCountLabel;
     QPushButton* m_stopButton;
 
@@ -44,10 +49,12 @@ private:
     AudioCapture* m_audioCapture;
     PicInPic* m_picInPic;
     PicInPicWidget* m_pipWidget;
+    WebSocketClient* m_webSocket;
 
     int m_liveMode;
     bool m_isLiving;
     int m_viewerCount;
+    int m_roomId;
     QTimer* m_viewerTimer;
     QImage m_cameraPipFrame;
 };

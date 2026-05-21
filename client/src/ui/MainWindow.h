@@ -25,7 +25,7 @@ public:
     void showAuthPage();
     void showMainPage();
     void showLiveRoom(const QString& playUrl, int roomId);
-    void showAnchorRoom(const QString& pushUrl, int mode);
+    void showAnchorRoom(const QString& pushUrl, int mode, int roomId);
 
 private:
     void setupUI();
