@@ -16,6 +16,7 @@ public:
 
 private:
     void handleGetAvatars(const Callback& callback);
+    void handleGetRooms(const QString& path, const Callback& callback);
     void handleLogin(const QJsonObject& body, const Callback& callback);
     void handleRegister(const QJsonObject& body, const Callback& callback);
 

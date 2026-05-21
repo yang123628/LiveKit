@@ -1,11 +1,9 @@
-CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.obj: \
- D:\vskelin\LiveKit\client\src\network\MockHttpClient.cpp \
- D:/vskelin/LiveKit/client/src/network/MockHttpClient.h \
- D:/vskelin/LiveKit/client/src/network/IHttpClient.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QObject \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobject.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobjectdefs.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qnamespace.h \
+CMakeFiles/LiveKitClient.dir/src/model/RoomInfo.cpp.obj: \
+ D:\vskelin\LiveKit\client\src\model\RoomInfo.cpp \
+ D:/vskelin/LiveKit/client/src/model/RoomInfo.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QString \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstring.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qchar.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qglobal.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/type_traits \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -90,11 +88,9 @@ CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qglobalstatic.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qnumeric.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qversiontagging.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobjectdefs_impl.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstring.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qchar.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qbytearray.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qrefcount.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qnamespace.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qarraydata.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/x86_64-w64-mingw32/include/string.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/x86_64-w64-mingw32/include/sec_api/string_s.h \
@@ -179,11 +175,19 @@ CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstringliteral.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstringalgorithms.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstringview.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qlist.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qalgorithms.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonObject \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonobject.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonvalue.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstring.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qiterator.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qhashfunctions.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qpair.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonArray \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonarray.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QVector \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qvector.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qalgorithms.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qlist.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qhashfunctions.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/numeric \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_numeric.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/list \
@@ -195,52 +199,8 @@ CMakeFiles/LiveKitClient.dir/src/network/MockHttpClient.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstringlist.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qregexp.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstringmatcher.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qscopedpointer.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qmetatype.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qvarlengtharray.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qcontainerfwd.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/vector \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_uninitialized.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_vector.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_bvector.h \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/vector.tcc \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/map \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_tree.h \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_map.h \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/tuple \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/array \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/uses_allocator.h \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/invoke.h \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/stl_multimap.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobject_impl.h \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/chrono \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/ratio \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/ctime \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/x86_64-w64-mingw32/include/time.h \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/x86_64-w64-mingw32/include/_timeval.h \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/x86_64-w64-mingw32/include/pthread_time.h \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/parse_numbers.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonObject \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonobject.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonvalue.h \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/functional \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/std_function.h \
- D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/refwrap.h \
- D:/vskelin/LiveKit/client/src/network/ApiResponse.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QString \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstring.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QTimer \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qtimer.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qbasictimer.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobject.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonArray \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonarray.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QDateTime \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qdatetime.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qshareddata.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qhash.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QUrl \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qurl.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QUrlQuery \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qurlquery.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qurl.h
+ D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/vector.tcc

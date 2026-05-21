@@ -179,6 +179,12 @@
 			null
 		],
 		[
+			"D:/vskelin/LiveKit/client/src/model/RoomInfo.h",
+			"MU",
+			"VNQA4LF4BW/moc_RoomInfo.cpp",
+			null
+		],
+		[
 			"D:/vskelin/LiveKit/client/src/model/UserInfo.h",
 			"MU",
 			"VNQA4LF4BW/moc_UserInfo.cpp",
@@ -215,6 +221,12 @@
 			null
 		],
 		[
+			"D:/vskelin/LiveKit/client/src/ui/LiveHallPage.h",
+			"MU",
+			"YPKJ5OE7LN/moc_LiveHallPage.cpp",
+			null
+		],
+		[
 			"D:/vskelin/LiveKit/client/src/ui/LoginPage.h",
 			"MU",
 			"YPKJ5OE7LN/moc_LoginPage.cpp",
@@ -230,6 +242,12 @@
 			"D:/vskelin/LiveKit/client/src/ui/RegisterPage.h",
 			"MU",
 			"YPKJ5OE7LN/moc_RegisterPage.cpp",
+			null
+		],
+		[
+			"D:/vskelin/LiveKit/client/src/ui/RoomCard.h",
+			"MU",
+			"YPKJ5OE7LN/moc_RoomCard.cpp",
 			null
 		]
 	],
@@ -301,6 +319,7 @@
 		[ "D:/vskelin/LiveKit/client/src/app/AppConfig.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/app/Application.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/main.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/model/RoomInfo.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/model/UserInfo.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/network/ApiResponse.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/network/HttpClient.cpp", "MU", null ],
@@ -311,9 +330,11 @@
 			null
 		],
 		[ "D:/vskelin/LiveKit/client/src/theme/ThemeManager.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/ui/LiveHallPage.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/LoginPage.cpp", "MU", null ],
 		[ "D:/vskelin/LiveKit/client/src/ui/MainWindow.cpp", "MU", null ],
-		[ "D:/vskelin/LiveKit/client/src/ui/RegisterPage.cpp", "MU", null ]
+		[ "D:/vskelin/LiveKit/client/src/ui/RegisterPage.cpp", "MU", null ],
+		[ "D:/vskelin/LiveKit/client/src/ui/RoomCard.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

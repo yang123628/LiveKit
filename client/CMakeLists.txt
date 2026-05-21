@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(LiveKitClient VERSION 0.2.0 LANGUAGES CXX)
+project(LiveKitClient VERSION 0.3.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -42,12 +42,15 @@ set(SOURCES
     src/ui/MainWindow.cpp
     src/ui/LoginPage.cpp
     src/ui/RegisterPage.cpp
+    src/ui/LiveHallPage.cpp
+    src/ui/RoomCard.cpp
     src/theme/ThemeManager.cpp
     src/network/ApiResponse.cpp
     src/network/IHttpClient.cpp
     src/network/HttpClient.cpp
     src/network/MockHttpClient.cpp
     src/model/UserInfo.cpp
+    src/model/RoomInfo.cpp
 )
 
 set(HEADERS
@@ -56,12 +59,15 @@ set(HEADERS
     src/ui/MainWindow.h
     src/ui/LoginPage.h
     src/ui/RegisterPage.h
+    src/ui/LiveHallPage.h
+    src/ui/RoomCard.h
     src/theme/ThemeManager.h
     src/network/ApiResponse.h
     src/network/IHttpClient.h
     src/network/HttpClient.h
     src/network/MockHttpClient.h
     src/model/UserInfo.h
+    src/model/RoomInfo.h
 )
 
 set(RESOURCES

@@ -1,9 +1,11 @@
 #include "ui/MainWindow.h"
 #include "ui/LoginPage.h"
 #include "ui/RegisterPage.h"
+#include "ui/LiveHallPage.h"
 #include "theme/ThemeManager.h"
 #include "app/AppConfig.h"
 #include "app/Application.h"
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)
@@ -105,13 +107,12 @@ void MainWindow::setupNavigationBar() {
 void MainWindow::setupPages() {
     m_contentStack = new QStackedWidget(this);
 
-    m_pageLiveHall = new QWidget(this);
+    m_pageLiveHall = new LiveHallPage(this);
     m_pageLiveHall->setObjectName("pageLiveHall");
-    auto* hallLayout = new QVBoxLayout(m_pageLiveHall);
-    auto* hallLabel = new QLabel(QStringLiteral("直播大厅"), m_pageLiveHall);
-    hallLabel->setObjectName("pageTitle");
-    hallLabel->setAlignment(Qt::AlignCenter);
-    hallLayout->addWidget(hallLabel);
+
+    connect(m_pageLiveHall, &LiveHallPage::roomClicked, [](int roomId) {
+        qDebug() << "Room clicked:" << roomId;
+    });
 
     m_pageStartLive = new QWidget(this);
     m_pageStartLive->setObjectName("pageStartLive");
@@ -153,6 +154,7 @@ void MainWindow::showAuthPage() {
 void MainWindow::showMainPage() {
     m_topStack->setCurrentWidget(m_mainPage);
     switchPage(0);
+    m_pageLiveHall->refreshRooms();
 }
 
 void MainWindow::checkAutoLogin() {

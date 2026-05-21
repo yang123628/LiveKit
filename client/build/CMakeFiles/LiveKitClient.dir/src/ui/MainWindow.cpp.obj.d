@@ -313,9 +313,25 @@ CMakeFiles/LiveKitClient.dir/src/ui/MainWindow.cpp.obj: \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qfiledevice.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qvector2d.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtGui/qtouchdevice.h \
- D:/vskelin/LiveKit/client/src/theme/ThemeManager.h \
+ D:/vskelin/LiveKit/client/src/ui/LiveHallPage.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QScrollArea \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qscrollarea.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QTimer \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qtimer.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qbasictimer.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QVector \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qvector.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/QButtonGroup \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtWidgets/qbuttongroup.h \
+ D:/vskelin/LiveKit/client/src/model/RoomInfo.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QString \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qstring.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonObject \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonobject.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonArray \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonarray.h \
+ D:/vskelin/LiveKit/client/src/theme/ThemeManager.h \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QObject \
  D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qobject.h \
  D:/vskelin/LiveKit/client/src/app/AppConfig.h \
@@ -336,5 +352,7 @@ CMakeFiles/LiveKitClient.dir/src/ui/MainWindow.cpp.obj: \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/shared_ptr_atomic.h \
  D:/Qt/Qt5.12.11/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward/auto_ptr.h \
  D:/vskelin/LiveKit/client/src/model/UserInfo.h \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QJsonObject \
- D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qjsonobject.h
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/QDebug \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qdebug.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qtextstream.h \
+ D:/Qt/Qt5.12.11/5.12.11/mingw73_64/include/QtCore/qcontiguouscache.h

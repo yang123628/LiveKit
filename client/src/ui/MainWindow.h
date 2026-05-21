@@ -9,6 +9,7 @@
 
 class LoginPage;
 class RegisterPage;
+class LiveHallPage;
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -48,7 +49,7 @@ private:
     QPushButton* m_btnStartLive;
     QPushButton* m_btnProfile;
 
-    QWidget* m_pageLiveHall;
+    LiveHallPage* m_pageLiveHall;
     QWidget* m_pageStartLive;
     QWidget* m_pageProfile;
 
