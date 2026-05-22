@@ -4493,13 +4493,14 @@ CMakeFiles/LiveKitServer.dir/src/network/Connection.cpp.o: ../src/network/Connec
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
-  ../src/core/Logger.h \
-  /usr/include/c++/11/mutex \
+  ../src/network/WebSocketHandler.h \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
+  ../src/core/Logger.h \
+  /usr/include/c++/11/mutex \
   /usr/include/c++/11/system_error \
   /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
   /usr/include/c++/11/stdexcept \
@@ -5265,6 +5266,11 @@ CMakeFiles/LiveKitServer.dir/src/network/HttpServer.cpp.o: ../src/network/HttpSe
   /usr/include/c++/11/bits/basic_string.tcc \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h \
   ../src/core/EventLoop.h \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/bits/hashtable.h \
@@ -5273,11 +5279,6 @@ CMakeFiles/LiveKitServer.dir/src/network/HttpServer.cpp.o: ../src/network/HttpSe
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/mutex \
-  /usr/include/c++/11/chrono \
-  /usr/include/c++/11/ratio \
-  /usr/include/c++/11/limits \
-  /usr/include/c++/11/ctime \
-  /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/system_error \
   /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
   /usr/include/c++/11/stdexcept \

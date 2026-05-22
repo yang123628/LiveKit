@@ -48,6 +48,8 @@ void HttpServer::onMessage(std::shared_ptr<Connection> conn) {
     std::string rawData = conn->inputBuffer().retrieveAllAsString();
     if (rawData.empty()) return;
 
+    LOG_INFO("onMessage fd=" << conn->fd() << " bytes=" << rawData.size() << " first=" << rawData.substr(0, std::min((size_t)50, rawData.size())));
+
     WsContext* ctx = WebSocketHandler::getWsContext(conn);
     if (ctx && ctx->handshakeDone) {
         m_eventLoop->threadPool().submit([this, conn, rawData]() {
@@ -56,8 +58,46 @@ void HttpServer::onMessage(std::shared_ptr<Connection> conn) {
         return;
     }
 
-    m_eventLoop->threadPool().submit([this, conn, rawData]() {
-        handleRequest(conn, rawData);
+    size_t headerEnd = rawData.find("\r\n\r\n");
+    if (headerEnd == std::string::npos) {
+        LOG_WARN("incomplete HTTP request, no header end");
+        HttpResponse resp;
+        resp.setStatus(400);
+        resp.setJson(400, "Bad Request");
+        conn->send(resp.serialize());
+        return;
+    }
+
+    bool isPost = (rawData.size() >= 4 && rawData.substr(0, 4) == "POST");
+    if (isPost) {
+        size_t clPos = rawData.find("Content-Length:");
+        if (clPos != std::string::npos && clPos < headerEnd) {
+            size_t clStart = clPos + 16;
+            while (clStart < headerEnd && (rawData[clStart] == ' ' || rawData[clStart] == '\t')) clStart++;
+            size_t clEnd = rawData.find("\r\n", clStart);
+            if (clEnd != std::string::npos) {
+                int contentLength = std::atoi(rawData.c_str() + clStart);
+                size_t bodyAvailable = rawData.size() - (headerEnd + 4);
+                if ((int)bodyAvailable < contentLength) {
+                    LOG_WARN("incomplete POST body: have=" << bodyAvailable << " need=" << contentLength);
+                    HttpResponse resp;
+                    resp.setStatus(400);
+                    resp.setJson(400, "Bad Request");
+                    conn->send(resp.serialize());
+                    return;
+                }
+            }
+        }
+    }
+
+    if (rawData.find("Expect: 100-continue") != std::string::npos) {
+        conn->send("HTTP/1.1 100 Continue\r\n\r\n");
+    }
+
+    auto startTime = std::chrono::steady_clock::now();
+
+    m_eventLoop->threadPool().submit([this, conn, rawData, startTime]() {
+        handleRequest(conn, rawData, startTime);
     });
 }
 
@@ -73,7 +113,7 @@ void HttpServer::onClose(std::shared_ptr<Connection> conn) {
     LOG_INFO("connection closed: " << conn->ip() << ":" << conn->port());
 }
 
-void HttpServer::handleRequest(std::shared_ptr<Connection> conn, const std::string& rawData) {
+void HttpServer::handleRequest(std::shared_ptr<Connection> conn, const std::string& rawData, std::chrono::steady_clock::time_point startTime) {
     if (WebSocketHandler::isWebSocketUpgrade(rawData)) {
         std::string response;
         if (WebSocketHandler::handshake(rawData, response)) {
@@ -95,7 +135,9 @@ void HttpServer::handleRequest(std::shared_ptr<Connection> conn, const std::stri
         return;
     }
 
-    auto startTime = std::chrono::steady_clock::now();
+    if (rawData.find("Expect: 100-continue") != std::string::npos) {
+        conn->send("HTTP/1.1 100 Continue\r\n\r\n");
+    }
 
     HttpRequest req;
     if (!req.parse(rawData)) {
