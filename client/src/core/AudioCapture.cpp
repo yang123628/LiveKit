@@ -70,7 +70,7 @@ void AudioCapture::close() {
     wait();
 
     if (m_swrCtx) {
-        swr_free(static_cast<SwrContext**>(&m_swrCtx));
+        swr_free((SwrContext**)&m_swrCtx);
         m_swrCtx = nullptr;
     }
     if (m_audioInput) {
@@ -92,10 +92,10 @@ void AudioCapture::run() {
     QByteArray srcBuf(srcLineSize, 0);
 
     int maxDstNbSamples = swr_get_out_samples(swr, srcNbSamples);
-    uint8_t* dstData[2] = {nullptr, nullptr};
-    int dstLineSize[2] = {0};
-    av_samples_alloc_array_and_samples(&dstData, dstLineSize, m_channels,
-        maxDstNbSamples, AV_SAMPLE_FMT_FLTP, 0);
+    uint8_t** dstData = nullptr;
+    int dstLineSize = 0;
+    av_samples_alloc_array_and_samples(&dstData, &dstLineSize, m_channels,
+    maxDstNbSamples, AV_SAMPLE_FMT_FLTP, 0);
 
     while (m_running) {
         qint64 bytesReady = m_audioInput->bytesReady();

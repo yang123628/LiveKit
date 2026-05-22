@@ -1,0 +1,4 @@
+D:/vskelin/LiveKit/client/build_mingw/CMakeFiles/LiveKitClient.dir
+D:/vskelin/LiveKit/client/build_mingw/CMakeFiles/edit_cache.dir
+D:/vskelin/LiveKit/client/build_mingw/CMakeFiles/rebuild_cache.dir
+D:/vskelin/LiveKit/client/build_mingw/CMakeFiles/LiveKitClient_autogen.dir

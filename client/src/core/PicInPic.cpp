@@ -1,7 +1,8 @@
 #include "core/PicInPic.h"
-#include <QPainter>
-#include <libswscale/swscale.h>
+#include <libavcodec/avcodec.h>
+#include <libavutil/frame.h>
 #include <libavutil/imgutils.h>
+#include <libswscale/swscale.h>
 
 PicInPic::PicInPic()
     : m_pipWidth(320)
@@ -57,6 +58,7 @@ AVFrame* PicInPic::qimageToYUV420P(const QImage& image) {
     }
 
     AVFrame* frame = av_frame_alloc();
+    if (!frame) return nullptr;
     frame->format = AV_PIX_FMT_YUV420P;
     frame->width = w;
     frame->height = h;

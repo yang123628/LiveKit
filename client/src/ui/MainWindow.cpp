@@ -9,6 +9,8 @@
 #include "theme/ThemeManager.h"
 #include "app/AppConfig.h"
 #include "app/Application.h"
+#include "network/IHttpClient.h"
+#include "network/ApiResponse.h"
 
 #ifdef HAS_FFMPEG
 #include "ui/AnchorRoomPage.h"

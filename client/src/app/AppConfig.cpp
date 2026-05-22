@@ -7,7 +7,7 @@ AppConfig& AppConfig::instance() {
 
 AppConfig::AppConfig()
     : m_settings("LiveKit", "LiveKitClient")
-    , m_serverAddress("http://192.168.1.100:8080")
+    , m_serverAddress("http://192.168.124.192:9090")
     , m_themeName("dark")
     , m_token("")
 {

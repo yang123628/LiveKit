@@ -1,6 +1,7 @@
 #include "core/DesktopCapture.h"
 #include <QScreen>
 #include <QGuiApplication>
+#include <QPixmap>
 #include <QElapsedTimer>
 
 DesktopCapture::DesktopCapture(QObject* parent)

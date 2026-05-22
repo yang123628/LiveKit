@@ -23,6 +23,7 @@ void HttpClient::post(const QString& path, const QJsonObject& body, const Callba
     QUrl url(m_baseUrl + path);
     QNetworkRequest request(url);
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+    request.setRawHeader("Expect","");
 
     QJsonDocument doc(body);
     auto* reply = m_manager->post(request, doc.toJson());

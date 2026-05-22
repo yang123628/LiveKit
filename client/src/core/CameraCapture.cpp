@@ -1,6 +1,5 @@
 #include "core/CameraCapture.h"
-#include <opencv2/videoio.hpp>
-#include <opencv2/imgproc.hpp>
+#include <opencv2/opencv.hpp>
 #include <QElapsedTimer>
 
 CameraCapture::CameraCapture(QObject* parent)
