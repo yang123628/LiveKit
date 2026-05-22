@@ -95,7 +95,11 @@ void AudioCapture::run() {
     uint8_t** dstData = nullptr;
     int dstLineSize = 0;
     av_samples_alloc_array_and_samples(&dstData, &dstLineSize, m_channels,
+<<<<<<< HEAD
     maxDstNbSamples, AV_SAMPLE_FMT_FLTP, 0);
+=======
+        maxDstNbSamples, AV_SAMPLE_FMT_FLTP, 0);
+>>>>>>> 03e5a0dd4a25e1bc5a6dc35acc7c13f0914fb869
 
     while (m_running) {
         qint64 bytesReady = m_audioInput->bytesReady();

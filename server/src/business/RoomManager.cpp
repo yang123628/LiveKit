@@ -20,9 +20,12 @@ bool RoomManager::joinRoom(int roomId, int userId, const std::string& username, 
     viewer.username = username;
     viewer.avatar_id = avatarId;
     viewer.conn = conn;
+    viewer.has_ws_conn = (conn != nullptr);
     viewers[userId] = viewer;
-    m_fdToRoomUser[conn->fd()] = {roomId, userId};
-    LOG_INFO("ws user " << username << " joined room " << roomId << ", viewers=" << viewers.size());
+    if (conn) {
+        m_fdToRoomUser[conn->fd()] = {roomId, userId};
+    }
+    LOG_INFO("user " << username << " joined room " << roomId << ", viewers=" << viewers.size());
     return true;
 }
 
@@ -133,8 +136,10 @@ void RoomManager::cleanupExpired() {
     for (auto roomIt = m_rooms.begin(); roomIt != m_rooms.end();) {
         auto& viewers = roomIt->second;
         for (auto it = viewers.begin(); it != viewers.end();) {
-            if (it->second.conn.expired()) {
-                m_fdToRoomUser.erase(-1);
+            if (it->second.has_ws_conn && it->second.conn.expired()) {
+                if (auto c = it->second.conn.lock()) {
+                    m_fdToRoomUser.erase(c->fd());
+                }
                 it = viewers.erase(it);
             } else {
                 ++it;

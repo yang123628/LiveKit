@@ -14,6 +14,7 @@ struct WsViewer {
     std::string username;
     int avatar_id;
     std::weak_ptr<Connection> conn;
+    bool has_ws_conn = false;
 };
 
 class RoomManager {
